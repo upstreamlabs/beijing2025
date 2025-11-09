@@ -153,7 +153,10 @@ const {
   
   .feature-backdrop {
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: radial-gradient(circle at 15% 20%, rgba(255, 198, 64, 0.2), transparent 55%),
       radial-gradient(circle at 85% 15%, rgba(43, 116, 255, 0.16), transparent 55%),
       radial-gradient(circle at 50% 85%, rgba(139, 210, 255, 0.18), transparent 60%);
@@ -309,22 +312,28 @@ const {
 
   @media (max-width: 768px) {
     .feature-spotlight {
-      padding: clamp(2rem, 8vw, 4rem) 0;
+      padding: 3rem 0 2rem 0;
       min-height: auto;
-      align-items: flex-start;
+      align-items: stretch;
+      display: block;
+    }
+
+    .container {
+      display: block;
     }
 
     .feature-grid {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 2rem;
+      display: block;
+      text-align: center;
+    }
+
+    .feature-copy {
+      margin-bottom: 2rem;
     }
 
     .feature-media {
       max-width: 280px;
-      margin: 0 !important;
-      align-self: center;
+      margin: 0 auto;
     }
 
     .feature-media img {
