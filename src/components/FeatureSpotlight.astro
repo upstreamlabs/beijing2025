@@ -289,8 +289,40 @@ const {
     }
 
     .feature-media {
-      max-width: 520px;
+      max-width: 320px;
       margin: 0 auto;
+      margin-bottom: 0;
+    }
+
+    .feature-media img {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+    }
+
+    .feature-spotlight:not(.image-left) .feature-media img {
+      margin-left: 0;
+    }
+
+    .feature-spotlight.image-left .feature-media img {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .feature-spotlight {
+      padding: clamp(2rem, 8vw, 4rem) 0;
+      min-height: auto;
+    }
+
+    .feature-media {
+      max-width: 280px;
+      margin: 0 auto;
+      margin-top: 1.5rem;
+    }
+
+    .feature-media img {
+      border-radius: 12px;
     }
   }
 </style>
