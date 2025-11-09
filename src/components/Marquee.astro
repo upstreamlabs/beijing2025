@@ -1,11 +1,15 @@
 ---
-import projects from "json/Marquee.json";
+import projectsEn from "json/Marquee-upstream.json";
+import projectsZh from "json/Marquee-upstream-zh.json";
 
 interface Props {
   title?: string;
 }
 
-const { title = "参与项目" } = Astro.props;
+const pathname = Astro.url.pathname;
+const isChinesePage = pathname.startsWith('/cn/');
+const projects = isChinesePage ? projectsZh : projectsEn;
+const { title = isChinesePage ? "参与展示的开源商业创新营项目" : "Featured Open Source Business Innovation Camp Projects" } = Astro.props;
 ---
 
 <section
