@@ -223,15 +223,6 @@ const {
     z-index: 3;
   }
 
-  .feature-media::before {
-    content: "";
-    position: absolute;
-    inset: -8%;
-    background: linear-gradient(135deg, rgba(43, 116, 255, 0.25), rgba(255, 198, 64, 0.25));
-    filter: blur(60px);
-    z-index: 0;
-  }
-
   .feature-media {
     position: relative;
     overflow: visible;
@@ -293,7 +284,11 @@ const {
       margin: 0 auto !important;
       margin-top: 2rem !important;
       margin-bottom: 0 !important;
-      overflow: hidden;
+      overflow: hidden !important;
+    }
+
+    .feature-media::before {
+      display: none;
     }
 
     .feature-media img {
