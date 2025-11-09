@@ -494,6 +494,7 @@ const titleSecondPart = splitTitle ? splitTitle[1]?.trim() : null;
       font-family: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
       font-size: 1.306rem;
       letter-spacing: 0.24em;
+      color: rgba(255, 255, 255, 0.9);
     }
 
     .hero-eyebrow.multiline .cn {
@@ -521,27 +522,55 @@ const titleSecondPart = splitTitle ? splitTitle[1]?.trim() : null;
       font-size: clamp(1.8rem, 7vw, 2.5rem);
     }
 
+    .event-facts.immediate {
+      margin-top: 2rem;
+    }
+
+    .hero-badges {
+      position: static;
+      transform: none;
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .hero-eyebrow.multiline {
+      margin-top: 3rem;
+    }
+
     .hero-quote {
       font-size: 1.1rem;
       line-height: 1.7;
-      margin-top: 2rem;
+      margin-top: 3rem;
     }
 
     .hero-description {
       font-size: 1rem;
-      margin-top: 1.5rem;
+      margin-top: 2.5rem;
+    }
+
+    .hero-description.secondary {
+      margin-top: 2rem;
+    }
+
+    .hero-highlights {
+      margin-top: 2rem;
+    }
+
+    .organizer-block {
+      margin-top: 4rem;
     }
 
     .organizer-logos {
-      gap: 1.25rem;
+      gap: 1rem;
     }
 
     .org-logo {
-      height: 68px;
+      height: 48px;
     }
 
     .org-logo[src*="innoecos"] {
-      height: 122px;
+      height: 85px;
     }
 
     .hero-column {
