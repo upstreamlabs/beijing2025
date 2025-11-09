@@ -1,0 +1,150 @@
+{
+  "categories": [
+    {
+      "id": "all",
+      "name": "全部"
+    },
+    {
+      "id": "keynote",
+      "name": "主题演讲"
+    },
+    {
+      "id": "panel",
+      "name": "圆桌讨论"
+    },
+    {
+      "id": "lightning",
+      "name": "Lightning Talk"
+    },
+    {
+      "id": "special",
+      "name": "特别环节"
+    }
+  ],
+  "sessions": {
+    "special": [
+      {
+        "date": "12月21日",
+        "timeSlot": "09:00 – 10:00",
+        "title": "签到 & 社交早餐",
+        "content": "",
+        "speakers": [],
+        "isSpecialEvent": true
+      },
+      {
+        "date": "12月21日",
+        "timeSlot": "10:00 – 10:15",
+        "title": "开场致辞：GOBI 2025 & Upstream 训练营回顾",
+        "content": "",
+        "speakers": [],
+        "isSpecialEvent": true
+      },
+      {
+        "date": "12月21日",
+        "timeSlot": "15:30 – 16:00",
+        "title": "茶歇 & Demo Walk",
+        "content": "",
+        "speakers": [],
+        "isSpecialEvent": true
+      },
+      {
+        "date": "12月21日",
+        "timeSlot": "17:00 – 17:10",
+        "title": "颁奖：Upstream 开源商业创新颁奖",
+        "content": "",
+        "speakers": [],
+        "isSpecialEvent": true
+      },
+      {
+        "date": "12月21日",
+        "timeSlot": "17:10 – 17:30",
+        "title": "闭幕：从源到业，2026 展望",
+        "content": "",
+        "speakers": [],
+        "isSpecialEvent": true
+      },
+      {
+        "date": "12月21日",
+        "timeSlot": "18:00 – 20:00",
+        "title": "晚宴 & Happy Hour",
+        "content": "嘉宾 / 观众互动社交",
+        "speakers": [],
+        "isSpecialEvent": true
+      }
+    ],
+    "keynote": [
+      {
+        "date": "12月21日",
+        "timeSlot": "10:15 – 10:45",
+        "title": "Keynote 1：开源产业发展综述",
+        "content": "",
+        "speakers": [],
+        "isSpecialEvent": true
+      },
+      {
+        "date": "12月21日",
+        "timeSlot": "10:45 – 11:05",
+        "title": "Keynote 2：开源商业模型探索（理论和实践）",
+        "content": "",
+        "speakers": [],
+        "isSpecialEvent": true
+      },
+      {
+        "date": "12月21日",
+        "timeSlot": "11:05 – 11:25",
+        "title": "Keynote 3：可持续发展开源商业生态指数（理论框架）",
+        "content": "",
+        "speakers": [],
+        "isSpecialEvent": true
+      }
+    ],
+    "panel": [
+      {
+        "date": "12月21日",
+        "timeSlot": "11:25 – 12:25",
+        "title": "圆桌讨论：源力觉醒: AI时代的开源商业",
+        "content": "",
+        "speakers": []
+      },
+      {
+        "date": "12月21日",
+        "timeSlot": "13:30 – 14:30",
+        "title": "圆桌讨论：破局 · AI时代的个体生存法则",
+        "content": "",
+        "speakers": []
+      },
+      {
+        "date": "12月21日",
+        "timeSlot": "14:30 – 15:30",
+        "title": "圆桌讨论：聚力 · 开源社区的进化与未来",
+        "content": "",
+        "speakers": []
+      },
+      {
+        "date": "12月21日",
+        "timeSlot": "15:30 – 16:30",
+        "title": "圆桌讨论：创生 · AI催生的新文艺复兴",
+        "content": "",
+        "speakers": []
+      }
+    ],
+    "lightning": [
+      {
+        "date": "12月21日",
+        "timeSlot": "12:30 – 13:30",
+        "title": "午餐 & 训练营学员 Lightning Talk",
+        "content": "每人 3–4 分钟；观众+评审团实时投票",
+        "speakers": [],
+        "isSpecialEvent": true
+      },
+      {
+        "date": "12月21日",
+        "timeSlot": "16:30 – 17:00",
+        "title": "Upstream 开源商业创新项目展示和投票",
+        "content": "",
+        "speakers": [],
+        "isSpecialEvent": true
+      }
+    ]
+  }
+}

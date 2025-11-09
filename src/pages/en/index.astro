@@ -1,0 +1,237 @@
+---
+import Layout from "layouts/Layout.astro";
+import Hero from "components/Hero.astro";
+import FeatureSpotlight from "components/FeatureSpotlight.astro";
+import SellingPoints from "components/SellingPoints.astro";
+import Cards from "components/Cards.astro";
+import Button from "components/Button.astro";
+import SimpleFAQ from "components/SimpleFAQ.astro";
+import Marquee from "components/Marquee.astro";
+import VenueInfo from "components/VenueInfo.astro";
+import AgendaSchedule from "components/AgendaSchedule.astro";
+
+// Import JSON data
+import heroLinksData from "json/HeroLinks.json";
+import sellingPointsData from "json/SellingPointsEn.json";
+import agendaData from "json/Schedule-gobi-en.json";
+
+const heroLinks = heroLinksData;
+const agendaItems = agendaData;
+
+const heroBadges = [
+  // Badges removed as requested
+];
+
+const coorganizers = [
+  {
+    src: "/images/sponsors/innoecos-logo.png",
+    alt: "INNOECOS"
+  },
+  {
+    src: "/images/sponsors/csdn.png",
+    alt: "CSDN"
+  }
+];
+
+// Create placeholder data for speakers
+const speakerProfiles = [
+  {
+    title: "Internet and Cloud Providers",
+    description: "AI infrastructure, developer platforms, AIGC/Agent ecosystem leaders",
+    image: "/icons/cloud.svg",
+  },
+  {
+    title: "Leading Open Source Projects and Maintainers",
+    description: "Models/frameworks/databases/data platforms",
+    image: "/icons/code.svg",
+  },
+  {
+    title: "AI Developer Tools",
+    description: "Inference and training frameworks, monitoring and evaluation, DevEx toolchains",
+    image: "/icons/tools.svg",
+  },
+  {
+    title: "Industry and Investment",
+    description: "Enterprise open source leaders, industry research, investment firm partners",
+    image: "/icons/building.svg",
+  },
+  {
+    title: "Policy and Standards",
+    description: "Foundations/associations, compliance and standards organizations",
+    image: "/icons/file.svg",
+  },
+];
+
+// Extract FAQ items from agenda if available, otherwise use hardcoded
+const faqItems = [
+  {
+    question: "Will there be interpretation?",
+    answer: "Chinese venue provided, simultaneous interpretation/English subtitles as needed"
+  },
+  {
+    question: "Will there be live streaming?",
+    answer: "Live streaming and recordings of breakout sessions planned (sent via email after registration)"
+  },
+  {
+    question: "Are invoices available?",
+    answer: "Corporate reimbursement and student discount policies"
+  },
+  {
+    question: "Are open source project booths supported?",
+    answer: "Community booths and Demo Walk sessions provided"
+  },
+  {
+    question: "How to participate in voting?",
+    answer: "Scan QR code on site, one vote per person, real-time display"
+  }
+];
+---
+
+<Layout
+  title="GOBI 2025: From Source to Scale"
+  description="GOBI 2025 connects developers, businesses, and policy partners to turn open collaboration into sustainable innovation and growth—from source to scale."
+  navDarkMode={true}
+  navBackground="header-home"
+  pageTransitionName="GOBI 2025"
+>
+  <Hero
+    title="GOBI 2025 | Global Open Source Business Innovation Conference"
+    tagline="Open Source Business and Innovation Conference"
+    mottoCn="Unlock the Source, Create the Future"
+    mottoEn="释放源力，创造未来"
+    date="DEC 21"
+    location="BEIJING"
+    backgroundVideo="/videos/GOBICONF-HERO.webm"
+    videoPoster="/videos/GOBICONF-HERO-poster.jpg"
+    links={heroLinks}
+    badges={heroBadges}
+    logosHeading="Co-organizers"
+    logos={coorganizers}
+  />
+
+  <FeatureSpotlight
+    id="overview"
+    title="GOBI 2025 Mission"
+    text="AI is becoming the ultimate bridge connecting developers and creators, bringing massive talent into the open source ecosystem like never before. A new creator-centric business paradigm is rising - it's no longer about simply consuming open source, but about empowering and amplifying open source as a digital public product. GOBI aims to transform individual creativity into a driving force for the future of industry. If you are an open source leader, developer, creator, ecosystem connector, or value discoverer, welcome to join GOBI 2025 to co-define and lead this great journey of source awakening!"
+    image="/images/homepage/wave.png"
+    imageAlt="GOBI 2025"
+    theme="light"
+    background="lightgray"
+  />
+
+  <Cards
+    id="speakers"
+    title="Featured Speakers"
+    description="Experts and practitioners from various fields"
+    cards={speakerProfiles}
+    theme="light"
+    background="light"
+  />
+
+  <AgendaSchedule />
+
+  <Marquee title="Featured Open Source Business Innovation Projects" />
+
+  <SellingPoints
+    points={sellingPointsData}
+    id="selling-points"
+    theme="light"
+    background="lightgray"
+    title="GOBI 2025 helps you rediscover your creative power through expert insights and community interaction"
+  />
+
+  <VenueInfo
+    subtitle="Venue"
+    title="Renaissance Beijing Haidian Hotel"
+    location="Building 6, Yard 8, North Street, Dongsheng Science Park, Haidian District, Beijing"
+    image="/images/homepage/dongsheng-marriot.webp"
+    text="Located in the core area of Zhongguancun, Renaissance Beijing Haidian Hotel features modern conference facilities and comfortable accommodation environment, adjacent to many well-known technology companies and universities, with convenient transportation."
+    mapLatitude={40.0296}
+    mapLongitude={116.3526}
+    mapZoom={15}
+  />
+
+  {/* <SimpleFAQ
+    id="faq"
+    title="Frequently Asked Questions"
+    items={faqItems}
+    theme="light"
+    background="light"
+  /> */}
+
+  <section class="section section-apply" id="apply" data-theme-section="dark" data-bg-section="dark">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2 class="custom3" style="font-family: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">Join GOBI 2025</h2>
+          <p class="apply-motto">
+            GOBI 2025 connects developers, businesses, and policy partners to explore sustainable paths from "source" to "industry".
+          </p>
+          <div class="apply-actions">
+            <Button
+              text="Register Now"
+              link="#register"
+              class="btn primary xl btn-hover"
+            />
+            <Button
+              text="Submit Proposal"
+              link="#speakers"
+              class="btn outline btn-hover xl"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</Layout>
+
+<style>
+  .lead {
+    font-size: 1.15rem;
+    line-height: 1.7;
+  }
+
+  .section-apply {
+    text-align: left;
+    background: linear-gradient(135deg, rgba(43, 116, 255, 0.92), rgba(0, 200, 150, 0.88));
+  }
+
+  .section-apply p {
+    max-width: 640px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.88);
+  }
+
+  .apply-motto {
+    font-family: 'Source Han Serif CN VF', 'Source Han Serif SC', 'Source Han Serif', 'Noto Serif CJK SC', serif;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+  .apply-motto .separator {
+    margin: 0 0.75rem;
+    opacity: 0.6;
+  }
+
+  .apply-actions {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .apply-actions .btn.primary span {
+    color: #ffffff !important;
+  }
+
+  @media (max-width: 768px) {
+    .lead {
+      font-size: 1.02rem;
+    }
+  }
+</style>

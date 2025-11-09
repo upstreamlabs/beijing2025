@@ -1,0 +1,29 @@
+---
+const serverPreferred = '/cn/';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+    <meta http-equiv="refresh" content={`0;url=${serverPreferred}`} />
+    <meta name="robots" content="noindex" />
+    <script is:inline>
+      (function () {
+        var target = '/cn/';
+        if (window.location.pathname !== target) {
+          window.location.replace(target);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <p>
+        JavaScript is required for automatic language detection. Please continue to
+        <a href="/en/">English</a> or <a href="/cn/">Chinese</a>.
+      </p>
+    </noscript>
+  </body>
+</html>

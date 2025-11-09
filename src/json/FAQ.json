@@ -1,0 +1,16 @@
+{
+  "categories": [
+    {
+      "name": "All"
+    },
+    {
+      "name": "Registration"
+    },
+    {
+      "name": "Venue"
+    },
+    {
+      "name": "Schedule"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+---
+import Layout from "layouts/Layout.astro";
+import Forumschedule from "components/Forumschedule.astro";
+---
+
+<Layout
+  title="会议日程 - GOBI 2025"
+  description="GOBI 2025 会议日程安排"
+  navDarkMode={false}
+  navBackground="light"
+  pageTransitionName="schedule"
+>
+  <section class="section" data-theme-section="light" data-bg-section="light">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>会议日程</h1>
+          <p>GOBI 2025 同期活动安排</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Forumschedule />
+</Layout>

@@ -1,0 +1,17 @@
+[
+  {
+    "title": "A｜AI 时代的产品设计",
+    "description": "端侧/混合推理体验、智能体/工作流、可用性与安全、PLG 增长",
+    "image": "/icons/design.svg"
+  },
+  {
+    "title": "B｜AI 产品出海",
+    "description": "定价与计费、区域合规、本地化、渠道与生态伙伴",
+    "image": "/icons/plane.svg"
+  },
+  {
+    "title": "C｜开源商业 Panel",
+    "description": "商业模式（Open Core、SaaS、双证授权、企业支持）、销售与交付、SBOM 与合规",
+    "image": "/icons/money.svg"
+  }
+]

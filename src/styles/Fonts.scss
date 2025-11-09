@@ -1,0 +1,47 @@
+@import url('https://chinese-fonts-cdn.netlify.app/packages/syst/dist/SourceHanSerifCN/result.css');
+@import url('https://puhuiti.oss-cn-hangzhou.aliyuncs.com/AlibabaPuHuiTi-3/AlibabaPuHuiTi-3-85/AlibabaPuHuiTi-3-85-Regular/AlibabaPuHuiTi-3-85-Regular.css');
+
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Inter Regular'), local('Inter-Regular'),
+         url('/fonts/inter-v18-latin-regular.woff2') format('woff2');
+}
+ 
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Inter Medium'), local('Inter-Medium'), 
+         url('/fonts/inter-v18-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: block;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Manrope SemiBold'), local('Manrope-SemiBold'),
+        url('/fonts/Manrope-SemiBold.ttf') format('ttf');
+}
+
+@font-face {
+    font-display: block;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Manrope Bold'), local('Manrope-Bold'),
+        url('/fonts/Manrope-Bold.ttf') format('ttf');
+}
+
+@font-face {
+    font-display: block;
+    font-family: 'Zhuque Fangsong';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Zhuque Fangsong'), local('ZhuqueFangsong-Regular'),
+        url('/fonts/ZhuqueFangsong-Regular.ttf') format('truetype');
+}

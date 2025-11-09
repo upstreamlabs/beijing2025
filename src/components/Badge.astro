@@ -1,0 +1,54 @@
+---
+interface Props {
+  text: string;
+  type: 'voting' | 'training' | 'city';
+  class?: string;
+}
+
+const { text, type, class: className } = Astro.props;
+
+const badgeClasses = {
+  voting: 'badge-voting',
+  training: 'badge-training',
+  city: 'badge-city'
+};
+
+const badgeType = badgeClasses[type] || '';
+---
+
+<div class={`badge ${badgeType} ${className || ''}`}>
+  <span>{text}</span>
+</div>
+
+<style>
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25em 0.75em;
+    border-radius: 100em;
+    font-size: 0.75em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+  }
+
+  .badge-voting {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-aqua));
+    color: white;
+    box-shadow: 0 2px 8px rgba(43, 116, 255, 0.3);
+  }
+
+  .badge-training {
+    background: linear-gradient(135deg, var(--color-aqua), var(--color-secondary));
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 200, 150, 0.3);
+  }
+
+  .badge-city {
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
+    color: white;
+    box-shadow: 0 2px 8px rgba(255, 198, 64, 0.3);
+  }
+</style>

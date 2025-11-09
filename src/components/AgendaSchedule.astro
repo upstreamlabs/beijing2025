@@ -1,0 +1,223 @@
+---
+// Import the schedule data
+import scheduleDataZh from "json/Schedule-gobi.json"
+import scheduleDataEn from "json/Schedule-gobi-en.json"
+
+// Use appropriate data based on language
+const isEnglish = Astro.url.pathname.includes('/en/')
+const scheduleData = isEnglish ? scheduleDataEn : scheduleDataZh
+
+interface Session {
+  date: string
+  timeSlot: string
+  title: string
+  content: string
+  speakers: any[]
+  category?: string
+  isSpecialEvent?: boolean
+}
+
+// Helper function to sort sessions by time
+const sortSessionsByTime = (sessions: Session[]) => {
+  return sessions.sort((a, b) => {
+    // Extract start times from timeSlot (handle both "–" and "-" separators)
+    const aStartTime = a.timeSlot.split(/[–-]/)[0].trim()
+    const bStartTime = b.timeSlot.split(/[–-]/)[0].trim()
+
+    // Clean up the time string and convert to minutes
+    const aTime = aStartTime.replace(/\s/g, '').split(":").map(Number)
+    const bTime = bStartTime.replace(/\s/g, '').split(":").map(Number)
+
+    const aMinutes = (aTime[0] || 0) * 60 + (aTime[1] || 0)
+    const bMinutes = (bTime[0] || 0) * 60 + (bTime[1] || 0)
+
+    // Compare times
+    return aMinutes - bMinutes
+  })
+}
+
+// Prepare all sessions for the current day
+const allSessions: Session[] = Object.entries(scheduleData.sessions).flatMap(
+  ([categoryName, categorySessions]) =>
+    categorySessions.map((session) => ({
+      ...session,
+      category: scheduleData.categories.find((cat) => cat.id === categoryName)?.name || categoryName,
+      isSpecialEvent: session.isSpecialEvent || false
+    }))
+)
+
+// Remove duplicates from all sessions while preserving the first occurrence
+const uniqueAllSessions = Array.from(
+  new Map(allSessions.map((session) => [session.title, session])).values()
+)
+
+const sortedAllSessions = sortSessionsByTime(uniqueAllSessions)
+---
+
+<section
+  class="section section-agenda"
+  id="agenda"
+  data-theme-section="light"
+  data-bg-section="lightgray"
+>
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">{Astro.url.pathname.includes('/en/') ? 'Agenda' : '会议日程'}</h2>
+    </div>
+    <div class="agenda-list">
+      {sortedAllSessions.map((session: Session) => (
+        <div class={`agenda-item ${session.isSpecialEvent ? 'special-event' : ''}`}>
+          <div class="agenda-time">
+            <p class="time">{session.timeSlot.replace(/–/g, '-')}</p>
+          </div>
+          <div class="agenda-content">
+            <h3 class="agenda-title">{session.title}</h3>
+            {session.content && (
+              <p class="agenda-description">{session.content}</p>
+            )}
+          </div>
+        </div>
+      ))}
+    </div>
+    <p class="agenda-note">{isEnglish ? 'Schedule is subject to change' : '日程可能调整，请以现场为准'}</p>
+  </div>
+</section>
+
+<style>
+  .section-agenda {
+    padding: clamp(4rem, 10vw, 7rem) 0;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .section-title {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: #0d1c3a;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+  }
+
+  [data-theme-section="dark"] .section-title {
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+  .agenda-list {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .agenda-item {
+    display: flex;
+    gap: 2rem;
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+
+  .agenda-item:hover {
+    background: rgba(43, 116, 255, 0.05);
+    border-radius: 8px;
+  }
+
+  [data-theme-section="dark"] .agenda-item:hover {
+    background: rgba(43, 116, 255, 0.1);
+  }
+
+  .agenda-item.special-event {
+    border-radius: 8px;
+    padding: 1.5rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .agenda-item.special-event:hover {
+    background: rgba(43, 116, 255, 0.05);
+  }
+
+  .agenda-time {
+    flex-shrink: 0;
+    width: 160px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+
+  .agenda-time .time {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', 'Source Code Pro', monospace;
+    letter-spacing: 0;
+    line-height: 1.2;
+    white-space: nowrap;
+    display: inline-block;
+    min-width: 160px;
+    text-align: left;
+  }
+
+  .agenda-content {
+    flex: 1;
+  }
+
+  .agenda-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #0d1c3a;
+    margin: 0 0 0.5rem 0;
+    line-height: 1.4;
+    font-family: 'Manrope', sans-serif;
+  }
+
+  [data-theme-section="dark"] .agenda-title {
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+  .agenda-description {
+    font-size: 1rem;
+    color: rgba(13, 28, 58, 0.7);
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  [data-theme-section="dark"] .agenda-description {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .agenda-note {
+    text-align: center;
+    margin-top: 3rem;
+    color: #999;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 768px) {
+    .agenda-item {
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+
+    .agenda-time {
+      width: 100%;
+    }
+
+    .agenda-title {
+      font-size: 1.1rem;
+    }
+
+    .agenda-description {
+      font-size: 0.95rem;
+    }
+
+    .agenda-item.special-event {
+      padding: 1rem;
+    }
+  }
+</style>

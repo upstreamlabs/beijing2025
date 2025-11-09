@@ -1,0 +1,264 @@
+---
+// Components
+import OpenStreetMap from "components/OpenStreetMap.astro";
+
+export interface Props {
+  id?: string;
+  sectionClass?: string;
+  title?: string;
+  titleZh?: string;
+  titleEn?: string;
+  image?: string;
+  imageAlt?: string;
+  location?: string;
+  address?: string;
+  description?: string;
+  mapLatitude?: number;
+  mapLongitude?: number;
+  mapZoom?: number;
+}
+
+const {
+  id = 'venue',
+  sectionClass = 'venue-section',
+  title,
+  titleZh = '会议地点',
+  titleEn = 'Venue',
+  image = '/images/homepage/dongsheng-marriot.webp',
+  imageAlt = 'Venue',
+  location = '北京中关村东升科技园万丽酒店',
+  address = '北京市海淀区永泰庄北路1号',
+  description = '北京中关村东升科技园万丽酒店位于中关村核心区域，紧邻众多知名科技企业和高校，交通便利。',
+  mapLatitude = 39.9042,
+  mapLongitude = 116.4074,
+  mapZoom = 13
+} = Astro.props;
+
+// Determine which values to use based on locale detection or explicit props
+const currentLang = Astro.url.pathname.includes('/en/') ? 'en' : 'zh';
+const displayTitle = title || (currentLang === 'en' ? titleEn : titleZh);
+---
+
+<div class="venue-with-map-overlay">
+<section class={sectionClass} id={id}>
+  <div class="venue-image-container">
+    <img src={image} alt={imageAlt} class="venue-image" />
+    <div class="venue-overlay desktop-only">
+      <h2 class="venue-title">{displayTitle}</h2>
+      <div class="venue-info-overlay">
+        <div class="venue-map-overlay">
+          <OpenStreetMap
+            latitude={mapLatitude}
+            longitude={mapLongitude}
+            zoom={mapZoom}
+            markerTitle={location}
+            height="400px"
+            width="500px"
+          />
+        </div>
+        <div class="venue-card-overlay">
+          <h3>{location}</h3>
+          <p>{address}</p>
+          <p>{description}</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Content Below Image -->
+    <div class="mobile-content-below">
+      <h2 class="mobile-title">{displayTitle}</h2>
+      <div class="mobile-venue-card">
+        <h3>{location}</h3>
+        <p>{address}</p>
+        <p>{description}</p>
+      </div>
+      <div class="mobile-map">
+        <OpenStreetMap
+          latitude={mapLatitude}
+          longitude={mapLongitude}
+          zoom={mapZoom}
+          markerTitle={location}
+          height="300px"
+          width="100%"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+
+<style>
+  /* Venue Section */
+  .venue-section {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .venue-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    display: block;
+  }
+
+  .venue-image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    min-height: 600px;
+  }
+
+  .venue-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+    padding-bottom: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .venue-title {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0 0 3rem 0;
+    text-align: center;
+  }
+
+  .venue-info-overlay {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 100%;
+    padding-right: 2rem;
+  }
+
+  .venue-map-overlay {
+    width: 500px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .venue-card-overlay {
+    background: transparent;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 1.5rem;
+    padding-top: 2rem;
+    width: 400px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .venue-card-overlay:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .venue-card-overlay h3 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .venue-card-overlay p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0 0 0.5rem 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Hide mobile content on desktop */
+  .mobile-content-below {
+    display: none;
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .venue-image {
+      min-height: 250px;
+      border-radius: 20px;
+    }
+
+    /* Hide desktop overlay on mobile */
+    .desktop-only {
+      display: none !important;
+    }
+
+    /* Show mobile content */
+    .mobile-content-below {
+      display: block;
+      padding: 2rem 1rem;
+      background: #f8f9fa;
+    }
+
+    .mobile-title {
+      color: #1a202c;
+      font-size: 1.8rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .mobile-venue-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 15px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      text-align: left;
+    }
+
+    .mobile-venue-card h3 {
+      color: #1a202c;
+      font-size: 1.8rem;
+      margin-bottom: 0.75rem;
+      font-weight: 600;
+    }
+
+    .mobile-venue-card p {
+      color: #666;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin: 0 0 0.5rem 0;
+    }
+
+    .mobile-map {
+      margin-top: 1.5rem;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+</style>

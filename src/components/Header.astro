@@ -1,0 +1,347 @@
+---
+import Button from "components/Button.astro";
+import Logo from "./Logo.astro";
+import CityTour from "./CityTour.astro";
+
+const pathname = Astro.url.pathname;
+const isChinesePage = pathname.startsWith('/cn/');
+const langPrefix = isChinesePage ? '/cn' : '/en';
+
+const navLinks = isChinesePage
+  ? [
+      { text: "会议日程", link: `${langPrefix}/#agenda` },
+      {
+        text: "Upstream 开源商业创新训练营",
+        link: "https://camp.upstreamlabs.org/cn/",
+        openInNewTab: true,
+      },
+    ]
+  : [
+      { text: "Schedule", link: `${langPrefix}/#agenda` },
+      {
+        text: "Upstream Open Source Business Camp",
+        link: "https://camp.upstreamlabs.org/en/",
+        openInNewTab: true,
+      },
+    ];
+
+const cta = isChinesePage
+  ? {
+      text: "立即报名",
+      link: "https://opencamp.cn/UpstreamLabs/camp/2025",
+      openInNewTab: true,
+    }
+  : {
+      text: "Register Now",
+      link: "https://opencamp.cn/UpstreamLabs/camp/2025",
+      openInNewTab: true,
+    };
+
+const currentPath = pathname.replace(/^\/(en|cn)/, '');
+const langSwitchLink = isChinesePage ? `/en${currentPath}` : `/cn${currentPath}`;
+const langSwitchText = isChinesePage ? 'EN' : '中文';
+
+const slug = Astro.url.pathname;
+---
+
+<header>
+  <div class="floating-ticket-button">
+    <Button
+      text={cta.text}
+      link={cta.link}
+      openInNewTab={cta.openInNewTab ?? false}
+      class="btn primary btn-floating btn-hover"
+    />
+  </div>
+
+  <div class="mobile-nav">
+    <div class="overlay overlay-dark" data-navigation-toggle="close"></div>
+
+    <div class="mobile-nav-box">
+      <div class="box-row box-row-logo">
+        <Logo width={115} />
+      </div>
+      <nav class="box-row box-row-nav" aria-label="Navigation Mobile">
+        <ul>
+          {navLinks.map((link) => {
+            const hashIndex = link.link.indexOf('#');
+            const isAnchorLink = hashIndex !== -1;
+            const anchorTarget = isAnchorLink ? link.link.slice(hashIndex) : null;
+            const linkHref = isAnchorLink ? anchorTarget : link.link;
+
+            if (link.submenu) {
+              return (
+                <li class="link link-hover dropdown" data-link-status="not-active">
+                  <a
+                    class="link-click dropdown-toggle"
+                    href={link.link}
+                    data-dropdown-toggle="dropdown"
+                  >
+                    <span>{link.text}</span>
+                    <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                      <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                  <ul class="dropdown-menu">
+                    {link.submenu.map((subitem) => (
+                      <li>
+                        <a
+                          href={subitem.link}
+                          target={subitem.openInNewTab ? '_blank' : '_self'}
+                          rel={subitem.openInNewTab ? 'noopener noreferrer' : ''}
+                          class="dropdown-link"
+                        >
+                          {subitem.text}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              );
+            }
+
+            return (
+              <li
+                class="link link-hover"
+                data-barba-update
+                data-link-status={link.link === slug ? 'active' : 'not-active'}
+              >
+                <a
+                  class="link-click"
+                  href={linkHref}
+                  data-anchor-target={anchorTarget || undefined}
+                  data-page-title={anchorTarget ? link.text : undefined}
+                >
+                  <span>{link.text}</span>
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
+      <div class="box-row box-row-btn" style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem;">
+        <CityTour cities={["Beijing", "Paris", "SF"]} />
+      </div>
+      <div class="box-row box-row-btn" style="display: flex; gap: 1rem; align-items: center;">
+        <div class="link link-hover" style="margin-right: 1rem;">
+          <a class="link-click" href={langSwitchLink} style="color: white; text-decoration: none;">
+            <span>{langSwitchText}</span>
+          </a>
+        </div>
+        <Button
+          text={cta.text}
+          link={cta.link}
+          openInNewTab={cta.openInNewTab ?? false}
+          class="btn primary xl btn-hover"
+        />
+      </div>
+    </div>
+  </div>
+
+  <button
+    class="hamburger btn-floating"
+    aria-label="Open menu"
+    data-navigation-toggle="toggle"
+    style="margin-top: 35px;"
+  >
+    <div class="hamburger-fill"></div>
+    <div class="bar bar-top"></div>
+    <div class="bar bar-bottom"></div>
+  </button>
+
+  <div class="main-nav-bar" style="opacity: 1;">
+    <div class="overlay nav-fill"></div>
+    <div class="row">
+      <div class="border-bottom"></div>
+
+      <div class="logo" style="padding-top: 25px;">
+        <a href="/" aria-label="Go to homepage" class="logo-click">
+          <Logo width={115} />
+        </a>
+      </div>
+
+      <nav aria-label="Navigation Desktop" style="padding-top: 35px;">
+        <ul>
+          {navLinks.map((link) => {
+            const hashIndex = link.link.indexOf('#');
+            const isAnchorLink = hashIndex !== -1;
+            const anchorTarget = isAnchorLink ? link.link.slice(hashIndex) : null;
+            const linkHref = isAnchorLink ? anchorTarget : link.link;
+
+            if (link.submenu) {
+              return (
+                <li class="link link-hover dropdown" data-link-status="not-active">
+                  <a
+                    class="link-click dropdown-toggle"
+                    href={link.link}
+                    data-dropdown-toggle="dropdown"
+                  >
+                    <span>{link.text}</span>
+                    <svg class="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                      <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                  <ul class="dropdown-menu">
+                    {link.submenu.map((subitem) => (
+                      <li>
+                        <a
+                          href={subitem.link}
+                          target={subitem.openInNewTab ? '_blank' : '_self'}
+                          rel={subitem.openInNewTab ? 'noopener noreferrer' : ''}
+                          class="dropdown-link"
+                        >
+                          {subitem.text}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              );
+            }
+
+            return (
+              <li
+                class="link link-hover"
+                data-barba-update
+                data-link-status={link.link === slug ? 'active' : 'not-active'}
+              >
+                <a
+                  class="link-click"
+                  href={linkHref}
+                  data-anchor-target={anchorTarget || undefined}
+                  data-page-title={anchorTarget ? link.text : undefined}
+                >
+                  <span>{link.text}</span>
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
+
+      <div style="padding-top: 40px; display: flex; gap: 1rem; align-items: center;">
+        <div class="link link-hover" style="margin-right: 1rem;">
+          <a class="link-click" href={langSwitchLink} style="color: white; text-decoration: none;">
+            <span>{langSwitchText}</span>
+          </a>
+        </div>
+        <Button
+          text={cta.text}
+          link={cta.link}
+          openInNewTab={cta.openInNewTab ?? false}
+          class="btn outline btn-hover"
+        />
+      </div>
+    </div>
+  </div>
+</header>
+
+<style>
+  .floating-ticket-button {
+    position: relative;
+    top: -15px;
+    z-index: 10;
+  }
+
+  /* Dropdown menu styles */
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .dropdown-arrow {
+    transition: transform 0.3s ease;
+  }
+
+  .dropdown:hover .dropdown-arrow {
+    transform: rotate(180deg);
+  }
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 220px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    padding: 8px 0;
+    margin-top: 10px;
+    z-index: 1000;
+  }
+
+  [data-theme-nav="dark"] .dropdown-menu {
+    background: rgba(28, 29, 36, 0.95);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+
+  .dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .dropdown-link {
+    display: block;
+    padding: 10px 20px;
+    color: #0d1c3a;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+    font-weight: 500;
+  }
+
+  [data-theme-nav="dark"] .dropdown-link {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .dropdown-link:hover {
+    background: rgba(43, 116, 255, 0.1);
+    color: #2b74ff;
+  }
+
+  [data-theme-nav="dark"] .dropdown-link:hover {
+    background: rgba(43, 116, 255, 0.2);
+    color: #5b9eff;
+  }
+
+  /* Mobile dropdown adjustments */
+  @media (max-width: 768px) {
+    .dropdown-menu {
+      position: static;
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+      background: none;
+      backdrop-filter: none;
+      box-shadow: none;
+      padding: 0;
+      margin: 10px 0 0 0;
+    }
+
+    .dropdown-toggle .dropdown-arrow {
+      transform: rotate(90deg);
+    }
+
+    .dropdown-link {
+      padding: 12px 20px;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 0.9rem;
+    }
+
+    .dropdown-link:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+    }
+  }
+</style>

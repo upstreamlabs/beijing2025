@@ -1,0 +1,22 @@
+{
+  "name": "gobi-2025-beijing",
+  "description": "GOBI 2025: From Source to Scale - Open Source Business and Innovation Conference",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "build:gh-pages": "cross-env GITHUB_PAGES=true astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.2.1",
+    "astro": "^5.13.3",
+    "astro-iconify": "^1.2.0",
+    "sass": "^1.85.1"
+  },
+  "devDependencies": {
+    "cross-env": "^10.0.0"
+  }
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Moxin-LLM",
+    "description": "Moxin is a family of fully open-source and reproducible LLMs",
+    "avatar": "https://avatars.githubusercontent.com/u/167464495?v=4",
+    "stars": 0.1,
+    "age": "3.3"
+  },
+  {
+    "name": "makepad",
+    "description": "Makepad is a creative software development platform for Rust that compiles to wasm/webGL, osx/metal, windows/dx11 linux/opengl",
+    "avatar": "https://avatars.githubusercontent.com/u/20386338?v=4",
+    "stars": 5.3,
+    "age": "72.8"
+  },
+  {
+    "name": "dora",
+    "description": "DORA (Dataflow-Oriented Robotic Architecture) is middleware designed to streamline and simplify the creation of AI-based robotic applications. It offers low latency, composable, and distributed dataflow capabilities. Applications are modeled as directed graphs, also referred to as pipelines.",
+    "avatar": "https://avatars.githubusercontent.com/u/99922143?s=48&v=4",
+    "stars": 1.8,
+    "age": "36.8"
+  }
+]

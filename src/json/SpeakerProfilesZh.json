@@ -1,0 +1,27 @@
+[
+  {
+    "title": "互联网与云厂商",
+    "description": "AI 基础设施、开发者平台、AIGC / Agent 生态负责人",
+    "image": "/icons/cloud.svg"
+  },
+  {
+    "title": "头部开源产品与维护者",
+    "description": "模型/框架/数据库/数据平台",
+    "image": "/icons/code.svg"
+  },
+  {
+    "title": "AI 开发者工具",
+    "description": "推理与训练框架、观测与评测、DevEx 工具链",
+    "image": "/icons/tools.svg"
+  },
+  {
+    "title": "产业与投资",
+    "description": "企业开源负责人、产业研究、投资机构合伙人",
+    "image": "/icons/building.svg"
+  },
+  {
+    "title": "政策与标准",
+    "description": "基金会/协会、合规与标准组织代表",
+    "image": "/icons/file.svg"
+  }
+]

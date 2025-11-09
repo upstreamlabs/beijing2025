@@ -1,0 +1,309 @@
+---
+interface Props {
+  id?: string;
+  title: string;
+  text: string;
+  image: string;
+  imageAlt: string;
+  eyebrow?: string;
+  imagePosition?: 'left' | 'right';
+  theme?: 'light' | 'dark';
+  background?: 'light' | 'lightgray' | 'dark' | 'primary';
+}
+
+const {
+  id,
+  title,
+  text,
+  image,
+  imageAlt,
+  eyebrow,
+  imagePosition = 'right',
+  theme = 'light',
+  background = 'lightgray',
+} = Astro.props;
+---
+
+<section
+  class={`mission-spotlight ${imagePosition === 'left' ? 'image-left' : ''}`}
+  id={id}
+  data-theme-section={theme}
+  data-bg-section={background}
+>
+  <div class="mission-bg-container" aria-hidden="true">
+    <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" class="mission-bg-svg">
+      <defs>
+        <radialGradient id="source-core" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" style="stop-color:#FFC640;stop-opacity:0.8" />
+          <stop offset="50%" style="stop-color:#2B74FF;stop-opacity:0.4" />
+          <stop offset="100%" style="stop-color:#2B74FF;stop-opacity:0.1" />
+        </radialGradient>
+        <linearGradient id="flow-stream" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#FFC640;stop-opacity:0.6" />
+          <stop offset="50%" style="stop-color:#00C896;stop-opacity:0.4" />
+          <stop offset="100%" style="stop-color:#2B74FF;stop-opacity:0.3" />
+        </linearGradient>
+        <linearGradient id="empowerment" x1="0%" y1="100%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:0.5" />
+          <stop offset="100%" style="stop-color:#FFC640;stop-opacity:0.5" />
+        </linearGradient>
+      </defs>
+
+      <!-- Source energy core -->
+      <circle cx="150" cy="450" r="40" fill="url(#source-core)" opacity="0.7">
+        <animate attributeName="r" values="40;50;40" dur="3s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Ripple effects from source -->
+      <circle cx="150" cy="450" r="60" fill="none" stroke="#FFC640" stroke-width="2" opacity="0.5">
+        <animate attributeName="r" values="60;90;60" dur="4s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.5;0.2;0.5" dur="4s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Convergence streams -->
+      <path d="M150 450 Q300 350, 500 200" fill="none" stroke="url(#flow-stream)" stroke-width="4" opacity="0.7">
+        <animate attributeName="stroke-dasharray" values="0 500;150 500;0 500" dur="6s" repeatCount="indefinite"/>
+      </path>
+      <path d="M150 450 Q250 300, 400 150" fill="none" stroke="url(#flow-stream)" stroke-width="3" opacity="0.6">
+        <animate attributeName="stroke-dasharray" values="0 400;120 400;0 400" dur="5s" begin="1s" repeatCount="indefinite"/>
+      </path>
+      <path d="M150 450 Q350 400, 600 250" fill="none" stroke="url(#flow-stream)" stroke-width="3" opacity="0.6">
+        <animate attributeName="stroke-dasharray" values="0 450;130 450;0 450" dur="5.5s" begin="2s" repeatCount="indefinite"/>
+      </path>
+
+      <!-- Industry transformation nodes -->
+      <circle cx="500" cy="200" r="25" fill="#2B74FF" opacity="0.6">
+        <animate attributeName="r" values="25;30;25" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="400" cy="150" r="20" fill="#00C896" opacity="0.6">
+        <animate attributeName="r" values="20;25;20" dur="2.5s" begin="1s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="600" cy="250" r="22" fill="#FF6B6B" opacity="0.6">
+        <animate attributeName="r" values="22;27;22" dur="2.8s" begin="1.5s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Empowerment rays spreading outward -->
+      <path d="M500 200 L650 100" stroke="url(#empowerment)" stroke-width="2" opacity="0.4">
+        <animate attributeName="opacity" values="0.4;0.7;0.4" dur="4s" repeatCount="indefinite"/>
+      </path>
+      <path d="M500 200 L700 180" stroke="url(#empowerment)" stroke-width="2" opacity="0.4">
+        <animate attributeName="opacity" values="0.4;0.7;0.4" dur="4s" begin="0.5s" repeatCount="indefinite"/>
+      </path>
+      <path d="M400 150 L550 50" stroke="url(#empowerment)" stroke-width="2" opacity="0.4">
+        <animate attributeName="opacity" values="0.4;0.7;0.4" dur="4s" begin="1s" repeatCount="indefinite"/>
+      </path>
+      <path d="M600 250 L750 200" stroke="url(#empowerment)" stroke-width="2" opacity="0.4">
+        <animate attributeName="opacity" values="0.4;0.7;0.4" dur="4s" begin="1.5s" repeatCount="indefinite"/>
+      </path>
+
+      <!-- Creative sparks -->
+      <circle cx="250" cy="350" r="3" fill="#FFC640" opacity="0.9">
+        <animate attributeName="cy" values="350;320;350" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="320" cy="380" r="2" fill="#00C896" opacity="0.8">
+        <animate attributeName="cy" values="380;360;380" dur="2.5s" begin="0.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2.5s" begin="0.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="200" cy="400" r="2.5" fill="#2B74FF" opacity="0.85">
+        <animate attributeName="cy" values="400;375;400" dur="2.2s" begin="1s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.85;0.25;0.85" dur="2.2s" begin="1s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Mission symbols -->
+      <text x="100" y="500" font-family="serif" font-size="28" fill="#FFC640" opacity="0.5">源</text>
+      <text x="680" y="120" font-family="serif" font-size="24" fill="#2B74FF" opacity="0.4">创</text>
+      <text x="720" y="280" font-family="serif" font-size="20" fill="#00C896" opacity="0.35">业</text>
+
+      <!-- Network connections -->
+      <path d="M500 200 Q550 175, 600 250" fill="none" stroke="#2B74FF" stroke-width="1" opacity="0.3" stroke-dasharray="2,4"/>
+      <path d="M400 150 Q450 125, 500 200" fill="none" stroke="#00C896" stroke-width="1" opacity="0.3" stroke-dasharray="2,4"/>
+      <path d="M600 250 Q650 225, 700 180" fill="none" stroke="#FF6B6B" stroke-width="1" opacity="0.3" stroke-dasharray="2,4"/>
+    </svg>
+  </div>
+
+  <div class="feature-backdrop" aria-hidden="true"></div>
+  <div class="container">
+    <div class="feature-grid">
+      <div class="feature-copy">
+        {eyebrow && <p class="feature-eyebrow">{eyebrow}</p>}
+        <h2>{title}</h2>
+        <p>{text}</p>
+      </div>
+      {image && (
+        <div class="feature-media">
+          <img src={image} alt={imageAlt} loading="lazy" />
+        </div>
+      )}
+    </div>
+  </div>
+</section>
+
+<style>
+  .mission-spotlight {
+    position: relative;
+    padding: clamp(4rem, 10vw, 8rem) 0;
+    overflow: hidden;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .mission-bg-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    opacity: 0.5;
+  }
+
+  .mission-bg-svg {
+    width: 100%;
+    height: 100%;
+    animation: missionFlow 20s ease-in-out infinite;
+  }
+
+  @keyframes missionFlow {
+    0%, 100% {
+      transform: scale(1) rotate(-2deg);
+      opacity: 0.5;
+    }
+    25% {
+      transform: scale(1.02) rotate(-1deg);
+      opacity: 0.6;
+    }
+    50% {
+      transform: scale(1.03) rotate(-3deg);
+      opacity: 0.55;
+    }
+    75% {
+      transform: scale(1.01) rotate(-2deg);
+      opacity: 0.65;
+    }
+  }
+
+  .feature-backdrop {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 15% 20%, rgba(255, 198, 64, 0.2), transparent 55%),
+      radial-gradient(circle at 85% 15%, rgba(43, 116, 255, 0.16), transparent 55%),
+      radial-gradient(circle at 50% 85%, rgba(139, 210, 255, 0.18), transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .feature-grid {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(2rem, 6vw, 4rem);
+    align-items: center;
+  }
+
+  .mission-spotlight.image-left .feature-grid {
+    direction: rtl;
+  }
+
+  .mission-spotlight.image-left .feature-copy {
+    direction: ltr;
+  }
+
+  .feature-copy {
+    max-width: 580px;
+  }
+
+  .feature-copy h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+    color: #0d1c3a;
+    font-family: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 700;
+  }
+
+  [data-theme-section="dark"] .feature-copy h2 {
+    color: rgba(255, 255, 255, 0.92);
+  }
+
+  .feature-copy p {
+    font-size: clamp(1.05rem, 2vw, 1.3rem);
+    line-height: 1.85;
+    color: rgba(13, 28, 58, 0.75);
+  }
+
+  [data-theme-section="dark"] .feature-copy p {
+    color: rgba(255, 255, 255, 0.78);
+  }
+
+  .feature-eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: rgba(13, 28, 58, 0.6);
+    margin-bottom: 1rem;
+  }
+
+  [data-theme-section="dark"] .feature-eyebrow {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .feature-media {
+    position: relative;
+    z-index: 3;
+  }
+
+  .feature-media::before {
+    content: "";
+    position: absolute;
+    inset: -8%;
+    background: linear-gradient(135deg, rgba(43, 116, 255, 0.25), rgba(255, 198, 64, 0.25));
+    filter: blur(60px);
+    z-index: 0;
+  }
+
+  .feature-media img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    border-radius: 28px;
+    box-shadow: none;
+  }
+
+  .mission-spotlight.image-left .feature-media img {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @media (max-width: 900px) {
+    .feature-grid {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+
+    .mission-spotlight.image-left .feature-grid {
+      direction: ltr;
+    }
+
+    .feature-copy {
+      margin-inline: auto;
+    }
+
+    .feature-copy h2 {
+      font-size: clamp(1.8rem, 7vw, 2.5rem);
+    }
+
+    .feature-copy p {
+      font-size: 1.05rem;
+    }
+
+    .feature-media {
+      max-width: 520px;
+      margin: 0 auto;
+    }
+  }
+</style>

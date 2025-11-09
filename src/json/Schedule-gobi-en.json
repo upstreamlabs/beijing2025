@@ -1,0 +1,150 @@
+{
+  "categories": [
+    {
+      "id": "all",
+      "name": "All"
+    },
+    {
+      "id": "keynote",
+      "name": "Keynotes"
+    },
+    {
+      "id": "panel",
+      "name": "Panel Discussions"
+    },
+    {
+      "id": "lightning",
+      "name": "Lightning Talks"
+    },
+    {
+      "id": "special",
+      "name": "Special Events"
+    }
+  ],
+  "sessions": {
+    "special": [
+      {
+        "date": "December 21",
+        "timeSlot": "09:00 – 10:00",
+        "title": "Registration & Social Breakfast",
+        "content": "",
+        "speakers": [],
+        "isSpecialEvent": true
+      },
+      {
+        "date": "December 21",
+        "timeSlot": "10:00 – 10:15",
+        "title": "Opening Remarks: GOBI 2025 & Upstream Training Camp Review",
+        "content": "",
+        "speakers": [],
+        "isSpecialEvent": true
+      },
+      {
+        "date": "December 21",
+        "timeSlot": "15:30 – 16:00",
+        "title": "Coffee Break & Demo Walk",
+        "content": "",
+        "speakers": [],
+        "isSpecialEvent": true
+      },
+      {
+        "date": "December 21",
+        "timeSlot": "17:00 – 17:10",
+        "title": "Awards: Upstream Open Source Business Innovation Awards",
+        "content": "",
+        "speakers": [],
+        "isSpecialEvent": true
+      },
+      {
+        "date": "December 21",
+        "timeSlot": "17:10 – 17:30",
+        "title": "Closing: From Source to Industry, 2026 Outlook",
+        "content": "",
+        "speakers": [],
+        "isSpecialEvent": true
+      },
+      {
+        "date": "December 21",
+        "timeSlot": "18:00 – 20:00",
+        "title": "Dinner & Happy Hour",
+        "content": "Guest / Attendee Networking",
+        "speakers": [],
+        "isSpecialEvent": true
+      }
+    ],
+    "keynote": [
+      {
+        "date": "December 21",
+        "timeSlot": "10:15 – 10:45",
+        "title": "Keynote 1: Open Source Industry Development Overview",
+        "content": "",
+        "speakers": [],
+        "isSpecialEvent": true
+      },
+      {
+        "date": "December 21",
+        "timeSlot": "10:45 – 11:05",
+        "title": "Keynote 2: Exploring Open Source Business Models (Theory and Practice)",
+        "content": "",
+        "speakers": [],
+        "isSpecialEvent": true
+      },
+      {
+        "date": "December 21",
+        "timeSlot": "11:05 – 11:25",
+        "title": "Keynote 3: Sustainable Open Source Business Ecosystem Index (Theoretical Framework)",
+        "content": "",
+        "speakers": [],
+        "isSpecialEvent": true
+      }
+    ],
+    "panel": [
+      {
+        "date": "December 21",
+        "timeSlot": "11:25 – 12:25",
+        "title": "Panel Discussion: Source Power Awakening: Open Source Business in the AI Era",
+        "content": "",
+        "speakers": []
+      },
+      {
+        "date": "December 21",
+        "timeSlot": "13:30 – 14:30",
+        "title": "Panel Discussion: Breakthrough · Individual Survival Rules in the AI Era",
+        "content": "",
+        "speakers": []
+      },
+      {
+        "date": "December 21",
+        "timeSlot": "14:30 – 15:30",
+        "title": "Panel Discussion: Gather Strength · Evolution and Future of Open Source Communities",
+        "content": "",
+        "speakers": []
+      },
+      {
+        "date": "December 21",
+        "timeSlot": "15:30 – 16:30",
+        "title": "Panel Discussion: Creation · AI-Driven New Renaissance",
+        "content": "",
+        "speakers": []
+      }
+    ],
+    "lightning": [
+      {
+        "date": "December 21",
+        "timeSlot": "12:30 – 13:30",
+        "title": "Lunch & Training Camp Lightning Talks",
+        "content": "3-4 minutes each; Real-time audience + jury voting",
+        "speakers": [],
+        "isSpecialEvent": true
+      },
+      {
+        "date": "December 21",
+        "timeSlot": "16:30 – 17:00",
+        "title": "Upstream Open Source Business Innovation Project Showcase and Voting",
+        "content": "",
+        "speakers": [],
+        "isSpecialEvent": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+---
+interface Props {
+  width?: number | string;
+  height?: number | string;
+}
+
+const widthProp = Astro.props.width ?? 96;
+const hasHeightProp = typeof Astro.props.height !== 'undefined';
+const heightProp = hasHeightProp ? Astro.props.height : undefined;
+
+const widthStyle = typeof widthProp === 'number' ? `${widthProp}px` : widthProp;
+const heightStyle = hasHeightProp
+  ? typeof heightProp === 'number'
+    ? `${heightProp}px`
+    : heightProp
+  : undefined;
+
+const widthAttribute = typeof widthProp === 'number' ? widthProp : undefined;
+const heightAttribute = hasHeightProp && typeof heightProp === 'number' ? heightProp : undefined;
+
+const wrapperStyles = [
+  'position: relative;',
+  'display: block;'
+];
+
+if (widthStyle) {
+  wrapperStyles.push(`width: ${widthStyle};`);
+}
+
+if (heightStyle) {
+  wrapperStyles.push(`height: ${heightStyle};`);
+}
+
+const wrapperStyle = wrapperStyles.join(' ');
+const imageStyle = 'display: block; width: 100%; height: auto;';
+const logoAlt = 'GOBI 2025 | 全球开源商业和创新大会';
+
+---
+
+<div class="logo-wrapper" role="img" aria-label={logoAlt} style={wrapperStyle}>
+  <img
+    class="logo-asset logo-asset--default"
+    src="/images/logos/GOBI-golden-logo.svg"
+    width={widthAttribute}
+    height={heightAttribute}
+    alt=""
+    aria-hidden="true"
+    loading="lazy"
+    decoding="async"
+    style={imageStyle}
+  />
+  <img
+    class="logo-asset logo-asset--light"
+    src="/images/logos/GOBI-black-logo.svg"
+    width={widthAttribute}
+    height={heightAttribute}
+    alt=""
+    aria-hidden="true"
+    loading="lazy"
+    decoding="async"
+    style={imageStyle}
+  />
+  <img
+    class="logo-asset logo-asset--inverse"
+    src="/images/logos/GOBI-white-logo.svg"
+    width={widthAttribute}
+    height={heightAttribute}
+    alt=""
+    aria-hidden="true"
+    loading="lazy"
+    decoding="async"
+    style={imageStyle}
+  />
+</div>
