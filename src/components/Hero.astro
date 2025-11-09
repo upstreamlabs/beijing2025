@@ -97,6 +97,8 @@ const titleSecondPart = splitTitle ? splitTitle[1]?.trim() : null;
           playsinline
           poster={videoPoster}
         >
+          <!-- Use compressed version for mobile, high quality for desktop -->
+          <source src={backgroundVideo.replace('.webm', '-compressed.webm')} type="video/webm" media="(max-width: 768px)" />
           <source src={backgroundVideo} type="video/webm" />
         </video>
       </div>
