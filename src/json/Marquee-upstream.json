@@ -3,7 +3,7 @@
     "name": "ChenLongOS Robot Dev Stack",
     "description": "ChenLongOS extends Tsinghua University's uCore->rCore lineage into a fully open, componentized operating system tailored for embodied intelligence",
     "avatar": "/images/project-logos/chenlong.png",
-    "stars": 0.8,
+    "stars": 0.7,
     "age": "12.5",
     "github": "https://github.com/arceos-org/arceos"
   },
@@ -11,7 +11,7 @@
     "name": "Agent Network Protocol (ANP)",
     "description": "ANP imagines the agentic internet as a peer-to-peer fabric where identities, conversations, and transactions travel through open specifications",
     "avatar": "/images/project-logos/anp.png",
-    "stars": 1.2,
+    "stars": 1.1,
     "age": "8.3",
     "github": "https://github.com/agent-network-protocol/AgentNetworkProtocol"
   },
@@ -19,7 +19,7 @@
     "name": "dora-rs Dataflow Robotics",
     "description": "DORA (Dataflow-Oriented Robotic Architecture) is middleware designed to streamline and simplify the creation of AI-based robotic applications",
     "avatar": "/images/project-logos/dora.png",
-    "stars": 1.8,
+    "stars": 2.7,
     "age": "36.8",
     "github": "https://github.com/dora-rs/dora"
   },
@@ -27,7 +27,7 @@
     "name": "FlagOS Unified AI Computing",
     "description": "FlagOS provides an open stack for domestic AI chips, enabling unified computing across different AI hardware platforms",
     "avatar": "/images/project-logos/flagos.png",
-    "stars": 0.6,
+    "stars": 3.9,
     "age": "18.2",
     "github": "https://github.com/flagos/flagos"
   },
@@ -35,7 +35,7 @@
     "name": "KTransformers Heterogeneous Inference",
     "description": "KTransformers enables running trillion-parameter models on single rigs through heterogeneous inference optimization",
     "avatar": "/images/project-logos/ktransformer.png",
-    "stars": 3.5,
+    "stars": 15.5,
     "age": "15.7",
     "github": "https://github.com/ktransformers/ktransformers"
   },
@@ -43,7 +43,7 @@
     "name": "MoFA Makers Collective",
     "description": "MoFA is a collective of indie makers creating AI products, fostering innovation in the AI maker community",
     "avatar": "/images/project-logos/mofa.png",
-    "stars": 0.9,
+    "stars": 0.1,
     "age": "24.3",
     "github": "https://github.com/mofa/mofa"
   },
@@ -59,7 +59,7 @@
     "name": "Matrix Suite for Decentralized Collaboration",
     "description": "Matrix is a Rust-native social graph with agent trust capabilities for decentralized collaboration",
     "avatar": "/images/project-logos/makepad.png",
-    "stars": 2.8,
+    "stars": 6.3,
     "age": "85.6",
     "github": "https://github.com/matrix-org/matrix-js-sdk"
   },

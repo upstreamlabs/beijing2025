@@ -3,7 +3,7 @@
     "name": "辰龙操作系统机器人开发栈",
     "description": "辰龙操作系统延续了清华大学uCore->rCore的技术谱系，打造了一个完全开源、组件化的面向具身智能的操作系统",
     "avatar": "/images/project-logos/chenlong.png",
-    "stars": 0.8,
+    "stars": 0.7,
     "age": "12.5",
     "github": "https://github.com/arceos-org/arceos"
   },
@@ -11,7 +11,7 @@
     "name": "智能体网络协议 (ANP)",
     "description": "ANP将智能体互联网构想为一个点对点的网络结构，身份、对话和交易通过开放规范而非孤立平台传输",
     "avatar": "/images/project-logos/anp.png",
-    "stars": 1.2,
+    "stars": 1.1,
     "age": "8.3",
     "github": "https://github.com/agent-network-protocol/AgentNetworkProtocol"
   },
@@ -19,7 +19,7 @@
     "name": "dora-rs 数据流机器人",
     "description": "DORA（数据流导向的机器人架构）是专为简化和简化基于AI的机器人应用程序创建而设计的中间件",
     "avatar": "/images/project-logos/dora.png",
-    "stars": 1.8,
+    "stars": 2.7,
     "age": "36.8",
     "github": "https://github.com/dora-rs/dora"
   },
@@ -27,7 +27,7 @@
     "name": "FlagOS 统一AI计算平台",
     "description": "FlagOS为国产AI芯片提供开放技术栈，实现不同AI硬件平台的统一计算能力",
     "avatar": "/images/project-logos/flagos.png",
-    "stars": 0.6,
+    "stars": 3.9,
     "age": "18.2",
     "github": "https://github.com/flagos/flagos"
   },
@@ -35,7 +35,7 @@
     "name": "KTransformers 异构推理框架",
     "description": "KTransformers通过异构推理优化，实现在单机上运行万亿参数模型的能力",
     "avatar": "/images/project-logos/ktransformer.png",
-    "stars": 3.5,
+    "stars": 15.5,
     "age": "15.7",
     "github": "https://github.com/ktransformers/ktransformers"
   },
@@ -43,7 +43,7 @@
     "name": "MoFA 创客集体",
     "description": "MoFA是一个独立创建AI产品的创客集体，在AI创客社区中培育创新",
     "avatar": "/images/project-logos/mofa.png",
-    "stars": 0.9,
+    "stars": 0.1,
     "age": "24.3",
     "github": "https://github.com/mofa/mofa"
   },
@@ -59,7 +59,7 @@
     "name": "Matrix去中心化协作套件",
     "description": "Matrix是一个具有智能体信任能力的Rust原生社交图谱，用于去中心化协作",
     "avatar": "/images/project-logos/makepad.png",
-    "stars": 2.8,
+    "stars": 6.3,
     "age": "85.6",
     "github": "https://github.com/matrix-org/matrix-js-sdk"
   },
