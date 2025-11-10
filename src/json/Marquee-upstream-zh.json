@@ -18,7 +18,7 @@
   {
     "name": "dora-rs 数据流机器人",
     "description": "DORA（数据流导向的机器人架构）是专为简化和简化基于AI的机器人应用程序创建而设计的中间件",
-    "avatar": "/images/project-logos/dora.png",
+    "avatar": "/images/project-logos/dora.svg",
     "stars": 2.7,
     "age": "36.8",
     "github": "https://github.com/dora-rs/dora"

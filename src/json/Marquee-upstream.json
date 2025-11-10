@@ -18,7 +18,7 @@
   {
     "name": "dora-rs Dataflow Robotics",
     "description": "DORA (Dataflow-Oriented Robotic Architecture) is middleware designed to streamline and simplify the creation of AI-based robotic applications",
-    "avatar": "/images/project-logos/dora.png",
+    "avatar": "/images/project-logos/dora.svg",
     "stars": 2.7,
     "age": "36.8",
     "github": "https://github.com/dora-rs/dora"
