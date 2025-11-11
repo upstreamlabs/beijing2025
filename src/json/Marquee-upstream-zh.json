@@ -58,7 +58,7 @@
   {
     "name": "基于Matrix的去中心化社交套件",
     "description": "Matrix是一个具有智能体信任能力的Rust原生社交图谱，用于去中心化协作",
-    "avatar": "/images/project-logos/makepad.png",
+    "avatar": "/images/project-logos/robrix.png",
     "stars": 6.3,
     "age": "85.6",
     "github": "https://github.com/matrix-org/matrix-js-sdk"

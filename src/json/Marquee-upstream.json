@@ -58,7 +58,7 @@
   {
     "name": "Matrix Suite for Decentralized Collaboration",
     "description": "Matrix is a Rust-native social graph with agent trust capabilities for decentralized collaboration",
-    "avatar": "/images/project-logos/makepad.png",
+    "avatar": "/images/project-logos/robrix.png",
     "stars": 6.3,
     "age": "85.6",
     "github": "https://github.com/matrix-org/matrix-js-sdk"
