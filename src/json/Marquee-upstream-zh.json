@@ -16,7 +16,7 @@
     "github": "https://github.com/agent-network-protocol/AgentNetworkProtocol"
   },
   {
-    "name": "dora-rs 数据流机器人",
+    "name": "DORA机器人操作系统",
     "description": "DORA（数据流导向的机器人架构）是专为简化和简化基于AI的机器人应用程序创建而设计的中间件",
     "avatar": "/images/project-logos/dora.svg",
     "stars": 2.7,
@@ -48,7 +48,7 @@
     "github": "https://github.com/mofa/mofa"
   },
   {
-    "name": "Moxin AI边缘语音引擎",
+    "name": "Moxin 本地模型平台",
     "description": "Moxin为边缘计算提供私有级语音AI，实现离线语音处理能力",
     "avatar": "/images/project-logos/moxin.png",
     "stars": 0.1,
@@ -56,7 +56,7 @@
     "github": "https://github.com/moxin-llm/moxin"
   },
   {
-    "name": "Matrix去中心化协作套件",
+    "name": "基于Matrix的去中心化社交套件",
     "description": "Matrix是一个具有智能体信任能力的Rust原生社交图谱，用于去中心化协作",
     "avatar": "/images/project-logos/makepad.png",
     "stars": 6.3,
@@ -64,7 +64,7 @@
     "github": "https://github.com/matrix-org/matrix-js-sdk"
   },
   {
-    "name": "Makepad · Robius · Moly AI工作室",
+    "name": "Rust的全栈AI应用开发平台",
     "description": "Makepad为AI原生应用提供全栈Rust工具链，是一个创意软件开发平台",
     "avatar": "/images/project-logos/makepad.png",
     "stars": 5.3,
