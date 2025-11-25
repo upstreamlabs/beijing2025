@@ -117,7 +117,7 @@ const titleSecondPart = splitTitle ? splitTitle[1]?.trim() : null;
           <div class="hero-title">
             {splitTitle ? (
               <h1 class={`display-title ${isEnglishPage ? 'en-title' : ''}`}>
-                <span class="title-gobi">{titleFirstPart}</span>
+                <span class="title-gobi" style="font-size: clamp(0.78125rem, 1.5625vw, 1.25rem) !important; display: inline-block;" data-mobile-size="clamp(0.390625rem, 0.78125vw, 0.625rem)">{titleFirstPart}</span>
                 <br />
                 <span class="title-english">{titleSecondPart}</span>
               </h1>
@@ -187,6 +187,29 @@ const titleSecondPart = splitTitle ? splitTitle[1]?.trim() : null;
       </div>
     </div>
   </div>
+<script>
+    // Handle responsive GOBI logo sizing
+    function updateGobiLogoSize() {
+      const gobiLogo = document.querySelector('.title-gobi[data-mobile-size]');
+      if (gobiLogo) {
+        const isMobile = window.innerWidth <= 768;
+        const mobileSize = gobiLogo.getAttribute('data-mobile-size');
+        const desktopSize = gobiLogo.style.fontSize.replace(' !important', '');
+
+        if (isMobile) {
+          gobiLogo.style.fontSize = mobileSize + ' !important';
+        } else {
+          gobiLogo.style.fontSize = desktopSize + ' !important';
+        }
+      }
+    }
+
+    // Initial sizing
+    updateGobiLogoSize();
+
+    // Update on resize
+    window.addEventListener('resize', updateGobiLogoSize);
+  </script>
 </section>
 
 <style>
@@ -208,6 +231,7 @@ const titleSecondPart = splitTitle ? splitTitle[1]?.trim() : null;
     align-items: center;
     margin: 0 auto;
     text-align: center;
+    padding-bottom: 4rem; /* Add padding to prevent overlap with buttons */
   }
 
   .hero-eyebrow {
@@ -314,6 +338,7 @@ const titleSecondPart = splitTitle ? splitTitle[1]?.trim() : null;
     font-family: 'AlibabaPuHuiTi-3-85-Bold', 'Alibaba PuHuiTi', 'PingFang SC', 'Microsoft YaHei', sans-serif;
     font-weight: 700;
     letter-spacing: 0.19em;
+    font-size: clamp(0.78125rem, 1.5625vw, 1.25rem); /* Increased by 25% */
   }
 
   .display-title .title-chinese {
@@ -333,7 +358,21 @@ const titleSecondPart = splitTitle ? splitTitle[1]?.trim() : null;
     font-family: 'AlibabaPuHuiTi-3-85-Bold', 'Alibaba PuHuiTi', 'PingFang SC', 'Microsoft YaHei', sans-serif;
     font-weight: 700;
     letter-spacing: 0.19em;
-    font-size: 0.8em;
+    font-size: clamp(0.78125rem, 1.5625vw, 1.25rem) !important; /* Increased by 25% */
+  }
+
+  /* Additional fallback selectors */
+  .hero-title .title-gobi {
+    font-size: clamp(0.78125rem, 1.5625vw, 1.25rem) !important;
+  }
+
+  .display-title .title-gobi {
+    font-size: clamp(0.78125rem, 1.5625vw, 1.25rem) !important;
+  }
+
+  /* Most specific selector */
+  h1.display-title .title-gobi {
+    font-size: clamp(0.78125rem, 1.5625vw, 1.25rem) !important;
   }
 
   .display-title:not(.en-title) .title-english {
@@ -429,12 +468,13 @@ const titleSecondPart = splitTitle ? splitTitle[1]?.trim() : null;
   }
 
   .organizer-heading {
-    font-size: 1.306rem;
-    text-transform: uppercase;
-    letter-spacing: 0.24em;
-    color: rgba(255, 255, 255, 0.7);
+    font-size: clamp(1.3rem, 2.2vw, 1.6rem);
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.9);
     margin-bottom: 0.02rem;
-    font-family: 'AlibabaPuHuiTi-3-85-Bold', 'Alibaba PuHuiTi', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    font-family: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    text-transform: none;
   }
 
   .organizer-logos {
@@ -443,16 +483,115 @@ const titleSecondPart = splitTitle ? splitTitle[1]?.trim() : null;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 1rem 0;
+    min-height: 120px;
   }
 
   .org-logo {
     height: 88px;
     width: auto;
     object-fit: contain;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
   }
 
   .org-logo[src*="innoecos"] {
     height: 158px;
+  }
+
+  .org-logo[src*="gosim"] {
+    height: 44px; /* Half of default 88px */
+  }
+
+  /* Responsive adjustments for sponsor logos */
+  @media (max-width: 1024px) and (min-width: 769px) {
+    .organizer-logos {
+      gap: 1.5rem;
+      min-height: 100px;
+    }
+
+    .org-logo {
+      height: 75px;
+    }
+
+    .org-logo[src*="innoecos"] {
+      height: 130px;
+    }
+
+    .org-logo[src*="gosim"] {
+      height: 38px; /* Half of default 75px */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .organizer-block {
+      margin-top: 4rem;
+    }
+
+    .organizer-logos {
+      gap: 1rem;
+      min-height: 80px;
+    }
+
+    .org-logo {
+      height: 48px;
+    }
+
+    .org-logo[src*="innoecos"] {
+      height: 85px;
+    }
+
+    .org-logo[src*="gosim"] {
+      height: 24px; /* Half of default 48px */
+    }
+
+    .org-logo[src*="gosim"] {
+      height: 24px; /* Half of default 48px */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .organizer-block {
+      margin-top: 3rem;
+    }
+
+    .organizer-logos {
+      gap: 0.75rem;
+      min-height: 60px;
+      padding: 0.5rem 0;
+    }
+
+    .org-logo {
+      height: 40px;
+    }
+
+    .org-logo[src*="innoecos"] {
+      height: 70px;
+    }
+
+    .org-logo[src*="gosim"] {
+      height: 20px; /* Half of default 40px */
+    }
+  }
+
+  /* Prevent overlap on very small screens */
+  @media (max-width: 360px) {
+    .organizer-logos {
+      gap: 0.5rem;
+      min-height: 50px;
+    }
+
+    .org-logo {
+      height: 35px;
+    }
+
+    .org-logo[src*="innoecos"] {
+      height: 60px;
+    }
+
+    .org-logo[src*="gosim"] {
+      height: 18px; /* Half of default 35px */
+    }
   }
 
   .btn-home-wrap {
@@ -464,15 +603,89 @@ const titleSecondPart = splitTitle ? splitTitle[1]?.trim() : null;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: center;
+    z-index: 20;
+    max-width: 90vw;
   }
 
   .btn-home-wrap :global(.btn) {
     width: 180px;
+    min-width: 140px;
     white-space: nowrap;
+    flex-shrink: 0;
   }
 
   .btn-home-wrap :global(.btn .btn-content) {
     width: 100%;
+  }
+
+  /* Ensure adequate spacing between content and buttons */
+  .organizer-block {
+    margin-top: 8rem;
+  }
+
+  @media (max-width: 1024px) and (min-width: 769px) {
+    .btn-home-wrap {
+      gap: 0.75rem;
+    }
+
+    .btn-home-wrap :global(.btn) {
+      width: 160px;
+      min-width: 120px;
+    }
+
+    .organizer-block {
+      margin-top: 7rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .btn-home-wrap {
+      position: relative;
+      transform: none;
+      left: auto;
+      bottom: auto;
+      width: 100%;
+      margin: 4rem auto 2rem auto;
+      justify-content: center;
+      max-width: 100%;
+    }
+
+    .btn-home-wrap :global(.btn) {
+      width: 100%;
+      max-width: 320px;
+      min-width: auto;
+    }
+
+    .organizer-block {
+      margin-top: 5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .btn-home-wrap {
+      gap: 0.75rem;
+      margin: 3rem auto 2rem auto;
+    }
+
+    .btn-home-wrap :global(.btn) {
+      max-width: 280px;
+      font-size: 0.9rem;
+    }
+
+    .organizer-block {
+      margin-top: 4rem;
+    }
+  }
+
+  /* Ensure proper spacing on very small screens */
+  @media (max-width: 360px) {
+    .btn-home-wrap {
+      margin: 2.5rem auto 1.5rem auto;
+    }
+
+    .organizer-block {
+      margin-top: 3.5rem;
+    }
   }
 
   @media (max-width: 768px) {
@@ -491,10 +704,11 @@ const titleSecondPart = splitTitle ? splitTitle[1]?.trim() : null;
     }
 
     .organizer-heading {
-      font-family: 'AlibabaPuHuiTi-3-85-Bold', 'Alibaba PuHuiTi', 'PingFang SC', 'Microsoft YaHei', sans-serif;
-      font-size: 1.045rem;
-      letter-spacing: 0.24em;
+      font-family: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      font-size: clamp(1.3rem, 2.2vw, 1.6rem);
+      letter-spacing: 0.03em;
       color: rgba(255, 255, 255, 0.9);
+      text-transform: none;
     }
 
     .hero-eyebrow.multiline .cn {
@@ -520,6 +734,26 @@ const titleSecondPart = splitTitle ? splitTitle[1]?.trim() : null;
 
     .display-title.en-title {
       font-size: clamp(1.8rem, 7vw, 2.5rem);
+    }
+
+    .display-title .title-gobi {
+      font-size: clamp(0.390625rem, 0.78125vw, 0.625rem); /* Increased by 25% for mobile */
+    }
+
+    .display-title:not(.en-title) .title-gobi {
+      font-size: clamp(0.390625rem, 0.78125vw, 0.625rem) !important; /* Apply same increase for Chinese page */
+    }
+
+    .hero-title .title-gobi {
+      font-size: clamp(0.390625rem, 0.78125vw, 0.625rem) !important;
+    }
+
+    .display-title .title-gobi {
+      font-size: clamp(0.390625rem, 0.78125vw, 0.625rem) !important;
+    }
+
+    h1.display-title .title-gobi {
+      font-size: clamp(0.390625rem, 0.78125vw, 0.625rem) !important;
     }
 
     .event-facts.immediate {
@@ -571,6 +805,10 @@ const titleSecondPart = splitTitle ? splitTitle[1]?.trim() : null;
 
     .org-logo[src*="innoecos"] {
       height: 85px;
+    }
+
+    .org-logo[src*="gosim"] {
+      height: 24px; /* Half of default 48px */
     }
 
     .hero-column {
@@ -632,5 +870,50 @@ const titleSecondPart = splitTitle ? splitTitle[1]?.trim() : null;
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  /* Ensure all hero elements remain visible on all screen sizes */
+  .hero-title,
+  .hero-eyebrow,
+  .hero-quote,
+  .hero-description,
+  .hero-highlights,
+  .organizer-block {
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: block !important;
+    position: relative;
+    z-index: 10;
+  }
+
+  /* Fix button styling - remove overly aggressive visibility rules */
+  .btn-home-wrap {
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    z-index: 20;
+    max-width: 90vw;
+  }
+
+  .btn-home-wrap :global(.btn) {
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 180px;
+    min-width: 140px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* Remove overly aggressive visibility override that was messing up buttons */
+  .hero-column > *:not(.btn-home-wrap) {
+    visibility: visible !important;
+    opacity: 1 !important;
   }
 </style>
