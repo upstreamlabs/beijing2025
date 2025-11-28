@@ -84,6 +84,25 @@ const {
         .row-audience .why-content p {
             font-size: 1.05rem;
             line-height: 1.7;
+            white-space: normal;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            hyphens: auto;
+            display: -webkit-box;
+            -webkit-line-clamp: unset;
+            -webkit-box-orient: vertical;
+            overflow: visible;
+            max-height: none;
+        }
+
+        .why-reasons {
+            min-height: auto;
+            height: auto;
+        }
+
+        .why-content {
+            height: auto;
+            min-height: auto;
         }
     }
     
