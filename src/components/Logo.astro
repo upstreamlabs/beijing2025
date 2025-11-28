@@ -23,16 +23,20 @@ const wrapperStyles = [
   'display: block;'
 ];
 
-if (widthStyle) {
-  wrapperStyles.push(`width: ${widthStyle};`);
+// Calculate 56% larger dimensions for the wrapper
+const scaledWidth = widthStyle ? `calc(${widthStyle} * 1.56)` : '150px';
+const scaledHeight = heightStyle ? `calc(${heightStyle} * 1.56)` : 'auto';
+
+if (scaledWidth) {
+  wrapperStyles.push(`width: ${scaledWidth};`);
 }
 
-if (heightStyle) {
-  wrapperStyles.push(`height: ${heightStyle};`);
+if (heightStyle && scaledHeight !== 'auto') {
+  wrapperStyles.push(`height: ${scaledHeight};`);
 }
 
 const wrapperStyle = wrapperStyles.join(' ');
-const imageStyle = 'display: block; width: 100%; height: auto; transform: scale(1.56); transform-origin: center;';
+const imageStyle = 'display: block; width: 100%; height: auto;';
 const logoAlt = 'GOBI 2025 | 全球开源商业和创新大会';
 
 ---
