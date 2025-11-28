@@ -117,7 +117,7 @@ const titleSecondPart = splitTitle ? splitTitle[1]?.trim() : null;
           <div class="hero-title">
             {splitTitle ? (
               <h1 class={`display-title ${isEnglishPage ? 'en-title' : ''}`}>
-                <span class="title-gobi" style="font-size: clamp(0.78125rem, 1.5625vw, 1.25rem) !important; display: inline-block;" data-mobile-size="clamp(0.390625rem, 0.78125vw, 0.625rem)">{titleFirstPart}</span>
+                <span class="title-gobi" style="font-size: clamp(0.9765625rem, 1.953125vw, 1.5625rem) !important; display: inline-block;" data-mobile-size="clamp(0.48828125rem, 0.9765625vw, 0.78125rem)">{titleFirstPart}</span>
                 <br />
                 <span class="title-english">{titleSecondPart}</span>
               </h1>
@@ -190,17 +190,25 @@ const titleSecondPart = splitTitle ? splitTitle[1]?.trim() : null;
 <script>
     // Handle responsive GOBI logo sizing
     function updateGobiLogoSize() {
+      console.log('🔍 updateGobiLogoSize called');
       const gobiLogo = document.querySelector('.title-gobi[data-mobile-size]');
+      console.log('🎯 Found GOBI logo element:', gobiLogo);
+
       if (gobiLogo) {
         const isMobile = window.innerWidth <= 768;
-        const mobileSize = gobiLogo.getAttribute('data-mobile-size');
-        const desktopSize = gobiLogo.style.fontSize.replace(' !important', '');
+        console.log('📱 Is mobile:', isMobile);
 
-        if (isMobile) {
-          gobiLogo.style.fontSize = mobileSize + ' !important';
-        } else {
-          gobiLogo.style.fontSize = desktopSize + ' !important';
-        }
+        // Force our new sizes directly to ensure they're applied
+        const mobileSize = 'clamp(0.48828125rem, 0.9765625vw, 0.78125rem)';
+        const desktopSize = 'clamp(0.9765625rem, 1.953125vw, 1.5625rem)';
+
+        const newSize = isMobile ? mobileSize : desktopSize;
+        console.log('📏 Applying new font size:', newSize);
+
+        gobiLogo.style.fontSize = newSize + ' !important';
+        console.log('✅ Font size set to:', gobiLogo.style.fontSize);
+      } else {
+        console.error('❌ GOBI logo element not found!');
       }
     }
 
@@ -338,7 +346,7 @@ const titleSecondPart = splitTitle ? splitTitle[1]?.trim() : null;
     font-family: 'AlibabaPuHuiTi-3-85-Bold', 'Alibaba PuHuiTi', 'PingFang SC', 'Microsoft YaHei', sans-serif;
     font-weight: 700;
     letter-spacing: 0.19em;
-    font-size: clamp(0.78125rem, 1.5625vw, 1.25rem); /* Increased by 25% */
+    font-size: clamp(0.9765625rem, 1.953125vw, 1.5625rem); /* Increased by 25% */
   }
 
   .display-title .title-chinese {
@@ -358,21 +366,41 @@ const titleSecondPart = splitTitle ? splitTitle[1]?.trim() : null;
     font-family: 'AlibabaPuHuiTi-3-85-Bold', 'Alibaba PuHuiTi', 'PingFang SC', 'Microsoft YaHei', sans-serif;
     font-weight: 700;
     letter-spacing: 0.19em;
-    font-size: clamp(0.78125rem, 1.5625vw, 1.25rem) !important; /* Increased by 25% */
+    font-size: clamp(0.9765625rem, 1.953125vw, 1.5625rem) !important; /* Increased by 25% */
   }
 
   /* Additional fallback selectors */
   .hero-title .title-gobi {
-    font-size: clamp(0.78125rem, 1.5625vw, 1.25rem) !important;
+    font-size: clamp(0.9765625rem, 1.953125vw, 1.5625rem) !important;
   }
 
   .display-title .title-gobi {
-    font-size: clamp(0.78125rem, 1.5625vw, 1.25rem) !important;
+    font-size: clamp(0.9765625rem, 1.953125vw, 1.5625rem) !important;
   }
 
   /* Most specific selector */
   h1.display-title .title-gobi {
-    font-size: clamp(0.78125rem, 1.5625vw, 1.25rem) !important;
+    font-size: clamp(0.9765625rem, 1.953125vw, 1.5625rem) !important;
+  }
+
+  /* Ultra-specific selector to force override */
+  h1.display-title .title-gobi.title-gobi {
+    font-size: clamp(0.9765625rem, 1.953125vw, 1.5625rem) !important;
+  }
+
+  /* Force override for any element with title-gobi class */
+  .title-gobi {
+    font-size: clamp(0.9765625rem, 1.953125vw, 1.5625rem) !important;
+  }
+
+  /* Final force override - highest specificity */
+  h1.display-title .title-gobi[data-mobile-size] {
+    font-size: clamp(0.9765625rem, 1.953125vw, 1.5625rem) !important;
+  }
+
+  /* Global override for any element with title-gobi */
+  *[class*="title-gobi"] {
+    font-size: clamp(0.9765625rem, 1.953125vw, 1.5625rem) !important;
   }
 
   .display-title:not(.en-title) .title-english {
@@ -422,6 +450,8 @@ const titleSecondPart = splitTitle ? splitTitle[1]?.trim() : null;
     margin-bottom: 1.5rem;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   .event-facts p {
@@ -431,6 +461,7 @@ const titleSecondPart = splitTitle ? splitTitle[1]?.trim() : null;
     color: rgba(255, 255, 255, 0.9);
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    text-align: center;
   }
 
   .hero-highlights {
@@ -737,27 +768,59 @@ const titleSecondPart = splitTitle ? splitTitle[1]?.trim() : null;
     }
 
     .display-title .title-gobi {
-      font-size: clamp(0.390625rem, 0.78125vw, 0.625rem); /* Increased by 25% for mobile */
+      font-size: clamp(0.48828125rem, 0.9765625vw, 0.78125rem); /* Increased by 25% for mobile */
     }
 
     .display-title:not(.en-title) .title-gobi {
-      font-size: clamp(0.390625rem, 0.78125vw, 0.625rem) !important; /* Apply same increase for Chinese page */
+      font-size: clamp(0.48828125rem, 0.9765625vw, 0.78125rem) !important; /* Apply same increase for Chinese page */
     }
 
     .hero-title .title-gobi {
-      font-size: clamp(0.390625rem, 0.78125vw, 0.625rem) !important;
+      font-size: clamp(0.48828125rem, 0.9765625vw, 0.78125rem) !important;
     }
 
     .display-title .title-gobi {
-      font-size: clamp(0.390625rem, 0.78125vw, 0.625rem) !important;
+      font-size: clamp(0.48828125rem, 0.9765625vw, 0.78125rem) !important;
     }
 
     h1.display-title .title-gobi {
-      font-size: clamp(0.390625rem, 0.78125vw, 0.625rem) !important;
+      font-size: clamp(0.48828125rem, 0.9765625vw, 0.78125rem) !important;
+    }
+
+    /* Ultra-specific selector to force override mobile */
+    h1.display-title .title-gobi.title-gobi {
+      font-size: clamp(0.48828125rem, 0.9765625vw, 0.78125rem) !important;
+    }
+
+    /* Force override for any element with title-gobi class on mobile */
+    .title-gobi {
+      font-size: clamp(0.48828125rem, 0.9765625vw, 0.78125rem) !important;
+    }
+
+    /* Final force override mobile - highest specificity */
+    h1.display-title .title-gobi[data-mobile-size] {
+      font-size: clamp(0.48828125rem, 0.9765625vw, 0.78125rem) !important;
+    }
+
+    /* Global override for any element with title-gobi on mobile */
+    *[class*="title-gobi"] {
+      font-size: clamp(0.48828125rem, 0.9765625vw, 0.78125rem) !important;
     }
 
     .event-facts.immediate {
       margin-top: 2rem;
+      display: flex !important;
+      flex-direction: column;
+      gap: 0.5rem;
+      justify-content: center !important;
+      align-items: center !important;
+      text-align: center !important;
+      width: 100%;
+    }
+
+    .event-facts.immediate p {
+      text-align: center !important;
+      margin: 0;
     }
 
     .hero-badges {
