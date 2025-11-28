@@ -682,8 +682,10 @@ const titleSecondPart = splitTitle ? splitTitle[1]?.trim() : null;
       left: auto;
       bottom: auto;
       width: 100%;
-      margin: 4rem auto 4rem auto;
+      margin: 4rem auto 4rem auto !important;
       justify-content: center;
+      position: relative;
+      z-index: 10;
       max-width: 100%;
     }
 
@@ -694,7 +696,10 @@ const titleSecondPart = splitTitle ? splitTitle[1]?.trim() : null;
     }
 
     .organizer-block {
-      margin-top: 8rem;
+      margin-top: 8rem !important;
+      min-height: 200px;
+      position: relative;
+      z-index: 1;
     }
   }
 
@@ -852,6 +857,22 @@ const titleSecondPart = splitTitle ? splitTitle[1]?.trim() : null;
       word-wrap: break-word !important;
       overflow-wrap: break-word !important;
       max-width: 90vw !important;
+    }
+
+    /* Prevent JavaScript layout interference in WeChat */
+    .hero-column {
+      min-height: auto !important;
+      height: auto !important;
+    }
+
+    .organizer-logos {
+      min-height: 120px;
+      position: relative;
+    }
+
+    .org-logo {
+      max-height: 60px;
+      width: auto;
     }
 
     /* WeChat browser specific fixes for English page title */
