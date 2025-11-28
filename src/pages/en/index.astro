@@ -13,9 +13,15 @@ import AgendaSchedule from "components/AgendaSchedule.astro";
 // Import JSON data
 import heroLinksData from "json/HeroLinks.json";
 import sellingPointsData from "json/SellingPointsEn.json";
+import tracksData from "json/Tracks.json";
+import speakerProfilesData from "json/SpeakerProfiles.json";
+import faqData from "json/FAQ.json";
 import agendaData from "json/Schedule-gobi-en.json";
 
 const heroLinks = heroLinksData;
+const tracks = tracksData;
+const speakerProfiles = speakerProfilesData;
+const faqItems = faqData;
 const agendaItems = agendaData;
 
 const heroBadges = [
@@ -34,59 +40,6 @@ const coorganizers = [
   {
     src: "/images/sponsors/csdn.png",
     alt: "CSDN"
-  }
-];
-
-// Create placeholder data for speakers
-const speakerProfiles = [
-  {
-    title: "Internet and Cloud Providers",
-    description: "AI infrastructure, developer platforms, AIGC/Agent ecosystem leaders",
-    image: "/icons/cloud.svg",
-  },
-  {
-    title: "Leading Open Source Projects and Maintainers",
-    description: "Models/frameworks/databases/data platforms",
-    image: "/icons/code.svg",
-  },
-  {
-    title: "AI Developer Tools",
-    description: "Inference and training frameworks, monitoring and evaluation, DevEx toolchains",
-    image: "/icons/tools.svg",
-  },
-  {
-    title: "Industry and Investment",
-    description: "Enterprise open source leaders, industry research, investment firm partners",
-    image: "/icons/building.svg",
-  },
-  {
-    title: "Policy and Standards",
-    description: "Foundations/associations, compliance and standards organizations",
-    image: "/icons/file.svg",
-  },
-];
-
-// Extract FAQ items from agenda if available, otherwise use hardcoded
-const faqItems = [
-  {
-    question: "Will there be interpretation?",
-    answer: "Chinese venue provided, simultaneous interpretation/English subtitles as needed"
-  },
-  {
-    question: "Will there be live streaming?",
-    answer: "Live streaming and recordings of breakout sessions planned (sent via email after registration)"
-  },
-  {
-    question: "Are invoices available?",
-    answer: "Corporate reimbursement and student discount policies"
-  },
-  {
-    question: "Are open source project booths supported?",
-    answer: "Community booths and Demo Walk sessions provided"
-  },
-  {
-    question: "How to participate in voting?",
-    answer: "Scan QR code on site, one vote per person, real-time display"
   }
 ];
 ---

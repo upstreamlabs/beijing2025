@@ -1,0 +1,17 @@
+[
+  {
+    "title": "A: Product Design in the AI Era",
+    "description": "Edge/hybrid inference experience, agents/workflows, usability and security, PLG growth",
+    "image": "/icons/design.svg"
+  },
+  {
+    "title": "B: AI Product Global Expansion",
+    "description": "Pricing and billing, regional compliance, localization, channels and ecosystem partners",
+    "image": "/icons/plane.svg"
+  },
+  {
+    "title": "C: Open Source Business Panel",
+    "description": "Business models (Open Core, SaaS, dual licensing, enterprise support), sales and delivery, SBOM and compliance",
+    "image": "/icons/money.svg"
+  }
+]

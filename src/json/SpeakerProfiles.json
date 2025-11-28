@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Internet and Cloud Providers",
+    "description": "AI infrastructure, developer platforms, AIGC/Agent ecosystem leaders",
+    "image": "/icons/cloud.svg"
+  },
+  {
+    "title": "Leading Open Source Projects and Maintainers",
+    "description": "Models/frameworks/databases/data platforms",
+    "image": "/icons/code.svg"
+  },
+  {
+    "title": "AI Developer Tools",
+    "description": "Inference and training frameworks, monitoring and evaluation, DevEx toolchains",
+    "image": "/icons/tools.svg"
+  },
+  {
+    "title": "Industry and Investment",
+    "description": "Enterprise open source leaders, industry research, investment firm partners",
+    "image": "/icons/building.svg"
+  },
+  {
+    "title": "Policy and Standards",
+    "description": "Foundations/associations, compliance and standards organizations",
+    "image": "/icons/file.svg"
+  }
+]
