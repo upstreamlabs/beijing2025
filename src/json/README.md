@@ -29,7 +29,7 @@ This directory contains all the editable content for the GOBI 2025 website. You 
 [
   {
     "text": "立即报名",
-    "link": "#register"
+    "link": "https://www.bagevent.com/event/gobi2025"
   }
 ]
 ```
