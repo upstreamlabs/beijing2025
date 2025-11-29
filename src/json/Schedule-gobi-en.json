@@ -131,14 +131,6 @@
     "lightning": [
       {
         "date": "December 21",
-        "timeSlot": "12:30 – 13:30",
-        "title": "Lunch & Training Camp Lightning Talks",
-        "content": "3-4 minutes each; Real-time audience + jury voting",
-        "speakers": [],
-        "isSpecialEvent": true
-      },
-      {
-        "date": "December 21",
         "timeSlot": "16:30 – 17:00",
         "title": "Upstream Open Source Business Innovation Project Showcase and Voting",
         "content": "",

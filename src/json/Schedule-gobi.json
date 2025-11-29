@@ -131,14 +131,6 @@
     "lightning": [
       {
         "date": "12月21日",
-        "timeSlot": "12:30 – 13:30",
-        "title": "午餐 & 训练营学员 Lightning Talk",
-        "content": "每人 3–4 分钟；观众+评审团实时投票",
-        "speakers": [],
-        "isSpecialEvent": true
-      },
-      {
-        "date": "12月21日",
         "timeSlot": "16:30 – 17:00",
         "title": "Upstream 开源商业创新项目展示和投票",
         "content": "",
