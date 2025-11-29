@@ -39,15 +39,7 @@
         "speakers": [],
         "isSpecialEvent": true
       },
-      {
-        "date": "December 21",
-        "timeSlot": "15:30 – 16:00",
-        "title": "Coffee Break & Demo Walk",
-        "content": "",
-        "speakers": [],
-        "isSpecialEvent": true
-      },
-      {
+        {
         "date": "December 21",
         "timeSlot": "17:00 – 17:10",
         "title": "Awards: Upstream Open Source Business Innovation Awards",

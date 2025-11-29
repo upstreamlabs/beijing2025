@@ -39,15 +39,7 @@
         "speakers": [],
         "isSpecialEvent": true
       },
-      {
-        "date": "12月21日",
-        "timeSlot": "15:30 – 16:00",
-        "title": "茶歇 & Demo Walk",
-        "content": "",
-        "speakers": [],
-        "isSpecialEvent": true
-      },
-      {
+        {
         "date": "12月21日",
         "timeSlot": "17:00 – 17:10",
         "title": "颁奖：Upstream 开源商业创新颁奖",
