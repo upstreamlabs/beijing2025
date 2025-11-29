@@ -25,6 +25,14 @@
     "special": [
       {
         "date": "12月21日",
+        "timeSlot": "9:00-18:00",
+        "title": "具身智能应用展示",
+        "content": "",
+        "speakers": [],
+        "isSpecialEvent": true
+      },
+      {
+        "date": "12月21日",
         "timeSlot": "09:00 – 10:00",
         "title": "签到 & 社交早餐",
         "content": "",
