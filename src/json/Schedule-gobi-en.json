@@ -62,6 +62,14 @@
         "content": "Guest / Attendee Networking",
         "speakers": [],
         "isSpecialEvent": true
+      },
+      {
+        "date": "December 21",
+        "timeSlot": "9:00-18:00",
+        "title": "Embodied Intelligence Application Showcase",
+        "content": "",
+        "speakers": [],
+        "isSpecialEvent": true
       }
     ],
     "keynote": [
