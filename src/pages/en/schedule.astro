@@ -1,0 +1,26 @@
+---
+import Layout from "layouts/Layout.astro";
+import Forumschedule from "components/Forumschedule.astro";
+import scheduleDataEn from "json/Schedule-forum-en.json";
+---
+
+<Layout
+  title="Schedule - GOBI 2025"
+  description="GOBI 2025 Conference Schedule"
+  navDarkMode={false}
+  navBackground="light"
+  pageTransitionName="schedule"
+>
+  <section class="section" data-theme-section="light" data-bg-section="light" style="padding-top: 200px; padding-bottom: 30px;">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Schedule</h1>
+          <p>GOBI 2025 Conference Agenda</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Forumschedule currentDay="DEC 21" scheduleData={scheduleDataEn} />
+</Layout>

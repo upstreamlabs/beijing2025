@@ -27,10 +27,11 @@ interface Session {
 interface Props {
   currentDay?: string
   activeCategory?: string
+  scheduleData?: Session[]
 }
 
-// Import the forum schedule data
-import forumScheduleData from "json/Schedule-forum.json"
+// Import the forum schedule data as default
+import defaultForumScheduleData from "json/Schedule-forum.json"
 
 // Import all images
 const images = import.meta.glob<{ default: ImageMetadata }>(
@@ -38,7 +39,11 @@ const images = import.meta.glob<{ default: ImageMetadata }>(
 )
 
 // Use the provided props or default values
-const { currentDay = "May 5", activeCategory = "All" } = Astro.props
+const { 
+  currentDay = "12月21日", 
+  activeCategory = "All",
+  scheduleData = defaultForumScheduleData
+} = Astro.props
 
 // Helper function to get category name from tag ID
 const getCategoryNameFromTag = (tagId: string): string => {
@@ -70,7 +75,7 @@ const sortSessionsByTime = (sessions: Session[]) => {
 }
 
 // Prepare all sessions for the current day
-const allSessions: Session[] = forumScheduleData
+const allSessions: Session[] = (scheduleData as Session[])
   .filter((session: Session) => session.date === currentDay)
   .map((session) => ({
     ...session,

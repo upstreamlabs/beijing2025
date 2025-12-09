@@ -1,0 +1,28 @@
+---
+import Layout from "layouts/Layout.astro";
+import SpeakerPageGrid from "components/SpeakerPageGrid.astro";
+
+// Import JSON data
+import speakersData from "json/SpeakersListEn.json";
+---
+
+<Layout
+  title="Speakers - GOBI 2025"
+  description="GOBI 2025 Featured Speakers"
+  navDarkMode={false}
+  navBackground="light"
+  pageTransitionName="speakers"
+>
+  <section class="section" data-theme-section="light" data-bg-section="light" style="padding-top: 200px; padding-bottom: 30px;">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Featured Speakers</h1>
+          <p>Global Thought Leaders in Open Source and AI Gathering at GOBI 2025</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <SpeakerPageGrid speakers={speakersData} />
+</Layout>

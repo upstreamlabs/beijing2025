@@ -8,7 +8,7 @@ import Button from "components/Button.astro";
 import SimpleFAQ from "components/SimpleFAQ.astro";
 import Marquee from "components/Marquee.astro";
 import VenueInfo from "components/VenueInfo.astro";
-import AgendaSchedule from "components/AgendaSchedule.astro";
+import QuickLinksEn from "components/QuickLinksEn.astro";
 
 // Import JSON data
 import heroLinksData from "json/HeroLinks.json";
@@ -66,6 +66,8 @@ const coorganizers = [
     logos={coorganizers}
   />
 
+  <QuickLinksEn />
+
   <FeatureSpotlight
     id="overview"
     title="GOBI 2025 Mission"
@@ -85,7 +87,7 @@ const coorganizers = [
     background="light"
   />
 
-  <AgendaSchedule />
+
 
   <Marquee />
 

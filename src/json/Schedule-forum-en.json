@@ -1,0 +1,307 @@
+[
+    {
+        "date": "DEC 21",
+        "timeSlot": "09:00 - 18:00",
+        "title": "(All Day) Embodied AI Application Showcase",
+        "content": "",
+        "speakers": [],
+        "isSpecialEvent": true
+    },
+    {
+        "date": "DEC 21",
+        "timeSlot": "09:00 - 10:00",
+        "title": "Registration & Networking Breakfast",
+        "content": "",
+        "speakers": [],
+        "isSpecialEvent": true
+    },
+    {
+        "date": "DEC 21",
+        "timeSlot": "10:00 - 10:05",
+        "title": "Opening Speech",
+        "content": "Leaders from Haidian & Dongsheng<br>UN (Remote Speech)",
+        "speakers": []
+    },
+    {
+        "date": "DEC 21",
+        "timeSlot": "10:15 - 10:45",
+        "title": "Keynote 1: Overview of Open Source Industry Development",
+        "content": "",
+        "speakers": []
+    },
+    {
+        "date": "DEC 21",
+        "timeSlot": "10:45 - 11:05",
+        "title": "Keynote 2: Exploring Open Source Business Models (Theory and Practice)",
+        "content": "",
+        "speakers": []
+    },
+    {
+        "date": "DEC 21",
+        "timeSlot": "11:05 - 11:25",
+        "title": "Keynote 3: Sustainable Open Source Business Ecosystem Index (Theoretical Framework)",
+        "content": "",
+        "speakers": [
+            {
+                "id": "jiang-tao",
+                "name": "Tao Jiang",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "Founder & Chairman of CSDN, Director of Open Atom Foundation",
+                "image": "蒋涛.jpeg"
+            }
+        ]
+    },
+    {
+        "date": "DEC 21",
+        "timeSlot": "11:25 - 12:25",
+        "title": "Panel: Breaking Through · The \"Macrohard\" Moment of Enterprise Software",
+        "content": "<h4>Key Topics: From \"Headcount Dividend\" to \"Efficiency Revolution\": Forced Reconstruction of Organizational Forms</h4><ul><li><strong>Core Argument:</strong> The growth of SaaS in the past decade has often been accompanied by extreme organizational bloat (sales armies, bloated middle management). Musk's transformation of Twitter (X) proves that <strong>extremely high talent density + radical flattening</strong> can maintain or even increase output.</li><li><strong>Discussion Direction:</strong> Enterprise software companies will face the investor's \"Macrohard\" test—no longer looking at headcount growth, but at <strong>Revenue Per Employee</strong>. Future unicorns may effectively be 10 people, not 1000. Middle management (especially coordination-focused PMs) will face a severe survival crisis.</li></ul><h4>2. Code Deflation: Software Construction Cost Approaches Zero</h4><ul><li><strong>Core Argument:</strong> AI is driving the cost of developing general functions down exponentially. When writing code is no longer expensive, \"feature-rich\" is no longer a moat.</li><li><strong>Discussion Direction:</strong> The software supply side will see a \"Cambrian Explosion\", where customers can easily generate customized tools via AI. The competitive barrier for SaaS vendors will shift completely from <strong>\"code assets\"</strong> to <strong>\"proprietary data\"</strong> and <strong>\"deep understanding of vertical workflows\"</strong>. If your software is just a generic CRUD interface, you will soon be replaced by AI.</li></ul><h4>3. The Endgame of Business Models: Service-as-Software Replace SaaS</h4><ul><li><strong>Core Argument:</strong> Traditional Seat-based models will fail. Because the goal of AI is to reduce human operators, if customers lay off staff, SaaS vendor revenue will collapse with it.</li><li><strong>Discussion Direction:</strong> Business models must shift from <strong>\"selling tools to humans\"</strong> to <strong>\"selling results to enterprises\"</strong> (Outcome-based Pricing). For example, instead of selling CRM accounts to salespeople, sell \"customer meetings successfully booked by AI Agents\". This marks the software company effectively becoming a \"services company\", only the service is delivered by machines, not humans.</li></ul><h4>4. Disappearance of Interface: No-UI is the New UI</h4><ul><li><strong>Core Argument:</strong> \"Macrohard\" is not just backend hardness, but frontend hardness too. Enterprise software has long been known for complex dashboards and forms because it was designed for humans to click.</li><li><strong>Discussion Direction:</strong> Software in the AI Agent era doesn't need complex UIs. Future enterprise software may just be a dialog box, or even a collection of APIs running silently in the background. Whoever can let users complete work <strong>\"without logging into software\"</strong> fastest is the winner.</li></ul><h4>5. The \"Innovator's Dilemma\" of Incumbcents vs. The \"Distribution Problem\" of AI Natives</h4><ul><li><strong>Core Argument:</strong> The market is in a stalemate. Giants like Salesforce have distribution channels (customer relationships) but are trapped by old seat-based business models and organizational inertia; AI Native startups have technology and efficiency advantages but lack trust and channels.</li><li><strong>Discussion Direction:</strong> The real breakthrough point of the \"Macrohard\" moment lies in: <strong>Will giants learn radical efficiency and AI reconstruction first, or will startups breach the trust barrier of the Fortune 500 first?</strong> The conclusion might be: Only those giants who dare to revolutionize themselves (cutting bloated departments, changing charging models) and startups that can solve extremely vertical pain points will survive.</li></ul>",
+        "speakers": [
+            {
+                "id": "gao-ning",
+                "name": "Ning Gao (Moderator)",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "Co-founder of Linkloud",
+                "image": "高宁.jpeg"
+            },
+            {
+                "id": "jiang-tao-p",
+                "name": "Tao Jiang",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "Founder & Chairman of CSDN",
+                "image": "蒋涛.jpeg"
+            },
+            {
+                "id": "tao-jianhui",
+                "name": "Jianhui Tao",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "Founder & CEO of TDengine",
+                "image": "陶建辉.jpeg"
+            },
+            {
+                "id": "zhang-wensong",
+                "name": "Wensong Zhang",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "Founder of LVS",
+                "image": "章文嵩.jpeg"
+            },
+            {
+                "id": "liu-song",
+                "name": "Song Liu",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "VP of PingCAP",
+                "image": "刘松.jpeg"
+            },
+            {
+                "id": "liu-kefeng",
+                "name": "Kefeng Liu",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "",
+                "image": ""
+            }
+        ]
+    },
+    {
+        "date": "DEC 21",
+        "timeSlot": "13:30 - 14:30",
+        "title": "Panel 1: Transformation · AI-Driven Software and SaaS Revolution, New Foundation, New Opportunities",
+        "content": "<h4>Key Topics</h4><ul><li><strong>Cognitive Transformation:</strong> Which \"pseudo-skills\" is AI rapidly eliminating? How to draw a \"capability balance sheet\" for the future and break mindset patterns?</li><li><strong>Capability Transformation:</strong> How to build interdisciplinary learning paths at the lowest cost, find the \"breakthrough point\" of capabilities, and become an \"interface talent\" that AI cannot easily replace?</li><li><strong>Value Transformation:</strong> In the next 5 years, what underlying capabilities will allow you to traverse the technology cycle, moving from \"replaced\" to \"irreplaceable\", achieving a leap in value?</li></ul>",
+        "speakers": [
+            {
+                "id": "sheng-jiang",
+                "name": "Iris Sheng (Moderator)",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "Co-founder of AFFiNE",
+                "image": "生姜Iris.jpeg"
+            },
+            {
+                "id": "bian-li",
+                "name": "Li Bian",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "Former VP of R&D at QBoson",
+                "image": "卞立.jpeg"
+            },
+            {
+                "id": "fang-haitao",
+                "name": "Haitao Fang",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "Founder of Sealos",
+                "image": "方海涛.jpeg"
+            },
+            {
+                "id": "lin-yuanlin",
+                "name": "Yuanlin Lin",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "Founder & CEO of Zeabur",
+                "image": "林沅霖.jpeg"
+            },
+            {
+                "id": "yiki",
+                "name": "Yiki",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "Founder & CEO of EezyCollab",
+                "image": "Yiki.png"
+            }
+        ]
+    },
+    {
+        "date": "DEC 21",
+        "timeSlot": "14:30 - 15:30",
+        "title": "Panel 2: Synergy · Evolution and Future of Open Source Communities",
+        "content": "<p><strong>Gathering glimmer makes a galaxy.</strong></p><h4>Key Topics</h4><ul><li><strong>Wisdom Synergy:</strong> When growth hits a bottleneck, how to leverage community power to achieve \"cognitive leaps\"? How to ask effectively and seek help to draw collective wisdom from the community?</li><li><strong>Action Synergy:</strong> From \"onlooker\" to \"co-creator\", how can ordinary people find their contribution coordinates in the open source community, turning individual glimmer into a prairie fire for the project?</li><li><strong>Value Synergy:</strong> How can communities go beyond \"tool attributes\" to become an individual's \"spiritual tribe\"? How do we find a sense of belonging in collaboration, move forward together, and achieve symbiotic evolution?</li></ul>",
+        "speakers": [
+            {
+                "id": "tang-xiaoyin",
+                "name": "Xiaoyin Tang (Moderator)",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "Executive Editor-in-Chief of CSDN & New Programmer",
+                "image": "唐小引.jpeg"
+            },
+            {
+                "id": "zheng-yaowei",
+                "name": "Yaowei Zheng",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "Author of LLaMA Factory",
+                "image": "郑耀威.jpeg"
+            },
+            {
+                "id": "zhang-yingfeng",
+                "name": "Yingfeng Zhang",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "Founder of RAGFlow",
+                "image": "张颖峰.png"
+            },
+            {
+                "id": "zhang-jiaju",
+                "name": "Jiaju Zhang",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "vLLM Community Contributor",
+                "image": "张家驹.jpeg"
+            },
+            {
+                "id": "du-junping",
+                "name": "Junping Du",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "Founder & CEO of Datastrato",
+                "image": "堵俊平.jpeg"
+            }
+        ]
+    },
+    {
+        "date": "DEC 21",
+        "timeSlot": "15:30 - 16:30",
+        "title": "Panel 3: Genesis · Renaissance-Style Entrepreneurs Catalyzed by AI",
+        "content": "<p><strong>Dancing with AI, creating the future. Can everyone do it?</strong></p><p>Renaissance-style AI Entrepreneurs: In the AI era, people who can cross the four dimensions of technology, art, humanities, and business to create breakthrough products with comprehensive thinking. Like Da Vinci and Michelangelo during the Renaissance, they are not limited to a single type of work, but create works that set examples for centuries with an interdisciplinary perspective.</p><p>The modern \"Renaissance-style AI Entrepreneur\" is:</p><ul><li>Deeply understands human needs</li><li>Familiar with AI principles and toolchains</li><li>Capable of artistic expression and design</li><li>And masters commercialization, market insight, and value creation</li></ul><p>This type of entrepreneur is not an \"upgraded version of a tech entrepreneur\", but a composite talent of technology + humanities + aesthetics + business.</p><h4>Key Topics:</h4><ol><li><strong>Soil Genesis: How does the AI era reshape the ideological soil of growth?</strong><br>Ideological liberation, cross-boundary demands, and resource support are constantly reconstructing the environment for youth development. What role will young people play in the AI era? How will the trajectory of thought and personal development be affected?</li><li><strong>Paradigm Genesis: When AI becomes the infrastructure for collaboration and creation, how will the efficiency paradigm be reconstructed?</strong><br>AI products are becoming the new \"collaboration interface\" and \"creation engine\". From automation to co-creation, from search to reasoning, how do we truly use AI to improve efficiency and break professional boundaries? What will future workflows look like?</li><li><strong>Pattern Genesis: With AI support, is the pattern of value creation changing?</strong><br>Content production, product development, expression methods, and distribution paths are all reshaped by AI. Does AI allow individuals to create at lower costs and faster speeds? Is AI making \"one person doing the work of a team\" possible?</li></ol>",
+        "speakers": [
+            {
+                "id": "chen-zhiwei",
+                "name": "Zhiwei Chen (Moderator)",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "Founder of Unbounded Youth Forum",
+                "image": "陈志伟.png"
+            },
+            {
+                "id": "zhao-jun",
+                "name": "Jun Zhao",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "Developer of SimilarTube & NanoInfluencer",
+                "image": "赵君.jpeg"
+            },
+            {
+                "id": "nana",
+                "name": "Nana",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "YouTube AI Video Explorer",
+                "image": "NANA.jpeg"
+            },
+            {
+                "id": "fan-han",
+                "name": "Fan Han",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "CMO of AI Social Product Bonjour!",
+                "image": "泛函.jpeg"
+            },
+            {
+                "id": "bao-chenxi",
+                "name": "Chenxi Bao",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "Product Manager at Music Tech Company",
+                "image": "鲍晨熙.jpeg"
+            }
+        ]
+    },
+    {
+        "date": "DEC 21",
+        "timeSlot": "16:30 - 17:00",
+        "title": "Winning Project Pitch & Audience Voting",
+        "content": "<p>10 minutes per project, determining the ranking order</p><p>All innovation is born from tracing back to the source; all change is new because of returning.</p>",
+        "speakers": []
+    },
+    {
+        "date": "DEC 21",
+        "timeSlot": "17:00 - 17:10",
+        "title": "Awards Ceremony",
+        "content": "",
+        "speakers": []
+    },
+    {
+        "date": "DEC 21",
+        "timeSlot": "17:10 - 17:30",
+        "title": "Closing: From Source to Industry, 2026 Outlook",
+        "content": "",
+        "speakers": [],
+        "isSpecialEvent": true
+    },
+    {
+        "date": "DEC 21",
+        "timeSlot": "18:00 - 20:00",
+        "title": "Dinner & Happy Hour",
+        "content": "Guest / Attendee Networking",
+        "speakers": [],
+        "isSpecialEvent": true
+    }
+]
