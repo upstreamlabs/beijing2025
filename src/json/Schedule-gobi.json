@@ -14,7 +14,7 @@
     },
     {
       "id": "lightning",
-      "name": "Lightning Talk"
+      "name": "项目路演"
     },
     {
       "id": "special",
@@ -25,49 +25,33 @@
     "special": [
       {
         "date": "12月21日",
-        "timeSlot": "9:00-18:00",
-        "title": "具身智能应用展示",
+        "timeSlot": "10:00 - 10:05",
+        "title": "开场致辞",
+        "content": "海淀、东升领导，UN (远程致辞)",
+        "speakers": [],
+        "isSpecialEvent": true
+      },
+      {
+        "date": "12月21日",
+        "timeSlot": "11:05 - 11:15",
+        "title": "社区启动：东畔开源社区启动",
+        "content": "组织委员会，宣言，Logo",
+        "speakers": [],
+        "isSpecialEvent": true
+      },
+      {
+        "date": "12月21日",
+        "timeSlot": "12:25 - 12:30",
+        "title": "抽奖",
         "content": "",
         "speakers": [],
         "isSpecialEvent": true
       },
       {
         "date": "12月21日",
-        "timeSlot": "09:00 – 10:00",
-        "title": "签到 & 社交早餐",
+        "timeSlot": "17:00 - 17:10",
+        "title": "比赛颁奖",
         "content": "",
-        "speakers": [],
-        "isSpecialEvent": true
-      },
-      {
-        "date": "12月21日",
-        "timeSlot": "10:00 – 10:15",
-        "title": "开场致辞：GOBI 2025 & Upstream 训练营回顾",
-        "content": "",
-        "speakers": [],
-        "isSpecialEvent": true
-      },
-        {
-        "date": "12月21日",
-        "timeSlot": "17:00 – 17:10",
-        "title": "颁奖：Upstream 开源商业创新颁奖",
-        "content": "",
-        "speakers": [],
-        "isSpecialEvent": true
-      },
-      {
-        "date": "12月21日",
-        "timeSlot": "17:10 – 17:30",
-        "title": "闭幕：从源到业，2026 展望",
-        "content": "",
-        "speakers": [],
-        "isSpecialEvent": true
-      },
-      {
-        "date": "12月21日",
-        "timeSlot": "18:00 – 20:00",
-        "title": "晚宴 & Happy Hour",
-        "content": "嘉宾 / 观众互动社交",
         "speakers": [],
         "isSpecialEvent": true
       }
@@ -75,25 +59,25 @@
     "keynote": [
       {
         "date": "12月21日",
-        "timeSlot": "10:15 – 10:45",
-        "title": "Keynote 1：开源产业发展综述",
+        "timeSlot": "10:15 - 10:45",
+        "title": "Keynote 1: 开源产业发展综述",
         "content": "",
         "speakers": [],
         "isSpecialEvent": true
       },
       {
         "date": "12月21日",
-        "timeSlot": "10:45 – 11:05",
-        "title": "Keynote 2：开源商业模型探索（理论和实践）",
+        "timeSlot": "10:45 - 11:05",
+        "title": "Keynote 2: 开源商业模型探索（理论和实践）",
         "content": "",
         "speakers": [],
         "isSpecialEvent": true
       },
       {
         "date": "12月21日",
-        "timeSlot": "11:05 – 11:25",
-        "title": "Keynote 3：可持续发展开源商业生态指数（理论框架）",
-        "content": "",
+        "timeSlot": "11:05 - 11:25",
+        "title": "Keynote 3: 可持续发展开源商业生态指数（理论框架）",
+        "content": "CSDN创始人&董事长、开放原子基金会理事 蒋涛",
         "speakers": [],
         "isSpecialEvent": true
       }
@@ -101,39 +85,88 @@
     "panel": [
       {
         "date": "12月21日",
-        "timeSlot": "11:25 – 12:25",
-        "title": "圆桌讨论：源力觉醒 · 开源AI模型塑造中国SaaS 产业的新底座",
-        "content": "",
+        "timeSlot": "11:25 - 12:25",
+        "title": "Panel: 破局 · 企业软件的\"巨硬\"时刻",
+        "content": "从“人头红利”到“人效革命”；代码通缩；商业模式终局；交互界面消失",
         "speakers": []
       },
       {
         "date": "12月21日",
-        "timeSlot": "13:30 – 14:30",
-        "title": "圆桌讨论：破局 · 企业软件的\"巨硬\"时刻",
-        "content": "",
+        "timeSlot": "13:30 - 14:30",
+        "title": "Panel 1: 变局 · AI 带来的软件和 Saas 变革，新底座，新机会",
+        "content": "认知变局、能力变局、价值变局",
         "speakers": []
       },
       {
         "date": "12月21日",
-        "timeSlot": "14:30 – 15:30",
-        "title": "圆桌讨论：聚力 · 开源社区的进化与未来",
-        "content": "",
+        "timeSlot": "13:30 - 13:50",
+        "title": "Track 2 Panel: 开源 AI 基础服务如何服务开发者",
+        "content": "智谱, MiniMax, 华为云",
         "speakers": []
       },
       {
         "date": "12月21日",
-        "timeSlot": "15:30 – 16:30",
-        "title": "圆桌讨论：创生 · AI催生的一人创业公司",
-        "content": "",
+        "timeSlot": "13:50 - 14:10",
+        "title": "Panel: 开源商业业务专题",
+        "content": "王晔, 王蕴博, 魏晋宇, 郭炜, 安筱鹏",
+        "speakers": []
+      },
+      {
+        "date": "12月21日",
+        "timeSlot": "13:50 - 14:10",
+        "title": "Track 2 Panel: AI时代的内容营销案例分享",
+        "content": "B站, 小宇宙, 小红书, 可灵, 稿定, liblib.art",
+        "speakers": []
+      },
+      {
+        "date": "12月21日",
+        "timeSlot": "14:10 - 14:30",
+        "title": "Panel: 开源商业投资专题",
+        "content": "高立新, 赵峰, 段亚林, 黄浩",
+        "speakers": []
+      },
+      {
+        "date": "12月21日",
+        "timeSlot": "14:10 - 14:30",
+        "title": "Track 2 Panel: 如何设计 AI 产品案例分享",
+        "content": "Rokid, Dify, Cherry Studio, RagFLOW, OpenManus",
+        "speakers": []
+      },
+      {
+        "date": "12月21日",
+        "timeSlot": "14:30 - 15:00",
+        "title": "Panel: 开源商业可持续发展",
+        "content": "林咏华, Bryan Che, Matt White, Florent Zara",
+        "speakers": []
+      },
+      {
+        "date": "12月21日",
+        "timeSlot": "14:30 - 15:00",
+        "title": "Track 2 Panel: AI 项目投资",
+        "content": "开源和AI的投资人",
+        "speakers": []
+      },
+      {
+        "date": "12月21日",
+        "timeSlot": "14:30 - 15:30",
+        "title": "Panel 2: 聚力 · 开源社区的进化与未来",
+        "content": "智慧聚力、行动聚力、价值聚力",
+        "speakers": []
+      },
+      {
+        "date": "12月21日",
+        "timeSlot": "15:30 - 16:30",
+        "title": "Panel 3: 创生 · AI催生的文艺复兴式创业者",
+        "content": "与AI共舞，创生未来。土壤创生、范式创生、模式创生",
         "speakers": []
       }
     ],
     "lightning": [
       {
         "date": "12月21日",
-        "timeSlot": "16:30 – 17:00",
-        "title": "Upstream 开源商业创新营总决赛",
-        "content": "项目展示与投票",
+        "timeSlot": "16:30 - 17:00",
+        "title": "参赛优胜项目 Pitch路演，观众投票",
+        "content": "每个项目 10 分钟，决定排名顺序",
         "speakers": [],
         "isSpecialEvent": true
       }

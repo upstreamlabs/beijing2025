@@ -4,7 +4,7 @@ import { Picture } from "astro:assets"
 import type { ImageMetadata } from "astro"
 
 // Components
-import SocialShare from "./SocialShare.astro"
+
 
 interface Speaker {
   id: string
@@ -182,14 +182,7 @@ const sortedAllSessions = sortSessionsByTime(uniqueAllSessions)
                               </div>
                             )}
                             
-                            <!-- Social share component with reduced spacing -->
-                            <div class="social-share-row">
-                              <SocialShare 
-                                title={`${session.title} - GOSIM AI Paris 2025`}
-                                url={getEventUrl(session.title)}
-                                description={session.content ? session.content.replace(/<[^>]*>/g, "").substring(0, 160) : ""}
-                              />
-                            </div>
+
                           </div>
                         </div>
                       </div>
@@ -216,10 +209,22 @@ const sortedAllSessions = sortSessionsByTime(uniqueAllSessions)
     flex-direction: column;
     gap: 0.25rem;
   }
-  
-  .social-share-row {
-    margin-top: 0.25rem;
-    padding-top: 0.25rem;
-    border-top: 1px solid #eee;
+
+  /* Increase spacing between schedule items */
+  .single-agenda-card {
+    margin-bottom: 2rem !important;
   }
+
+  /* Improve text readability */
+  .styled-content {
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+  
+  .styled-content :global(p), 
+  .styled-content :global(ul), 
+  .styled-content :global(li) {
+    margin-bottom: 0.8rem;
+  }
+
 </style> 

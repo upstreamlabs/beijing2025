@@ -9,7 +9,8 @@ const langPrefix = isChinesePage ? '/cn' : '/en';
 
 const navLinks = isChinesePage
   ? [
-      { text: "会议日程", link: `${langPrefix}/#agenda` },
+      { text: "会议日程", link: `${langPrefix}/schedule` },
+      { text: "演讲嘉宾", link: `${langPrefix}/speakers` },
       {
         text: "Upstream 开源商业创新训练营",
         link: "https://camp.upstreamlabs.org/cn/",
@@ -66,8 +67,19 @@ const slug = Astro.url.pathname;
           {navLinks.map((link) => {
             const hashIndex = link.link.indexOf('#');
             const isAnchorLink = hashIndex !== -1;
+            
+            // Check if the link points to the current page
+            const linkPath = isAnchorLink ? link.link.slice(0, hashIndex) : link.link;
+            // Normalize paths for comparison (remove trailing slashes)
+            // Use regex to remove trailing slash if present
+            const normalizedLinkPath = linkPath.replace(/\/$/, "");
+            const normalizedSlug = slug.replace(/\/$/, "");
+            
+            const isCurrentPageAnchor = isAnchorLink && (normalizedLinkPath === normalizedSlug || (normalizedLinkPath === "" && normalizedSlug === "/"));
+
             const anchorTarget = isAnchorLink ? link.link.slice(hashIndex) : null;
-            const linkHref = isAnchorLink ? anchorTarget : link.link;
+            // If it's an anchor on the current page, use just the hash. Otherwise use the full link.
+            const linkHref = isCurrentPageAnchor ? anchorTarget : link.link;
 
             if (link.submenu) {
               return (
@@ -165,8 +177,18 @@ const slug = Astro.url.pathname;
           {navLinks.map((link) => {
             const hashIndex = link.link.indexOf('#');
             const isAnchorLink = hashIndex !== -1;
+            
+            // Check if the link points to the current page
+            const linkPath = isAnchorLink ? link.link.slice(0, hashIndex) : link.link;
+            // Normalize paths for comparison (remove trailing slashes)
+            const normalizedLinkPath = linkPath.replace(/\/$/, "");
+            const normalizedSlug = slug.replace(/\/$/, "");
+            
+            const isCurrentPageAnchor = isAnchorLink && (normalizedLinkPath === normalizedSlug || (normalizedLinkPath === "" && normalizedSlug === "/"));
+
             const anchorTarget = isAnchorLink ? link.link.slice(hashIndex) : null;
-            const linkHref = isAnchorLink ? anchorTarget : link.link;
+            // If it's an anchor on the current page, use just the hash. Otherwise use the full link.
+            const linkHref = isCurrentPageAnchor ? anchorTarget : link.link;
 
             if (link.submenu) {
               return (

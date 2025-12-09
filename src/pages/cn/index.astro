@@ -9,6 +9,7 @@ import SimpleFAQ from "components/SimpleFAQ.astro";
 import SellingPoints from "components/SellingPoints.astro";
 import Marquee from "components/Marquee.astro";
 import VenueInfoZh from "components/VenueInfoZh.astro";
+import QuickLinks from "components/QuickLinks.astro";
 import AgendaSchedule from "components/AgendaSchedule.astro";
 
 // Import JSON data
@@ -67,6 +68,8 @@ const coorganizers = [
     logos={coorganizers}
   />
 
+  <QuickLinks />
+
   <FeatureSpotlight
     id="overview"
     title="GOBI 的使命"
@@ -86,7 +89,7 @@ const coorganizers = [
     background="light"
   />
 
-  <AgendaSchedule />
+
 
   <Marquee />
 

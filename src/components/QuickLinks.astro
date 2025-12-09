@@ -1,0 +1,48 @@
+---
+import Button from "./Button.astro";
+---
+
+<section class="section section-quick-links" data-theme-section="light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 quick-links-wrapper">
+         <Button
+            text="会议日程"
+            link="/cn/schedule"
+            class="btn outline xl btn-hover"
+         />
+         <Button
+            text="演讲嘉宾"
+            link="/cn/speakers"
+            class="btn outline xl btn-hover"
+         />
+         <Button
+            text="Upstream 开源商业创新训练营"
+            link="https://camp.upstreamlabs.org/cn/"
+            openInNewTab={true}
+            class="btn outline xl btn-hover"
+         />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-quick-links {
+    padding: 3rem 0;
+    /* Blend with the page background or provide a distinct one */
+    background-color: var(--color-background); 
+  }
+
+  .quick-links-wrapper {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+
+</style>

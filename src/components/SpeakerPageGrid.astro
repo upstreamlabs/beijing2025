@@ -1,0 +1,161 @@
+---
+interface Speaker {
+  name: string;
+  title: string;
+  bio: string;
+  image: string;
+}
+
+interface Props {
+  speakers: Speaker[];
+}
+
+const { speakers } = Astro.props;
+---
+
+<section class="section section-speakers" id="speakers-grid">
+  <div class="container">
+    <div class="row">
+      <div class="speakers-grid">
+        {
+          speakers.map((speaker, index) => (
+            <div class="speaker-card">
+              <div class="speaker-image-container">
+                {speaker.image ? (
+                  <img
+                    src={`/images/speakers/${speaker.image}`}
+                    alt={speaker.name}
+                    class="speaker-image"
+                    loading="lazy"
+                  />
+                ) : (
+                  <div class="speaker-image-placeholder">
+                    <span>{speaker.name[0]}</span>
+                  </div>
+                )}
+              </div>
+              <div class="speaker-info">
+                <h3 class="speaker-name">{speaker.name}</h3>
+                <p class="speaker-title">{speaker.title}</p>
+                {speaker.bio && (
+                  <div class="speaker-bio">
+                    <p>{speaker.bio}</p>
+                  </div>
+                )}
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-speakers {
+    padding: 4rem 0;
+    background-color: var(--theme-bg);
+  }
+
+  .speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    width: 100%;
+  }
+
+  .speaker-card {
+    background: var(--card-bg, #ffffff);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .speaker-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .speaker-image-container {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto 1.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .speaker-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+  }
+
+  .speaker-image-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #999;
+    font-weight: bold;
+  }
+
+  .speaker-info {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .speaker-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text-color, #0d1c3a);
+  }
+
+  .speaker-title {
+    font-size: 0.95rem;
+    color: var(--primary-color, #2b74ff);
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    min-height: 2.8em; /* Approximate 2 lines */
+  }
+
+  .speaker-bio {
+    text-align: left;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #666;
+    margin-top: auto; /* Push to bottom if needed, or structured nicely */
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+  }
+
+  .speaker-bio p {
+    margin: 0;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .speakers-grid {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    
+    .speaker-card {
+      padding: 1.5rem;
+    }
+  }
+</style>
