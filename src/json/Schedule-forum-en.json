@@ -298,9 +298,9 @@
     },
     {
         "date": "DEC 21",
-        "timeSlot": "18:00 - 20:00",
-        "title": "Dinner & Happy Hour",
-        "content": "Guest / Attendee Networking",
+        "timeSlot": "18:30 - 20:30",
+        "title": "Dinner (Invite Only)",
+        "content": "",
         "speakers": [],
         "isSpecialEvent": true
     }
