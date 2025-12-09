@@ -218,13 +218,38 @@ const sortedAllSessions = sortSessionsByTime(uniqueAllSessions)
   /* Improve text readability */
   .styled-content {
     line-height: 1.8;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
   }
   
   .styled-content :global(p), 
-  .styled-content :global(ul), 
+  .styled-content :global(ul) {
+    margin-bottom: 1.2rem;
+  }
+
+  .styled-content :global(h4) {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.1em;
+    font-weight: 600;
+  }
+
   .styled-content :global(li) {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  /* Speaker image adjustments */
+  .card-image {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 8px; /* Optional: adds rounded corners like speakers page */
+  }
+
+  .card-image :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
   }
 
 </style> 
