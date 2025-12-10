@@ -49,7 +49,7 @@
           "forum"
         ],
         "roleOrg": "CSDN创始人&董事长、开放原子基金会理事",
-        "image": "蒋涛.jpeg"
+        "image": "蒋涛.png"
       }
     ]
   },
@@ -66,7 +66,7 @@
           "forum"
         ],
         "roleOrg": "Linkloud联合创始人",
-        "image": "高宁.jpeg"
+        "image": "高宁.png"
       },
       {
         "id": "jiang-tao-p",
@@ -75,7 +75,7 @@
           "forum"
         ],
         "roleOrg": "CSDN 创始人&董事长",
-        "image": "蒋涛.jpeg"
+        "image": "蒋涛.png"
       },
       {
         "id": "tao-jianhui",
@@ -84,7 +84,7 @@
           "forum"
         ],
         "roleOrg": "涛思数据创始人、CEO",
-        "image": "陶建辉.jpeg"
+        "image": "陶建辉.png"
       },
       {
         "id": "zhang-wensong",
@@ -93,7 +93,7 @@
           "forum"
         ],
         "roleOrg": "LVS创始人",
-        "image": "章文嵩.jpeg"
+        "image": "章文嵩.png"
       },
       {
         "id": "liu-song",
@@ -102,7 +102,7 @@
           "forum"
         ],
         "roleOrg": "PingCAP副总裁",
-        "image": "刘松.jpeg"
+        "image": "刘松.png"
       }
     ]
   },
@@ -119,7 +119,7 @@
           "forum"
         ],
         "roleOrg": "AFFiNE联合创始人",
-        "image": "生姜Iris.jpeg"
+        "image": "生姜Iris.png"
       },
       {
         "id": "bian-li",
@@ -128,7 +128,7 @@
           "forum"
         ],
         "roleOrg": "QBoson前软件研发副总裁",
-        "image": "卞立.jpeg"
+        "image": "卞立.png"
       },
       {
         "id": "fang-haitao",
@@ -137,7 +137,7 @@
           "forum"
         ],
         "roleOrg": "Sealos创始人",
-        "image": "方海涛.jpeg"
+        "image": "方海涛.png"
       },
       {
         "id": "lin-yuanlin",
@@ -146,7 +146,7 @@
           "forum"
         ],
         "roleOrg": "Zeabur创始人兼CEO",
-        "image": "林沅霖.jpeg"
+        "image": "林沅霖.png"
       },
       {
         "id": "yiki",
@@ -172,7 +172,7 @@
           "forum"
         ],
         "roleOrg": "CSDN &《新程序员》执行总编",
-        "image": "唐小引.jpeg"
+        "image": "唐小引.png"
       },
       {
         "id": "zheng-yaowei",
@@ -181,7 +181,7 @@
           "forum"
         ],
         "roleOrg": "LLaMA Factory作者",
-        "image": "郑耀威.jpeg"
+        "image": "郑耀威.png"
       },
       {
         "id": "zhang-yingfeng",
@@ -199,7 +199,7 @@
           "forum"
         ],
         "roleOrg": "vLLM 社区贡献者",
-        "image": "张家驹.jpeg"
+        "image": "张家驹.png"
       },
       {
         "id": "du-junping",
@@ -208,7 +208,7 @@
           "forum"
         ],
         "roleOrg": "Datastrato创始人 & CEO",
-        "image": "堵俊平.jpeg"
+        "image": "堵俊平.png"
       }
     ]
   },
@@ -234,7 +234,7 @@
           "forum"
         ],
         "roleOrg": "SimilarTube & NanoInfluencer开发者",
-        "image": "赵君.jpeg"
+        "image": "赵君.png"
       },
       {
         "id": "nana",
@@ -243,7 +243,7 @@
           "forum"
         ],
         "roleOrg": "YouTube AI视频探索者",
-        "image": "NANA.jpeg"
+        "image": "NANA.png"
       },
       {
         "id": "fan-han",
@@ -252,7 +252,7 @@
           "forum"
         ],
         "roleOrg": "AI社交产品Bonjour! CMO",
-        "image": "泛函.jpeg"
+        "image": "泛函.png"
       },
       {
         "id": "bao-chenxi",
@@ -261,7 +261,7 @@
           "forum"
         ],
         "roleOrg": "音乐科技公司产品经理",
-        "image": "鲍晨熙.jpeg"
+        "image": "鲍晨熙.png"
       }
     ]
   },

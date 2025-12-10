@@ -1,0 +1,154 @@
+---
+interface Session {
+  timeSlot: string
+  title: string
+  isSpecialEvent?: boolean
+}
+
+interface Props {
+  scheduleData: Session[]
+  title?: string
+}
+
+const { scheduleData, title = "大会日程" } = Astro.props;
+
+const getStartHour = (timeSlot: string) => {
+  const start = timeSlot.split('-')[0].trim();
+  return parseInt(start.split(':')[0]);
+};
+
+// Filter out sessions that span the whole day if desired, or just strictly split by start time.
+// Assuming 12:00 is the cutoff for Afternoon.
+const morningSessions = scheduleData.filter(s => getStartHour(s.timeSlot) < 13);
+const afternoonSessions = scheduleData.filter(s => getStartHour(s.timeSlot) >= 13);
+
+const pathname = Astro.url.pathname;
+const isChinesePage = pathname.startsWith('/cn/');
+const amLabel = isChinesePage ? "上午" : "AM";
+const pmLabel = isChinesePage ? "下午" : "PM";
+---
+
+<section class="section section-text-schedule" data-theme-section="light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="schedule-heading">{title}</h2>
+      </div>
+    </div>
+    
+    <div class="row schedule-columns">
+      <div class="col-12 col-md-6 schedule-column">
+        <h3 class="column-title">{amLabel}</h3>
+        <div class="schedule-list">
+          {morningSessions.map((session) => (
+            <div class={`schedule-row ${session.isSpecialEvent ? 'special' : ''}`}>
+              <div class="time">{session.timeSlot}</div>
+              <div class="title">{session.title}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <div class="col-12 col-md-6 schedule-column">
+        <h3 class="column-title">{pmLabel}</h3>
+        <div class="schedule-list">
+          {afternoonSessions.map((session) => (
+            <div class={`schedule-row ${session.isSpecialEvent ? 'special' : ''}`}>
+              <div class="time">{session.timeSlot}</div>
+              <div class="title">{session.title}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-text-schedule {
+    padding: 2rem 0 4rem;
+    background-color: var(--color-background);
+  }
+
+  .schedule-heading {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 3rem;
+    font-family: 'Manrope', sans-serif;
+    font-size: 2rem;
+  }
+  
+  .column-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: #666;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .schedule-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .schedule-row {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    align-items: baseline;
+  }
+  
+  .schedule-row:last-child {
+    border-bottom: none;
+  }
+
+  .schedule-row.special {
+    color: #666;
+  }
+
+  .time {
+    flex: 0 0 110px;
+    font-family: 'Manrope', monospace;
+    font-weight: 600;
+    color: #000000; /* Requested black color */
+    text-align: left;
+    font-size: 0.95rem;
+  }
+
+  .title {
+    flex: 1;
+    font-weight: 500;
+    color: #0d1c3a;
+    font-size: 1rem;
+  }
+  
+  .schedule-row.special .title {
+    /* Styles removed to match regular items */
+    /* color: #555; */
+    /* font-weight: 400; */
+  }
+
+  @media (max-width: 768px) {
+    .schedule-columns {
+      gap: 3rem;
+    }
+    
+    .schedule-column {
+      padding: 0 1rem;
+    }
+    
+    .schedule-row {
+      padding: 0.75rem 0;
+    }
+    
+    .time {
+      flex: 0 0 100px;
+      font-size: 0.9rem;
+    }
+  }
+</style>

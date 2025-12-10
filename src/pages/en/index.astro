@@ -9,9 +9,12 @@ import SimpleFAQ from "components/SimpleFAQ.astro";
 import Marquee from "components/Marquee.astro";
 import VenueInfo from "components/VenueInfo.astro";
 import QuickLinksEn from "components/QuickLinksEn.astro";
+import SpeakerMarquee from "components/SpeakerMarquee.astro";
+import TextSchedule from "components/TextSchedule.astro";
 
 // Import JSON data
 import heroLinksData from "json/HeroLinks.json";
+import detailedScheduleDataEn from "json/Schedule-forum-en.json";
 import sellingPointsData from "json/SellingPointsEn.json";
 import tracksData from "json/Tracks.json";
 import speakerProfilesData from "json/SpeakerProfiles.json";
@@ -65,6 +68,10 @@ const coorganizers = [
     logosHeading="Co-organized by"
     logos={coorganizers}
   />
+
+  <SpeakerMarquee title="GOBI 2025 Featured Speakers & Conference Schedule" />
+
+  <TextSchedule scheduleData={detailedScheduleDataEn} title="" />
 
   <QuickLinksEn />
 

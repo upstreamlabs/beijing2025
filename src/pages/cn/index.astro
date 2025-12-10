@@ -12,6 +12,9 @@ import VenueInfoZh from "components/VenueInfoZh.astro";
 import QuickLinks from "components/QuickLinks.astro";
 import AgendaSchedule from "components/AgendaSchedule.astro";
 
+import SpeakerMarquee from "components/SpeakerMarquee.astro";
+import TextSchedule from "components/TextSchedule.astro";
+
 // Import JSON data
 import heroLinksData from "json/HeroLinksZh.json";
 import sellingPointsData from "json/SellingPointsZh.json";
@@ -19,6 +22,7 @@ import tracksData from "json/TracksZh.json";
 import speakerProfilesData from "json/SpeakerProfilesZh.json";
 import faqData from "json/FAQZh.json";
 import agendaData from "json/AgendaZh.json";
+import detailedScheduleData from "json/Schedule-forum.json";
 
 const heroLinks = heroLinksData;
 const tracks = tracksData;
@@ -67,6 +71,10 @@ const coorganizers = [
     logosHeading="联合主办方"
     logos={coorganizers}
   />
+
+  <SpeakerMarquee title="GOBI 2025 演讲嘉宾 & 大会日程" />
+  
+  <TextSchedule scheduleData={detailedScheduleData} title="" />
 
   <QuickLinks />
 

@@ -49,7 +49,7 @@
                     "forum"
                 ],
                 "roleOrg": "Founder & Chairman of CSDN, Director of Open Atom Foundation",
-                "image": "蒋涛.jpeg"
+                "image": "蒋涛.png"
             }
         ]
     },
@@ -66,7 +66,7 @@
                     "forum"
                 ],
                 "roleOrg": "Co-founder of Linkloud",
-                "image": "高宁.jpeg"
+                "image": "高宁.png"
             },
             {
                 "id": "jiang-tao-p",
@@ -75,7 +75,7 @@
                     "forum"
                 ],
                 "roleOrg": "Founder & Chairman of CSDN",
-                "image": "蒋涛.jpeg"
+                "image": "蒋涛.png"
             },
             {
                 "id": "tao-jianhui",
@@ -84,7 +84,7 @@
                     "forum"
                 ],
                 "roleOrg": "Founder & CEO of TDengine",
-                "image": "陶建辉.jpeg"
+                "image": "陶建辉.png"
             },
             {
                 "id": "zhang-wensong",
@@ -93,7 +93,7 @@
                     "forum"
                 ],
                 "roleOrg": "Founder of LVS",
-                "image": "章文嵩.jpeg"
+                "image": "章文嵩.png"
             },
             {
                 "id": "liu-song",
@@ -102,7 +102,7 @@
                     "forum"
                 ],
                 "roleOrg": "VP of PingCAP",
-                "image": "刘松.jpeg"
+                "image": "刘松.png"
             }
         ]
     },
@@ -119,7 +119,7 @@
                     "forum"
                 ],
                 "roleOrg": "Co-founder of AFFiNE",
-                "image": "生姜Iris.jpeg"
+                "image": "生姜Iris.png"
             },
             {
                 "id": "bian-li",
@@ -128,7 +128,7 @@
                     "forum"
                 ],
                 "roleOrg": "Former VP of R&D at QBoson",
-                "image": "卞立.jpeg"
+                "image": "卞立.png"
             },
             {
                 "id": "fang-haitao",
@@ -137,7 +137,7 @@
                     "forum"
                 ],
                 "roleOrg": "Founder of Sealos",
-                "image": "方海涛.jpeg"
+                "image": "方海涛.png"
             },
             {
                 "id": "lin-yuanlin",
@@ -146,7 +146,7 @@
                     "forum"
                 ],
                 "roleOrg": "Founder & CEO of Zeabur",
-                "image": "林沅霖.jpeg"
+                "image": "林沅霖.png"
             },
             {
                 "id": "yiki",
@@ -172,7 +172,7 @@
                     "forum"
                 ],
                 "roleOrg": "Executive Editor-in-Chief of CSDN & New Programmer",
-                "image": "唐小引.jpeg"
+                "image": "唐小引.png"
             },
             {
                 "id": "zheng-yaowei",
@@ -181,7 +181,7 @@
                     "forum"
                 ],
                 "roleOrg": "Author of LLaMA Factory",
-                "image": "郑耀威.jpeg"
+                "image": "郑耀威.png"
             },
             {
                 "id": "zhang-yingfeng",
@@ -199,7 +199,7 @@
                     "forum"
                 ],
                 "roleOrg": "vLLM Community Contributor",
-                "image": "张家驹.jpeg"
+                "image": "张家驹.png"
             },
             {
                 "id": "du-junping",
@@ -208,7 +208,7 @@
                     "forum"
                 ],
                 "roleOrg": "Founder & CEO of Datastrato",
-                "image": "堵俊平.jpeg"
+                "image": "堵俊平.png"
             }
         ]
     },
@@ -234,7 +234,7 @@
                     "forum"
                 ],
                 "roleOrg": "Developer of SimilarTube & NanoInfluencer",
-                "image": "赵君.jpeg"
+                "image": "赵君.png"
             },
             {
                 "id": "nana",
@@ -243,7 +243,7 @@
                     "forum"
                 ],
                 "roleOrg": "YouTube AI Video Explorer",
-                "image": "NANA.jpeg"
+                "image": "NANA.png"
             },
             {
                 "id": "fan-han",
@@ -252,7 +252,7 @@
                     "forum"
                 ],
                 "roleOrg": "CMO of AI Social Product Bonjour!",
-                "image": "泛函.jpeg"
+                "image": "泛函.png"
             },
             {
                 "id": "bao-chenxi",
@@ -261,7 +261,7 @@
                     "forum"
                 ],
                 "roleOrg": "Product Manager at Music Tech Company",
-                "image": "鲍晨熙.jpeg"
+                "image": "鲍晨熙.png"
             }
         ]
     },
