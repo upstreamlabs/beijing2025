@@ -103,15 +103,6 @@
                 ],
                 "roleOrg": "VP of PingCAP",
                 "image": "刘松.jpeg"
-            },
-            {
-                "id": "liu-kefeng",
-                "name": "Kefeng Liu",
-                "tags": [
-                    "forum"
-                ],
-                "roleOrg": "",
-                "image": ""
             }
         ]
     },
