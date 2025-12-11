@@ -20,29 +20,33 @@ const { speakers } = Astro.props;
         {
           speakers.map((speaker, index) => (
             <div class="speaker-card">
-              <div class="speaker-image-container">
-                {speaker.image ? (
-                  <img
-                    src={`/images/speakers/${speaker.image}`}
-                    alt={speaker.name}
-                    class="speaker-image"
-                    loading="lazy"
-                  />
-                ) : (
-                  <div class="speaker-image-placeholder">
-                    <span>{speaker.name[0]}</span>
-                  </div>
-                )}
+              <div class="speaker-header">
+                <div class="speaker-image-container">
+                  {speaker.image ? (
+                    <img
+                      src={`/images/speakers/${speaker.image}`}
+                      alt={speaker.name}
+                      class="speaker-image"
+                      loading="lazy"
+                    />
+                  ) : (
+                    <div class="speaker-image-placeholder">
+                      <span>{speaker.name[0]}</span>
+                    </div>
+                  )}
+                </div>
+                <!-- Clean logic for speaker role -->
+                <div class="speaker-role">
+                  <h3 class="speaker-name">{speaker.name}</h3>
+                  <p class="speaker-title">{speaker.title}</p>
+                </div>
               </div>
-              <div class="speaker-info">
-                <h3 class="speaker-name">{speaker.name}</h3>
-                <p class="speaker-title">{speaker.title}</p>
-                {speaker.bio && (
-                  <div class="speaker-bio">
-                    <p>{speaker.bio}</p>
-                  </div>
-                )}
-              </div>
+              
+              {speaker.bio && (
+                <div class="speaker-bio">
+                  <p>{speaker.bio}</p>
+                </div>
+              )}
             </div>
           ))
         }
@@ -53,54 +57,151 @@ const { speakers } = Astro.props;
 
 <style>
   .section-speakers {
-    padding: 4rem 0;
-    background-color: var(--theme-bg);
+    padding: 6rem 0;
+    background-color: var(--color-light);
   }
 
   .speakers-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 2.5rem;
     width: 100%;
   }
 
+  /* Staggered Entrance Animation */
   .speaker-card {
-    background: var(--card-bg, #ffffff);
-    border-radius: 16px;
-    padding: 2rem;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Match SpeakerMarquee exactly */
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 24px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
     display: flex;
     flex-direction: column;
     height: 100%;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    
+    opacity: 0;
+    animation: fadeInUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
   }
 
+  /* Generate staggered delays for first 12 items */
+  .speaker-card:nth-child(1) { animation-delay: 0.1s; }
+  .speaker-card:nth-child(2) { animation-delay: 0.15s; }
+  .speaker-card:nth-child(3) { animation-delay: 0.2s; }
+  .speaker-card:nth-child(4) { animation-delay: 0.25s; }
+  .speaker-card:nth-child(5) { animation-delay: 0.3s; }
+  .speaker-card:nth-child(6) { animation-delay: 0.35s; }
+  .speaker-card:nth-child(7) { animation-delay: 0.4s; }
+  .speaker-card:nth-child(8) { animation-delay: 0.45s; }
+  .speaker-card:nth-child(9) { animation-delay: 0.5s; }
+  .speaker-card:nth-child(10) { animation-delay: 0.55s; }
+  .speaker-card:nth-child(11) { animation-delay: 0.6s; }
+  .speaker-card:nth-child(12) { animation-delay: 0.65s; }
+  /* Default delay for the rest */
+  .speaker-card:nth-child(n+13) { animation-delay: 0.7s; }
+
   .speaker-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px) scale(1.02);
+    /* Cyan/Blue glow */
+    box-shadow: 0 20px 40px rgba(79, 172, 254, 0.25);
+    background: white;
+    border-color: rgba(0, 242, 254, 0.3);
+  }
+
+  /* Shimmer Shine Effect */
+  .speaker-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(
+      120deg, 
+      transparent, 
+      rgba(255, 255, 255, 0.4) 40%, 
+      rgba(255, 255, 255, 0.0) 60%
+    );
+    transition: all 0.6s;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .speaker-card:hover::after {
+    left: 100%;
+    opacity: 1;
+    transition: 0.8s;
+  }
+
+  .speaker-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    z-index: 2; /* Ensure above shimmer */
   }
 
   .speaker-image-container {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    margin: 0 auto 1.5rem;
-    border-radius: 8px;
-    overflow: hidden;
+    width: 180px;
+    height: 180px;
     flex-shrink: 0;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 3px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #e0e0e0, #f5f5f5);
+    transition: all 0.4s ease;
+  }
+
+  /* Gradient border effect */
+  .speaker-image-container::before {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border-radius: 50%;
+    padding: 3px;
+    /* Innovative "Cool" Gradient: Cyan -> Electric Blue -> Purple -> Pink */
+    background: linear-gradient(135deg, #00f2fe, #4facfe, #8E2DE2, #ff0099);
+    background-size: 300% 300%;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0.7;
+    transition: all 0.4s ease;
+    animation: spinBorder 4s linear infinite;
+  }
+
+  .speaker-card:hover .speaker-image-container::before {
+    opacity: 1;
+    animation-duration: 1.5s;
+    filter: brightness(1.2);
   }
 
   .speaker-image {
     width: 100%;
     height: 100%;
+    border-radius: 50%;
     object-fit: cover;
     object-position: top;
     display: block;
+    background-color: #fff;
+    z-index: 1;
   }
 
   .speaker-image-placeholder {
     width: 100%;
     height: 100%;
+    border-radius: 50%;
     background-color: #f0f0f0;
     display: flex;
     align-items: center;
@@ -108,54 +209,74 @@ const { speakers } = Astro.props;
     font-size: 3rem;
     color: #999;
     font-weight: bold;
-  }
-
-  .speaker-info {
-    text-align: center;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+    z-index: 1;
   }
 
   .speaker-name {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 1.35rem;
+    font-weight: 800;
     margin-bottom: 0.5rem;
     color: var(--text-color, #0d1c3a);
+    font-family: 'Manrope', 'Inter', sans-serif;
+    letter-spacing: -0.02em;
   }
 
   .speaker-title {
-    font-size: 0.95rem;
-    color: var(--primary-color, #2b74ff);
-    margin-bottom: 1rem;
-    font-weight: 600;
-    line-height: 1.4;
-    min-height: 2.8em; /* Approximate 2 lines */
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
+    line-height: 1.5;
   }
 
   .speaker-bio {
     text-align: left;
-    font-size: 0.9rem;
-    line-height: 1.6;
-    color: #666;
-    margin-top: auto; /* Push to bottom if needed, or structured nicely */
-    padding-top: 1rem;
-    border-top: 1px solid #eee;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #555;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(0,0,0,0.06);
+    margin-top: auto;
+    z-index: 2;
   }
 
   .speaker-bio p {
     margin: 0;
   }
 
+  @keyframes spinBorder {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
   /* Responsive adjustments */
   @media (max-width: 768px) {
     .speakers-grid {
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      grid-template-columns: 1fr;
       gap: 1.5rem;
     }
     
     .speaker-card {
-      padding: 1.5rem;
+      padding: 2rem;
+    }
+
+    .speaker-image-container {
+      width: 150px;
+      height: 150px;
+    }
+    
+    .speaker-name {
+      font-size: 1.25rem;
     }
   }
 </style>

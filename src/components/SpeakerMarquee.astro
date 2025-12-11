@@ -86,12 +86,14 @@ const { title = isChinesePage ? "演讲嘉宾" : "Featured Speakers" } = Astro.p
     position: relative;
     width: 100%;
     overflow: hidden;
-    padding: 1rem 0 3rem;
+    padding: 2rem 0 4rem;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
   }
 
   .speakers-track {
     display: flex;
-    gap: 2rem;
+    gap: 2.5rem;
     width: fit-content;
     animation: marquee 60s linear infinite;
   }
@@ -112,42 +114,112 @@ const { title = isChinesePage ? "演讲嘉宾" : "Featured Speakers" } = Astro.p
 
   .speaker-card {
     flex: 0 0 auto;
-    width: 300px;
-    padding: 1.5rem;
-    border: 1px solid #eee;
-    border-radius: 16px;
-    background: white;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    width: 280px;
+    padding: 2rem 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 450px; /* Fixed height */
+    height: 420px;
     justify-content: flex-start;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
   }
   
   .speaker-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px) scale(1.02);
+    /* Cyan/Blue glow */
+    box-shadow: 0 20px 40px rgba(79, 172, 254, 0.25);
+    background: white;
+    border-color: rgba(0, 242, 254, 0.3);
+  }
+
+  /* Shimmer Shine Effect */
+  .speaker-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(
+      120deg, 
+      transparent, 
+      rgba(255, 255, 255, 0.4) 40%, 
+      rgba(255, 255, 255, 0.0) 60%
+    );
+    transition: all 0.6s;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  .speaker-card:hover::after {
+    left: 100%;
+    opacity: 1;
+    transition: 0.8s;
   }
 
   .speaker-image-container {
-    width: 100%;
+    width: 180px;
+    height: 180px;
     flex-shrink: 0;
     margin-bottom: 1.5rem;
-    margin-right: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 3px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #e0e0e0, #f5f5f5);
+    transition: all 0.4s ease;
+  }
+
+  /* Gradient border effect */
+  .speaker-image-container::before {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    border-radius: 50%;
+    padding: 3px;
+    /* Innovative "Cool" Gradient: Cyan -> Electric Blue -> Purple -> Pink */
+    background: linear-gradient(135deg, #00f2fe, #4facfe, #8E2DE2, #ff0099);
+    background-size: 300% 300%;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0.7; /* Slightly more visible by default */
+    transition: all 0.4s ease;
+    animation: spinBorder 4s linear infinite;
+  }
+
+  .speaker-card:hover .speaker-image-container::before {
+    opacity: 1;
+    animation-duration: 1.5s;
+    /* Intensify the gradient on hover */
+    filter: brightness(1.2);
+  }
+
+  @keyframes spinBorder {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
   }
 
   .speaker-avatar {
-    width: 250px;
-    height: 250px;
-    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
     object-fit: cover;
     object-position: top;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    background-color: #fff;
+    z-index: 1;
   }
   
   .speaker-info {
@@ -156,44 +228,48 @@ const { title = isChinesePage ? "演讲嘉宾" : "Featured Speakers" } = Astro.p
     flex-direction: column;
     align-items: center;
     gap: 0.5rem;
+    z-index: 2;
   }
 
   .speaker-info h3 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.25rem;
+    margin: 0.5rem 0 0.25rem 0;
+    font-size: 1.35rem;
     color: #0d1c3a;
-    font-weight: 700;
+    font-weight: 800;
     font-family: 'Manrope', 'Inter', sans-serif;
+    letter-spacing: -0.02em;
   }
 
   .speaker-title {
     margin: 0;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: #666;
     line-height: 1.5;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    font-weight: 500;
   }
 
   @media (max-width: 768px) {
     .marquee-wrapper {
-        padding: 0 0 2rem;
+        padding: 1rem 0 2rem;
     }
     
     .speakers-track {
-        gap: 1rem;
+        gap: 1.5rem;
     }
 
     .speaker-card {
-      width: 260px; /* Reducing width slightly for mobile fluidness in marquee */
-      padding: 1rem;
+      width: 240px;
+      height: 380px;
+      padding: 1.5rem 1rem;
     }
 
-    .speaker-avatar {
-      width: 200px;
-      height: 200px;
+    .speaker-image-container {
+      width: 150px;
+      height: 150px;
     }
   }
 </style>
