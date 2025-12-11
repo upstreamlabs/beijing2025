@@ -21,6 +21,13 @@
         "image": "MichaelYuan.png"
     },
     {
+        "id": "wang-wei",
+        "name": "Wei Wang",
+        "title": "Professor at East China Normal University, Director of Open Source Technical Committee at Singularity AI Research Institute",
+        "bio": "Wei Wang, Director of the Open Source Technical Committee at Singularity AI Research Institute, Secretary-General of the Open Source Innovation Committee of CAST-UN Consultative Status, Professor at East China Normal University, and Distinguished Member of CCF. He has long been dedicated to systematic research on open source innovation, governance, and evaluation, leading the formulation of China's first set of open source governance standards and promoting the inclusion of open source in the national science and education development system. He has published over 100 papers in top international conferences and journals such as ICSE, WWW, and ACL. Selected for national innovation talent projects, he has won National Teaching Achievement Awards and the Shanghai Open Source Innovation Excellence Award Grand Prize.",
+        "image": "王伟.png"
+    },
+    {
         "id": "gao-ning",
         "name": "Ning Gao",
         "title": "Co-founder of Linkloud",
@@ -68,13 +75,6 @@
         "title": "Research Investor at XVC",
         "bio": "Representative projects include ONES and ApiFox.",
         "image": "placeholder.png"
-    },
-    {
-        "id": "wang-wei",
-        "name": "Wei Wang",
-        "title": "Professor at East China Normal University, Director of Open Source Technical Committee at Singularity AI Research Institute",
-        "bio": "Wei Wang, Director of the Open Source Technical Committee at Singularity AI Research Institute, Secretary-General of the Open Source Innovation Committee of CAST-UN Consultative Status, Professor at East China Normal University, and Distinguished Member of CCF. He has long been dedicated to systematic research on open source innovation, governance, and evaluation, leading the formulation of China's first set of open source governance standards and promoting the inclusion of open source in the national science and education development system. He has published over 100 papers in top international conferences and journals such as ICSE, WWW, and ACL. Selected for national innovation talent projects, he has won National Teaching Achievement Awards and the Shanghai Open Source Innovation Excellence Award Grand Prize.",
-        "image": "王伟.png"
     },
     {
         "id": "sheng-jiang",
