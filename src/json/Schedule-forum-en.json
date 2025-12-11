@@ -25,7 +25,7 @@
     {
         "date": "DEC 21",
         "timeSlot": "10:15 - 10:45",
-        "title": "Keynote 1: Overview of Open Source Industry Development",
+        "title": "Keynote Speech 1: Overview of Open Source Industry Development",
         "content": "Co-founder & Managing Partner, Sinovation Ventures Hua Wang",
         "speakers": [
             {
@@ -42,14 +42,14 @@
     {
         "date": "DEC 21",
         "timeSlot": "10:45 - 11:05",
-        "title": "Keynote 2: Exploring Open Source Business Models (Theory and Practice)",
+        "title": "Keynote Speech 2: Exploring Open Source Business Models",
         "content": "",
         "speakers": []
     },
     {
         "date": "DEC 21",
         "timeSlot": "11:05 - 11:25",
-        "title": "Keynote 3: Sustainable Open Source Business Ecosystem Index (Theoretical Framework)",
+        "title": "Keynote Speech 3: Sustainable Open Source Business Ecosystem Index",
         "content": "",
         "speakers": [
             {
@@ -67,7 +67,7 @@
         "date": "DEC 21",
         "timeSlot": "11:25 - 12:25",
         "title": "Panel: Breaking Through · The \"Macrohard\" Moment of Enterprise Software",
-        "content": "<h4>Key Topics: From \"Headcount Dividend\" to \"Efficiency Revolution\": Forced Reconstruction of Organizational Forms</h4><ul><li><strong>Core Argument:</strong> The growth of SaaS in the past decade has often been accompanied by extreme organizational bloat (sales armies, bloated middle management). Musk's transformation of Twitter (X) proves that <strong>extremely high talent density + radical flattening</strong> can maintain or even increase output.</li><li><strong>Discussion Direction:</strong> Enterprise software companies will face the investor's \"Macrohard\" test—no longer looking at headcount growth, but at <strong>Revenue Per Employee</strong>. Future unicorns may effectively be 10 people, not 1000. Middle management (especially coordination-focused PMs) will face a severe survival crisis.</li></ul><h4>2. Code Deflation: Software Construction Cost Approaches Zero</h4><ul><li><strong>Core Argument:</strong> AI is driving the cost of developing general functions down exponentially. When writing code is no longer expensive, \"feature-rich\" is no longer a moat.</li><li><strong>Discussion Direction:</strong> The software supply side will see a \"Cambrian Explosion\", where customers can easily generate customized tools via AI. The competitive barrier for SaaS vendors will shift completely from <strong>\"code assets\"</strong> to <strong>\"proprietary data\"</strong> and <strong>\"deep understanding of vertical workflows\"</strong>. If your software is just a generic CRUD interface, you will soon be replaced by AI.</li></ul><h4>3. The Endgame of Business Models: Service-as-Software Replace SaaS</h4><ul><li><strong>Core Argument:</strong> Traditional Seat-based models will fail. Because the goal of AI is to reduce human operators, if customers lay off staff, SaaS vendor revenue will collapse with it.</li><li><strong>Discussion Direction:</strong> Business models must shift from <strong>\"selling tools to humans\"</strong> to <strong>\"selling results to enterprises\"</strong> (Outcome-based Pricing). For example, instead of selling CRM accounts to salespeople, sell \"customer meetings successfully booked by AI Agents\". This marks the software company effectively becoming a \"services company\", only the service is delivered by machines, not humans.</li></ul><h4>4. Disappearance of Interface: No-UI is the New UI</h4><ul><li><strong>Core Argument:</strong> \"Macrohard\" is not just backend hardness, but frontend hardness too. Enterprise software has long been known for complex dashboards and forms because it was designed for humans to click.</li><li><strong>Discussion Direction:</strong> Software in the AI Agent era doesn't need complex UIs. Future enterprise software may just be a dialog box, or even a collection of APIs running silently in the background. Whoever can let users complete work <strong>\"without logging into software\"</strong> fastest is the winner.</li></ul><h4>5. The \"Innovator's Dilemma\" of Incumbcents vs. The \"Distribution Problem\" of AI Natives</h4><ul><li><strong>Core Argument:</strong> The market is in a stalemate. Giants like Salesforce have distribution channels (customer relationships) but are trapped by old seat-based business models and organizational inertia; AI Native startups have technology and efficiency advantages but lack trust and channels.</li><li><strong>Discussion Direction:</strong> The real breakthrough point of the \"Macrohard\" moment lies in: <strong>Will giants learn radical efficiency and AI reconstruction first, or will startups breach the trust barrier of the Fortune 500 first?</strong> The conclusion might be: Only those giants who dare to revolutionize themselves (cutting bloated departments, changing charging models) and startups that can solve extremely vertical pain points will survive.</li></ul>",
+        "content": "<h4>Key Topics</h4><ul><li><strong>Organizational Transformation:</strong> From \"headcount dividend\" to \"efficiency revolution\", are enterprises ready to challenge traditional 1000-person organizations with 10-person teams? How will talent density, radical flattening, and AI automation reshape the organizational form of enterprise software?</li><li><strong>Moat Reconstruction:</strong> When code deflates, UI disappears, and AI can generate tools, what's left of SaaS's moat? Has the competitive focus shifted from \"features\" to \"proprietary data + deep vertical workflow understanding\"?</li><li><strong>Model Transition:</strong> After seat-based models fail, who can first complete the transition from SaaS to Service-as-Software? In the \"Macrohard moment\", who can break through the dual bottleneck of trust and distribution—giants or AI Native startups?</li></ul>",
         "speakers": [
             {
                 "id": "gao-ning",
@@ -79,12 +79,21 @@
                 "image": "高宁.png"
             },
             {
-                "id": "jiang-tao-p",
+                "id": "wang-wei",
+                "name": "Wei Wang",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "",
+                "image": "王伟.png"
+            },
+            {
+                "id": "jiang-tao",
                 "name": "Tao Jiang",
                 "tags": [
                     "forum"
                 ],
-                "roleOrg": "Founder & Chairman of CSDN",
+                "roleOrg": "Founder & Chairman of CSDN, Director of Open Atom Foundation",
                 "image": "蒋涛.png"
             },
             {
@@ -253,7 +262,7 @@
         "date": "DEC 21",
         "timeSlot": "15:30 - 16:30",
         "title": "Panel 3: Genesis · Renaissance-Style Entrepreneurs Catalyzed by AI",
-        "content": "<p><strong>Dancing with AI, creating the future. Can everyone do it?</strong></p><p>Renaissance-style AI Entrepreneurs: In the AI era, people who can cross the four dimensions of technology, art, humanities, and business to create breakthrough products with comprehensive thinking. Like Da Vinci and Michelangelo during the Renaissance, they are not limited to a single type of work, but create works that set examples for centuries with an interdisciplinary perspective.</p><p>The modern \"Renaissance-style AI Entrepreneur\" is:</p><ul><li>Deeply understands human needs</li><li>Familiar with AI principles and toolchains</li><li>Capable of artistic expression and design</li><li>And masters commercialization, market insight, and value creation</li></ul><p>This type of entrepreneur is not an \"upgraded version of a tech entrepreneur\", but a composite talent of technology + humanities + aesthetics + business.</p><h4>Key Topics:</h4><ol><li><strong>Soil Genesis: How does the AI era reshape the ideological soil of growth?</strong><br>Ideological liberation, cross-boundary demands, and resource support are constantly reconstructing the environment for youth development. What role will young people play in the AI era? How will the trajectory of thought and personal development be affected?</li><li><strong>Paradigm Genesis: When AI becomes the infrastructure for collaboration and creation, how will the efficiency paradigm be reconstructed?</strong><br>AI products are becoming the new \"collaboration interface\" and \"creation engine\". From automation to co-creation, from search to reasoning, how do we truly use AI to improve efficiency and break professional boundaries? What will future workflows look like?</li><li><strong>Pattern Genesis: With AI support, is the pattern of value creation changing?</strong><br>Content production, product development, expression methods, and distribution paths are all reshaped by AI. Does AI allow individuals to create at lower costs and faster speeds? Is AI making \"one person doing the work of a team\" possible?</li></ol>",
+        "content": "<h4>Key Topics</h4><ul><li><strong>Soil Genesis:</strong> How does the AI era reshape the ideological soil of growth? Ideological liberation, cross-boundary demands, and resource support are constantly reconstructing the environment for youth development. What role will young people play in the AI era? How will the trajectory of thought and personal development be affected?</li><li><strong>Paradigm Genesis:</strong> When AI becomes the infrastructure for collaboration and creation, how will the efficiency paradigm be reconstructed? AI products are becoming the new \"collaboration interface\" and \"creation engine\". From automation to co-creation, from search to reasoning, how do we truly use AI to improve efficiency and break professional boundaries? What will future workflows look like?</li><li><strong>Pattern Genesis:</strong> With AI support, is the pattern of value creation changing? Content production, product development, expression methods, and distribution paths are all reshaped by AI. Does AI allow individuals to create at lower costs and faster speeds? Is AI making \"one person doing the work of a team\" possible?</li></ul>",
         "speakers": [
             {
                 "id": "chen-zhiwei",
@@ -314,8 +323,8 @@
     {
         "date": "DEC 21",
         "timeSlot": "16:30 - 17:00",
-        "title": "Winning Project Pitch & Audience Voting",
-        "content": "<p>10 minutes per project, determining the ranking order</p><p>All innovation is born from tracing back to the source; all change is new because of returning.</p>",
+        "title": "Upstream Open Source Business Innovation Camp Winning Project Pitch",
+        "content": "<p>Upstream Business Innovation Camp Top 3 Finals</p>",
         "speakers": []
     },
     {
@@ -328,7 +337,7 @@
     {
         "date": "DEC 21",
         "timeSlot": "17:10 - 17:30",
-        "title": "Closing: From Source to Industry, 2026 Outlook",
+        "title": "Closing: Unlock the Source, Create the Future, 2026 and Beyond",
         "content": "",
         "speakers": [],
         "isSpecialEvent": true
@@ -336,7 +345,7 @@
     {
         "date": "DEC 21",
         "timeSlot": "18:30 - 20:30",
-        "title": "Dinner (Invite Only)",
+        "title": "VIP Dinner",
         "content": "",
         "speakers": [],
         "isSpecialEvent": true

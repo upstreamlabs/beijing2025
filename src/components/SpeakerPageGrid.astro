@@ -71,8 +71,8 @@ const { speakers } = Astro.props;
 
   /* Staggered Entrance Animation */
   .speaker-card {
-    /* Match SpeakerMarquee exactly */
-    background: rgba(255, 255, 255, 0.8);
+    /* White background */
+    background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.6);
@@ -85,10 +85,10 @@ const { speakers } = Astro.props;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
     overflow: hidden;
-    
+
     opacity: 0;
     animation: fadeInUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
-    
+
     /* Ensure link styles don't look bad */
     text-decoration: none;
     color: inherit;
@@ -113,7 +113,6 @@ const { speakers } = Astro.props;
 
   .speaker-card:hover {
     transform: translateY(-10px) scale(1.02);
-    /* Cyan/Blue glow */
     box-shadow: 0 20px 40px rgba(79, 172, 254, 0.25);
     background: white;
     border-color: rgba(0, 242, 254, 0.3);
@@ -163,34 +162,7 @@ const { speakers } = Astro.props;
     justify-content: center;
     align-items: center;
     position: relative;
-    padding: 3px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #e0e0e0, #f5f5f5);
     transition: all 0.4s ease;
-  }
-
-  /* Gradient border effect */
-  .speaker-image-container::before {
-    content: '';
-    position: absolute;
-    inset: -3px;
-    border-radius: 50%;
-    padding: 3px;
-    /* Innovative "Cool" Gradient: Cyan -> Electric Blue -> Purple -> Pink */
-    background: linear-gradient(135deg, #00f2fe, #4facfe, #8E2DE2, #ff0099);
-    background-size: 300% 300%;
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    opacity: 0.7;
-    transition: all 0.4s ease;
-    animation: spinBorder 4s linear infinite;
-  }
-
-  .speaker-card:hover .speaker-image-container::before {
-    opacity: 1;
-    animation-duration: 1.5s;
-    filter: brightness(1.2);
   }
 
   .speaker-image {
@@ -200,7 +172,7 @@ const { speakers } = Astro.props;
     object-fit: cover;
     object-position: top;
     display: block;
-    background-color: #fff;
+    background-color: #f0f0f0;
     z-index: 1;
   }
 
@@ -247,11 +219,6 @@ const { speakers } = Astro.props;
 
   .speaker-bio p {
     margin: 0;
-  }
-
-  @keyframes spinBorder {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
   }
 
   @keyframes fadeInUp {

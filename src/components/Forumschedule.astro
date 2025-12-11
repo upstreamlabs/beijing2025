@@ -12,7 +12,12 @@ interface Speaker {
   roleOrg: string
   tags: string[]
   image: string
+  bio?: string
 }
+
+// Import speakers data for bio info
+import speakersDataZh from "json/SpeakersListZh.json"
+import speakersDataEn from "json/SpeakersListEn.json"
 
 interface Session {
   date: string
@@ -48,6 +53,41 @@ const {
 // Helper function to get category name from tag ID
 const getCategoryNameFromTag = (tagId: string): string => {
   return tagId === "forum" ? "Forum" : tagId
+}
+
+// Determine language from URL
+const pathname = Astro.url.pathname;
+const isChinesePage = pathname.startsWith('/cn/') || pathname === '/cn';
+const speakersData = isChinesePage ? speakersDataZh : speakersDataEn;
+
+// Helper function to get speaker bio from speakers list
+const getSpeakerBio = (speakerId: string): string | undefined => {
+  const speaker = speakersData.find((s: any) => s.id === speakerId);
+  return speaker?.bio;
+}
+
+// Helper function to check if speaker is moderator
+const isModerator = (speaker: Speaker): boolean => {
+  return speaker.name.includes('Moderator') || speaker.name.includes('主持');
+}
+
+// Helper function to get clean speaker name (without Moderator tag)
+const getCleanName = (name: string): string => {
+  return name.replace(/\s*\(Moderator\)\s*/gi, '').replace(/\s*\(主持\)\s*/gi, '').trim();
+}
+
+// Helper function to sort speakers by last name (first character for Chinese) in ascending order
+const sortSpeakersByLastName = (speakers: Speaker[]): Speaker[] => {
+  return [...speakers].sort((a, b) => {
+    const nameA = getCleanName(a.name);
+    const nameB = getCleanName(b.name);
+    // For Chinese names, last name is the first character
+    // For English names, last name is after the last space
+    const lastNameA = nameA.includes(' ') ? nameA.split(' ').pop() || nameA : nameA.charAt(0);
+    const lastNameB = nameB.includes(' ') ? nameB.split(' ').pop() || nameB : nameB.charAt(0);
+    // Ascending order (A to Z)
+    return lastNameA.localeCompare(lastNameB, 'zh-CN');
+  });
 }
 
 // Helper function to generate event URL
@@ -129,11 +169,17 @@ const sortedAllSessions = sortSessionsByTime(uniqueAllSessions)
                   >
                     <div class="left">
                       <div class="timeslot">
-                        <p class="timedate">{session.date}</p>
                         <p>{session.timeSlot}</p>
                       </div>
                       <h2 class="h5">{session.title}</h2>
                     </div>
+                    {(session.speakers.length > 0 || session.content) && (
+                      <div class="plus">
+                        <div class="plus-fill"></div>
+                        <div class="bar bar-top"></div>
+                        <div class="bar bar-bottom"></div>
+                      </div>
+                    )}
                   </div>
                   {(session.speakers.length > 0 || session.content) && (
                     <div class="bottom">
@@ -148,42 +194,115 @@ const sortedAllSessions = sortSessionsByTime(uniqueAllSessions)
                           
                           <!-- Wrap speakers and social share in a single container -->
                           <div class="speakers-and-share-container">
-                            {session.speakers.length > 0 && (
-                              <div class="card-row card-row-speakers">
-                                {session.speakers.map((speaker: Speaker) => (
-                                  <div class="card-col">
-                                    <a
-                                      class="single-speakers-card"
-                                      href={`${Astro.url.pathname.startsWith('/en') ? '/en' : '/cn'}/speakers/${speaker.id}/`}
-                                    >
-                                      <div class="card-row card-row-image">
-                                        <div class="card-image">
-                                          {speaker?.image &&
-                                            images[
-                                              `/public/images/speakers/${speaker.image}`
-                                            ] && (
-                                              <Picture
-                                                src={images[
-                                                  `/public/images/speakers/${speaker.image}`
-                                                ]()}
-                                                formats={["webp", "jpg"]}
-                                                alt={speaker.name}
-                                                class="overlay"
-                                                widths={[
-                                                  275, 400, 500, 600, 750, 900,
-                                                ]}
-                                                sizes="(max-width: 700px) 58vw, 450px"
-                                              />
-                                            )}
+                            {/* Moderator row */}
+                            {session.speakers.filter(s => isModerator(s)).length > 0 && (
+                              <div class="moderator-row">
+                                <p class="moderator-label">{isChinesePage ? '主持人' : 'Moderator'}</p>
+                                <div class="card-row card-row-speakers moderator-speakers">
+                                  {session.speakers.filter(s => isModerator(s)).map((speaker: Speaker) => (
+                                    <div class="card-col">
+                                      <a
+                                        class="single-speakers-card"
+                                        href={`${Astro.url.pathname.startsWith('/en') ? '/en' : '/cn'}/speakers/${speaker.id}/`}
+                                      >
+                                        <div class="card-row card-row-image">
+                                          <div class="card-image">
+                                            {speaker?.image &&
+                                              images[
+                                                `/public/images/speakers/${speaker.image}`
+                                              ] && (
+                                                <Picture
+                                                  src={images[
+                                                    `/public/images/speakers/${speaker.image}`
+                                                  ]()}
+                                                  formats={["webp", "jpg"]}
+                                                  alt={getCleanName(speaker.name)}
+                                                  class="overlay"
+                                                  widths={[
+                                                    275, 400, 500, 600, 750, 900,
+                                                  ]}
+                                                  sizes="(max-width: 700px) 58vw, 450px"
+                                                />
+                                              )}
+                                          </div>
                                         </div>
-                                      </div>
-                                      <div class="card-row card-row-info">
-                                        <h3 class="h5">{speaker.name}</h3>
-                                        <p>{speaker.roleOrg}</p>
-                                      </div>
-                                    </a>
-                                  </div>
-                                ))}
+                                        <div class="card-row card-row-info">
+                                          <div class="speaker-text-content">
+                                            <h3 class="h5">{getCleanName(speaker.name)}</h3>
+                                            <p>{speaker.roleOrg}</p>
+                                          </div>
+                                          {getSpeakerBio(speaker.id) && (
+                                            <div class="speaker-bio-row" onclick="event.preventDefault(); event.stopPropagation();">
+                                              <div class="speaker-bio-container">
+                                                <span class="bio-indicator">ⓘ Bio</span>
+                                                <div class="speaker-bio-tooltip">
+                                                  {getSpeakerBio(speaker.id)}
+                                                </div>
+                                              </div>
+                                            </div>
+                                          )}
+                                        </div>
+                                      </a>
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+                            )}
+
+                            {/* Regular speakers row */}
+                            {session.speakers.filter(s => !isModerator(s)).length > 0 && (
+                              <div class="speakers-row">
+                                {session.speakers.filter(s => isModerator(s)).length > 0 && (
+                                  <p class="speakers-label">{isChinesePage ? '嘉宾' : 'Speakers'}</p>
+                                )}
+                                <div class="card-row card-row-speakers">
+                                  {sortSpeakersByLastName(session.speakers.filter(s => !isModerator(s))).map((speaker: Speaker) => (
+                                    <div class="card-col">
+                                      <a
+                                        class="single-speakers-card"
+                                        href={`${Astro.url.pathname.startsWith('/en') ? '/en' : '/cn'}/speakers/${speaker.id}/`}
+                                      >
+                                        <div class="card-row card-row-image">
+                                          <div class="card-image">
+                                            {speaker?.image &&
+                                              images[
+                                                `/public/images/speakers/${speaker.image}`
+                                              ] && (
+                                                <Picture
+                                                  src={images[
+                                                    `/public/images/speakers/${speaker.image}`
+                                                  ]()}
+                                                  formats={["webp", "jpg"]}
+                                                  alt={speaker.name}
+                                                  class="overlay"
+                                                  widths={[
+                                                    275, 400, 500, 600, 750, 900,
+                                                  ]}
+                                                  sizes="(max-width: 700px) 58vw, 450px"
+                                                />
+                                              )}
+                                          </div>
+                                        </div>
+                                        <div class="card-row card-row-info">
+                                          <div class="speaker-text-content">
+                                            <h3 class="h5">{speaker.name}</h3>
+                                            <p>{speaker.roleOrg}</p>
+                                          </div>
+                                          {getSpeakerBio(speaker.id) && (
+                                            <div class="speaker-bio-row" onclick="event.preventDefault(); event.stopPropagation();">
+                                              <div class="speaker-bio-container">
+                                                <span class="bio-indicator">ⓘ Bio</span>
+                                                <div class="speaker-bio-tooltip">
+                                                  {getSpeakerBio(speaker.id)}
+                                                </div>
+                                              </div>
+                                            </div>
+                                          )}
+                                        </div>
+                                      </a>
+                                    </div>
+                                  ))}
+                                </div>
                               </div>
                             )}
                             
@@ -202,33 +321,221 @@ const sortedAllSessions = sortSessionsByTime(uniqueAllSessions)
         }
       </div>
       <p style="text-align: left;  margin: 1rem 0; font-size: 1.1rem; color: #000000;">
-        Schedules are subject to change
+        {isChinesePage ? '会议日程可能会有调整' : 'Schedules are subject to change'}
       </p>
     </div>
   </div>
 </section>
 
 <style>
+  /* Variables */
+  :root {
+    --color-border: rgba(28, 29, 36, 0.35);
+    --animation-primary: 0.3s cubic-bezier(.5, 0, .25, 1);
+    --border-radius: 8px;
+    --row-gap: 2rem;
+    --container-padding: 1.5rem;
+    --section-padding: 4rem;
+  }
+
+  /* Section Agenda Grid */
+  .section-agenda-grid {
+    font-family: 'Manrope', sans-serif;
+    padding: 1rem 0 var(--section-padding) 0;
+  }
+
+  .section-agenda-grid .h5 {
+    font-family: 'Manrope', sans-serif;
+  }
+
+  .section-agenda-grid .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+  }
+
+  .section-agenda-grid .list-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--row-gap);
+    padding-top: 1rem !important;
+  }
+
+  .section-agenda-grid .row-list {
+    flex-direction: column;
+    gap: 1em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Accordion */
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+
+  .accordion .single-accordion-item {
+    background-color: transparent;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: var(--animation-primary);
+    margin-bottom: 1rem;
+  }
+
+  .accordion .single-accordion-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Single Agenda Card */
+  .single-agenda-card {
+    background: white;
+    position: relative;
+  }
+
+  .single-agenda-card .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.2rem;
+    cursor: pointer;
+    gap: 1.5rem;
+  }
+
+  .single-agenda-card .top .left {
+    display: flex;
+    width: auto;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .single-agenda-card .top .left .timeslot {
+    flex-shrink: 0;
+    width: 9em;
+  }
+
+  .single-agenda-card .top .left .timeslot p {
+    transition: var(--animation-primary);
+    font-weight: 500;
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+  }
+
+  .single-agenda-card .top .left h2 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+  }
+
+  /* Plus/Minus Toggle */
+  .plus {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: var(--animation-primary);
+    flex-shrink: 0;
+  }
+
+  .plus-fill {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #FFC640;
+    border-radius: 50%;
+    opacity: 0;
+    transition: var(--animation-primary);
+  }
+
+  .accordion .card-hover:hover .plus-fill {
+    opacity: 0.2;
+  }
+
+  .plus .bar {
+    position: absolute;
+    background: #333;
+    transition: var(--animation-primary);
+  }
+
+  .plus .bar-top {
+    width: 14px;
+    height: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .plus .bar-bottom {
+    width: 2px;
+    height: 14px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  [data-accordion-status="active"] .plus .bar-bottom {
+    opacity: 0;
+  }
+
+  /* Bottom Content - use grid for animation (matches global styles) */
+  .single-agenda-card .bottom {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease-out;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .single-agenda-card[data-accordion-status="active"] .bottom {
+    grid-template-rows: 1fr;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .single-agenda-card .bottom-wrap {
+    overflow: hidden;
+    padding: 0 1.2rem 1.2rem 10rem;
+    min-height: 0;
+  }
+
+  .single-agenda-card .bottom-content {
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
   .speakers-and-share-container {
     display: flex;
     flex-direction: column;
-    gap: 0.25rem;
+    gap: 1rem;
   }
 
-  /* Increase spacing between schedule items */
-  .single-agenda-card {
-    margin-bottom: 2rem !important;
-  }
-
-  /* Improve text readability */
+  /* Styled Content */
   .styled-content {
-    line-height: 1.8;
-    margin-bottom: 2rem;
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.9rem;
   }
-  
-  .styled-content :global(p), 
+
+  .styled-content :global(p) {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+  }
+
   .styled-content :global(ul) {
-    margin-bottom: 1.2rem;
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+  }
+
+  .styled-content :global(li) {
+    list-style: disc;
+    margin: 0.25rem 0;
   }
 
   .styled-content :global(h4) {
@@ -238,23 +545,297 @@ const sortedAllSessions = sortSessionsByTime(uniqueAllSessions)
     font-weight: 600;
   }
 
-  .styled-content :global(li) {
-    margin-bottom: 0.5rem;
-    padding-left: 0.5rem;
+  /* Speakers Grid - override global styles */
+  .section-agenda-grid .card-row-speakers {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 1.5rem !important;
+    padding-bottom: 1rem;
+    width: 100%;
   }
 
-  /* Speaker image adjustments */
-  .card-image {
-    aspect-ratio: 1 / 1;
+  .section-agenda-grid .card-row-speakers > .card-col {
+    width: 100% !important;
+  }
+
+  .single-speakers-card {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    transition: var(--animation-primary);
+    width: 100%;
+  }
+
+  .single-speakers-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .single-speakers-card .card-row-image {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
+  .single-speakers-card .card-image {
+    width: 75%;
+    aspect-ratio: 1/1;
     overflow: hidden;
-    border-radius: 8px; /* Optional: adds rounded corners like speakers page */
+    border-radius: 50%;
+    background: #f0f0f0;
   }
 
-  .card-image :global(img) {
+  .single-speakers-card .card-image :global(img) {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: top;
+    border-radius: 50%;
   }
 
-</style> 
+  .single-speakers-card .card-row-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .single-speakers-card h3,
+  .single-speakers-card .h5 {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+  }
+
+  .single-speakers-card p {
+    margin: 0;
+    font-size: 0.8rem;
+    color: #666;
+  }
+
+  /* Moderator and Speakers labels */
+  .moderator-row,
+  .speakers-row {
+    margin-bottom: 1.5rem;
+  }
+
+  .moderator-label,
+  .speakers-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .moderator-speakers {
+    padding-left: 0;
+  }
+
+  /* Speaker text content */
+  .speaker-text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Bio indicator styles */
+  .speaker-bio-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    min-height: 28px;
+  }
+
+  .speaker-bio-container {
+    position: relative;
+    display: inline-block;
+    margin: 0.25rem 0;
+    vertical-align: top;
+  }
+
+  .bio-indicator {
+    font-size: 0.75rem;
+    color: #007acc;
+    cursor: pointer;
+    border: 1px solid #007acc;
+    border-radius: 12px;
+    padding: 2px 8px;
+    display: inline-block;
+    transition: all 0.2s ease;
+  }
+
+  .bio-indicator:hover {
+    background-color: #007acc;
+    color: white;
+  }
+
+  .speaker-bio-tooltip {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 280px;
+    max-width: 400px;
+    max-height: 300px;
+    background-color: #333;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 9999;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    overflow-y: auto;
+    word-wrap: break-word;
+    white-space: pre-line;
+  }
+
+  .speaker-bio-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid #333;
+  }
+
+  .speaker-bio-container:hover .speaker-bio-tooltip {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  /* Responsive */
+  @media screen and (max-width: 1080px) {
+    .single-agenda-card .top .left .timeslot {
+      width: 8em;
+    }
+
+    .single-agenda-card .bottom-wrap {
+      padding-left: 8em;
+      padding-right: 0;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .single-agenda-card .bottom-wrap {
+      padding-left: 1.5rem;
+    }
+
+    .section-agenda-grid .card-row-speakers {
+      grid-template-columns: repeat(2, 1fr) !important;
+      gap: 1rem !important;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .single-agenda-card .top {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .single-agenda-card .top .left {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+      width: 100%;
+    }
+
+    .single-agenda-card .top .left .timeslot {
+      width: 100%;
+      display: flex;
+      gap: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .section-agenda-grid .card-row-speakers {
+      grid-template-columns: 1fr !important;
+    }
+
+    .speaker-bio-tooltip {
+      position: fixed;
+      left: 10px !important;
+      right: 10px !important;
+      bottom: auto !important;
+      top: 10% !important;
+      transform: none;
+      min-width: unset;
+      max-width: unset;
+      max-height: 80vh;
+      width: auto;
+    }
+
+    .speaker-bio-tooltip::after {
+      display: none;
+    }
+  }
+</style>
+
+<script is:inline>
+  // Save accordion state before navigating away
+  document.addEventListener('click', function(e) {
+    const link = e.target.closest('a');
+    if (link && link.href && !link.href.includes('#')) {
+      // Save all open accordion states
+      const openAccordions = [];
+      document.querySelectorAll('.single-accordion-item[data-accordion-status="active"]').forEach((item, index) => {
+        const title = item.querySelector('.h5')?.textContent;
+        if (title) {
+          openAccordions.push(title);
+        }
+      });
+      sessionStorage.setItem('openAccordions', JSON.stringify(openAccordions));
+      sessionStorage.setItem('scrollPosition', window.scrollY.toString());
+    }
+  });
+
+  // Restore accordion state on page load
+  function restoreAccordionState() {
+    const openAccordions = JSON.parse(sessionStorage.getItem('openAccordions') || '[]');
+    const scrollPosition = sessionStorage.getItem('scrollPosition');
+
+    if (openAccordions.length > 0) {
+      document.querySelectorAll('.single-accordion-item').forEach(item => {
+        const title = item.querySelector('.h5')?.textContent;
+        if (title && openAccordions.includes(title)) {
+          item.setAttribute('data-accordion-status', 'active');
+        }
+      });
+
+      // Restore scroll position after a small delay to let accordion expand
+      if (scrollPosition) {
+        setTimeout(() => {
+          window.scrollTo(0, parseInt(scrollPosition));
+        }, 100);
+      }
+
+      // Clear the stored state
+      sessionStorage.removeItem('openAccordions');
+      sessionStorage.removeItem('scrollPosition');
+    }
+  }
+
+  // Run on page load
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', restoreAccordionState);
+  } else {
+    restoreAccordionState();
+  }
+
+  // Also handle back/forward navigation
+  window.addEventListener('pageshow', function(event) {
+    if (event.persisted) {
+      restoreAccordionState();
+    }
+  });
+</script>
