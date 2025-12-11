@@ -141,6 +141,15 @@
                 "image": "生姜Iris.png"
             },
             {
+                "id": "yan-junchen",
+                "name": "Junchen Yan",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "Co-founder, Dify.AI",
+                "image": "延君晨.png"
+            },
+            {
                 "id": "bian-li",
                 "name": "Li Bian",
                 "tags": [

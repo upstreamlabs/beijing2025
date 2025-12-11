@@ -35,6 +35,13 @@
         "image": "王伟.png"
     },
     {
+        "id": "yan-junchen",
+        "name": "Junchen Yan",
+        "title": "Co-founder, Dify.AI",
+        "bio": "Co-founder, Dify.AI Driving Commercial Growth through Product Architecture. Expert in the PMF to 1-to-10 journey.",
+        "image": "延君晨.png"
+    },
+    {
         "id": "zheng-yaowei",
         "name": "Yaowei Zheng",
         "title": "Author of LLaMA Factory",
@@ -166,13 +173,6 @@
         "title": "Co-founder & Managing Partner, Sinovation Ventures",
         "bio": "Co-CEO / Managing Partner of Sinovation Ventures. Graduated from Stanford University with an MBA. In 2000, amidst the first internet wave, he co-founded Yinda Technology, reaching an annual turnover of $15 million. From 2006 to late 2009, he worked at Google China's Business Development headquarters, creating Google China's premium advertising network, achieving an annual run rate of $80 million in revenue. Currently oversees Sinovation Ventures' investment business and strategy. He started investing in AI in 2012 and is one of the earliest AI investors globally, with several portfolio companies reaching multi-billion dollar valuations (4Paradigm, Megvii, Momenta, etc.). Since 2023, he has participated in the incubation of 01.AI and is deeply involved in its strategic planning.",
         "image": "汪华.png"
-    },
-    {
-        "id": "ji-junchen",
-        "name": "Junchen Ji",
-        "title": "Co-founder, Dify.AI",
-        "bio": "Co-founder, Dify.AI Driving Commercial Growth through Product Architecture. Expert in the PMF to 1-to-10 journey.",
-        "image": "季君晨.png"
     },
     {
         "id": "wen-xuanyi",
