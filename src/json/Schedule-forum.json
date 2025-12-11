@@ -26,8 +26,18 @@
     "date": "12月21日",
     "timeSlot": "10:15 - 10:45",
     "title": "Keynote 1: 开源产业发展综述",
-    "content": "",
-    "speakers": []
+    "content": "创新工场联合创始人、管理合伙人 汪华",
+    "speakers": [
+      {
+        "id": "wang-hua",
+        "name": "汪华",
+        "tags": [
+          "forum"
+        ],
+        "roleOrg": "创新工场联合创始人、管理合伙人",
+        "image": "汪华.png"
+      }
+    ]
   },
   {
     "date": "12月21日",
@@ -103,6 +113,15 @@
         ],
         "roleOrg": "PingCAP副总裁",
         "image": "刘松.png"
+      },
+      {
+        "id": "wen-xuanyi",
+        "name": "文煊义",
+        "tags": [
+          "forum"
+        ],
+        "roleOrg": "XVC 研究型投资人",
+        "image": "placeholder.png"
       }
     ]
   },
@@ -209,6 +228,15 @@
         ],
         "roleOrg": "Datastrato创始人 & CEO",
         "image": "堵俊平.png"
+      },
+      {
+        "id": "chen-yonggang",
+        "name": "陈永刚",
+        "tags": [
+          "forum"
+        ],
+        "roleOrg": "宇树科技 Qmini 开源负责人",
+        "image": "陈永刚.png"
       }
     ]
   },
@@ -290,7 +318,7 @@
   {
     "date": "12月21日",
     "timeSlot": "18:30 - 20:30",
-    "title": "晚宴（特邀嘉宾）",
+    "title": "晚宴（仅限特邀嘉宾）",
     "content": "",
     "speakers": [],
     "isSpecialEvent": true

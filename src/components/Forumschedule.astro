@@ -154,7 +154,7 @@ const sortedAllSessions = sortSessionsByTime(uniqueAllSessions)
                                   <div class="card-col">
                                     <a
                                       class="single-speakers-card"
-                                      href={`/speakers/${speaker.id}/`}
+                                      href={`${Astro.url.pathname.startsWith('/en') ? '/en' : '/cn'}/speakers/${speaker.id}/`}
                                     >
                                       <div class="card-row card-row-image">
                                         <div class="card-image">

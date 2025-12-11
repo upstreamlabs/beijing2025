@@ -1,0 +1,25 @@
+---
+import speakers from "json/SpeakersListZh.json";
+
+export async function getStaticPaths() {
+  return speakers.map(speaker => ({
+    params: { id: speaker.id },
+  }));
+}
+
+const { id } = Astro.params;
+const target = `/cn/speakers/${id}/`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content={`0;url=${target}`} />
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+    <p>Redirecting to <a href={target}>{target}</a>...</p>
+  </body>
+</html>

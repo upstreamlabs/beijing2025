@@ -26,8 +26,18 @@
         "date": "DEC 21",
         "timeSlot": "10:15 - 10:45",
         "title": "Keynote 1: Overview of Open Source Industry Development",
-        "content": "",
-        "speakers": []
+        "content": "Co-founder & Managing Partner, Sinovation Ventures Hua Wang",
+        "speakers": [
+            {
+                "id": "wang-hua",
+                "name": "Hua Wang",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "Co-founder & Managing Partner, Sinovation Ventures",
+                "image": "汪华.png"
+            }
+        ]
     },
     {
         "date": "DEC 21",
@@ -103,6 +113,15 @@
                 ],
                 "roleOrg": "VP of PingCAP",
                 "image": "刘松.png"
+            },
+            {
+                "id": "wen-xuanyi",
+                "name": "Xuanyi Wen",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "Research Investor at XVC",
+                "image": "placeholder.png"
             }
         ]
     },
@@ -209,6 +228,15 @@
                 ],
                 "roleOrg": "Founder & CEO of Datastrato",
                 "image": "堵俊平.png"
+            },
+            {
+                "id": "chen-yonggang",
+                "name": "Yonggang Chen",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "Head of Unitree Robotics Qmini Open Source",
+                "image": "陈永刚.png"
             }
         ]
     },

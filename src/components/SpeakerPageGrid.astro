@@ -1,5 +1,6 @@
 ---
 interface Speaker {
+  id: string;
   name: string;
   title: string;
   bio: string;
@@ -19,7 +20,7 @@ const { speakers } = Astro.props;
       <div class="speakers-grid">
         {
           speakers.map((speaker, index) => (
-            <div class="speaker-card">
+            <a href={`${Astro.url.pathname.startsWith('/en') ? '/en' : '/cn'}/speakers/${speaker.id}/`} class="speaker-card">
               <div class="speaker-header">
                 <div class="speaker-image-container">
                   {speaker.image ? (
@@ -47,7 +48,7 @@ const { speakers } = Astro.props;
                   <p>{speaker.bio}</p>
                 </div>
               )}
-            </div>
+            </a>
           ))
         }
       </div>
@@ -87,6 +88,11 @@ const { speakers } = Astro.props;
     
     opacity: 0;
     animation: fadeInUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    
+    /* Ensure link styles don't look bad */
+    text-decoration: none;
+    color: inherit;
+    display: block; /* Make sure anchor behaves like block */
   }
 
   /* Generate staggered delays for first 12 items */
