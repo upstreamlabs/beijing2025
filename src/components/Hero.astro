@@ -37,6 +37,8 @@ interface Props {
   badges?: HeroBadge[];
   mottoCn?: string;
   mottoEn?: string;
+  heroImage?: string;
+  heroImageAlt?: string;
 }
 
 const {
@@ -58,6 +60,8 @@ const {
   badges,
   mottoCn,
   mottoEn,
+  heroImage,
+  heroImageAlt = "Hero image",
 } = Astro.props;
 
 const splitTagline = tagline && tagline.includes('|') ? tagline.split('|') : undefined;
@@ -137,6 +141,12 @@ const titleSecondPart = splitTitle ? splitTitle[1]?.trim() : null;
               </div>
             )}
           </div>
+
+          {heroImage && (
+            <div class="hero-image-container">
+              <img src={heroImage} alt={heroImageAlt} class="hero-image" />
+            </div>
+          )}
 
           {(cnLine || enLine) && (
             <div class={`hero-eyebrow ${cnLine && enLine ? 'multiline' : ''}`}>
@@ -407,7 +417,7 @@ const titleSecondPart = splitTitle ? splitTitle[1]?.trim() : null;
   .display-title:not(.en-title) .title-english {
     font-family: 'Source Han Serif CN VF', 'Source Han Serif SC', 'Source Han Serif', 'Noto Serif CJK SC', serif;
     font-weight: 400;
-    font-size: 0.85em;
+    font-size: 1.0625em;
     letter-spacing: 0.05em;
     white-space: normal !important;
     word-wrap: break-word;
@@ -851,7 +861,7 @@ const titleSecondPart = splitTitle ? splitTitle[1]?.trim() : null;
 
     /* WeChat browser specific fixes for Chinese title */
     .display-title:not(.en-title) .title-english {
-      font-size: 0.75em !important;
+      font-size: 0.9375em !important;
       line-height: 1.4 !important;
       white-space: normal !important;
       word-wrap: break-word !important;
@@ -1035,5 +1045,30 @@ const titleSecondPart = splitTitle ? splitTitle[1]?.trim() : null;
   .hero-column > *:not(.btn-home-wrap) {
     visibility: visible !important;
     opacity: 1 !important;
+  }
+
+  /* Hero image styling */
+  .hero-image-container {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-image {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  @media (max-width: 768px) {
+    .hero-image-container {
+      margin-top: 1.5rem;
+    }
+
+    .hero-image {
+      max-width: 90%;
+    }
   }
 </style>
