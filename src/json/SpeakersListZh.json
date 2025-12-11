@@ -180,5 +180,12 @@
         "title": "XVC 研究型投资人",
         "bio": "代表项目 ONES 与 ApiFox",
         "image": "placeholder.png"
+    },
+    {
+        "id": "roxy",
+        "name": "兔老师Roxy",
+        "title": "Citely.ai 创始人 · 大学副教授 · 硕士生导师",
+        "bio": "致力于用 AI 解决学术写作中最痛苦的部分 —— 文献溯源与真实性核查。2025 年推出 Citely.ai，帮助学生、老师和科研人员减少重复劳动，把时间用在真正的创造上。",
+        "image": "兔老师Roxy.png"
     }
 ]

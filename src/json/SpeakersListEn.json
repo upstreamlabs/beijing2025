@@ -180,5 +180,12 @@
         "title": "Research Investor at XVC",
         "bio": "Representative projects include ONES and ApiFox.",
         "image": "placeholder.png"
+    },
+    {
+        "id": "roxy",
+        "name": "Roxy Tu",
+        "title": "Founder of Citely.ai, Associate Professor, Master Supervisor",
+        "bio": "Dedicated to using AI to solve the most painful parts of academic writing — literature tracing and authenticity verification. Launching Citely.ai in 2025 to help students, teachers, and researchers reduce repetitive work and spend time on true creation.",
+        "image": "兔老师Roxy.png"
     }
 ]

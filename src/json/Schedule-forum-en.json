@@ -290,6 +290,15 @@
                 ],
                 "roleOrg": "Product Manager at Music Tech Company",
                 "image": "鲍晨熙.png"
+            },
+            {
+                "id": "roxy",
+                "name": "Roxy Tu",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "Founder of Citely.ai",
+                "image": "兔老师Roxy.png"
             }
         ]
     },

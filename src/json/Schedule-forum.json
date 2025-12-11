@@ -290,6 +290,15 @@
         ],
         "roleOrg": "音乐科技公司产品经理",
         "image": "鲍晨熙.png"
+      },
+      {
+        "id": "roxy",
+        "name": "兔老师Roxy",
+        "tags": [
+          "forum"
+        ],
+        "roleOrg": "Citely.ai 创始人",
+        "image": "兔老师Roxy.png"
       }
     ]
   },
