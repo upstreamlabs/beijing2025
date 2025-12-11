@@ -1,10 +1,45 @@
 [
     {
+        "id": "wang-hua",
+        "name": "Hua Wang",
+        "title": "Co-founder & Managing Partner, Sinovation Ventures",
+        "bio": "Co-CEO / Managing Partner of Sinovation Ventures. Graduated from Stanford University with an MBA. In 2000, amidst the first internet wave, he co-founded Yinda Technology, reaching an annual turnover of $15 million. From 2006 to late 2009, he worked at Google China's Business Development headquarters, creating Google China's premium advertising network, achieving an annual run rate of $80 million in revenue. Currently oversees Sinovation Ventures' investment business and strategy. He started investing in AI in 2012 and is one of the earliest AI investors globally, with several portfolio companies reaching multi-billion dollar valuations (4Paradigm, Megvii, Momenta, etc.). Since 2023, he has participated in the incubation of 01.AI and is deeply involved in its strategic planning.",
+        "image": "汪华.png"
+    },
+    {
         "id": "jiang-tao",
         "name": "Tao Jiang",
         "title": "Founder & Chairman of CSDN, Initiator of GOSIM",
         "bio": "Mr. Tao Jiang is the Founder and Chairman of CSDN, China's professional developer community. In his 30+ year career, he has integrated expertise in software, internet, and entrepreneurship. He has led projects such as Giant Handwriting Computer, Kingsoft PowerWord, and Hero Super Player. In addition to CSDN, Mr. Jiang also founded Programmer Magazine, Broadview, and Itcast. As a venture investor, he has strategically invested in more than 80 high-tech startups. As a distinguished promoter of the open source industry, Mr. Jiang serves as a director of the Open Atom Foundation, executive member of the CCF Open Source Committee, and deputy secretary-general of the \"Innovation China\" Open Source Innovation Consortium. In 2023, he co-founded GOSIM Global Open Source Innovation Meetup to further promote the development of the open source industry in China and globally.",
         "image": "蒋涛.png"
+    },
+    {
+        "id": "michael-yuan",
+        "name": "Michael Yuan",
+        "title": "Founder of Second State, Initiator of GOSIM",
+        "bio": "Dr. Michael Yuan is the founder and core developer of WasmEdge. WasmEdge is a CNCF-hosted open source WebAssembly virtual machine, primarily used in edge computing, Service Mesh, and embedded functions. He has written 6 software engineering books and is a long-term open source contributor. Michael is also the co-founder of Second State, an open source infrastructure software startup dedicated to commercially and sustainably supporting enterprise applications in the WebAssembly and Rust ecosystems.",
+        "image": "MichaelYuan.png"
+    },
+    {
+        "id": "gao-ning",
+        "name": "Ning Gao",
+        "title": "Co-founder of Linkloud",
+        "bio": "Dedicated to empowering AI/SaaS global entrepreneurs, former investor at Hillhouse Ventures.",
+        "image": "高宁.png"
+    },
+    {
+        "id": "yan-junchen",
+        "name": "Junchen Yan",
+        "title": "Co-founder, Dify.AI",
+        "bio": "Co-founder, Dify.AI Driving Commercial Growth through Product Architecture. Expert in the PMF to 1-to-10 journey.",
+        "image": "延君晨.png"
+    },
+    {
+        "id": "du-junping",
+        "name": "Junping Du",
+        "title": "Founder & CEO of Datastrato",
+        "bio": "Junping Du, Founder & CEO of Datastrato, former Chair of the LF AI & DATA Foundation Board, Member of the Apache Software Foundation, Co-founder of Apache Gravitino, and expert in data and open source. Previously, he served as GM of Open Source Business at a Fortune 500 company, Head of Tencent Open Source & Director of Big Data R&D, and Head of Cloudera Hadoop Team.",
+        "image": "堵俊平.png"
     },
     {
         "id": "tao-jianhui",
@@ -28,6 +63,13 @@
         "image": "刘松.png"
     },
     {
+        "id": "wen-xuanyi",
+        "name": "Xuanyi Wen",
+        "title": "Research Investor at XVC",
+        "bio": "Representative projects include ONES and ApiFox.",
+        "image": "placeholder.png"
+    },
+    {
         "id": "wang-wei",
         "name": "Wei Wang",
         "title": "Professor at East China Normal University, Director of Open Source Technical Committee at Singularity AI Research Institute",
@@ -35,46 +77,39 @@
         "image": "王伟.png"
     },
     {
-        "id": "yan-junchen",
-        "name": "Junchen Yan",
-        "title": "Co-founder, Dify.AI",
-        "bio": "Co-founder, Dify.AI Driving Commercial Growth through Product Architecture. Expert in the PMF to 1-to-10 journey.",
-        "image": "延君晨.png"
+        "id": "sheng-jiang",
+        "name": "Iris Sheng",
+        "title": "Co-founder & Former COO of AFFiNE",
+        "bio": "AFFiNE Cofounder & ex-COO (raised $10M total). MiraclePlus S21 Alum. Dropped out of PhD at University of Edinburgh to start a business, taking it from Seed to Pre-A in 4 years. Forbes Asia 30U30. RTE Community Advisor. DKU Entrepreneurship Mentor. 3 years of global operations experience, reaching users in 100+ countries/regions. Mentored 30+ Product Hunt #1 projects. AFFiNE open source launch gained 6000 stars in one week, 10k stars in one month. Currently mentors 10+ projects on global expansion/open source operations, having mentored 40+ projects in total. \"AI toB Global Growth Methodology: Open Source Commercialization and Global Ecosystem Community Building\"",
+        "image": "生姜Iris.png"
     },
     {
-        "id": "zheng-yaowei",
-        "name": "Yaowei Zheng",
-        "title": "Author of LLaMA Factory",
-        "bio": "Yaowei Zheng, Ph.D. student in Computer Science at Beihang University, author of the LLaMA Factory large model fine-tuning framework, which has over 60k Stars on GitHub. He has published multiple papers as first author in conferences and journals like ACL, CVPR, and WWW, and serves as a reviewer for AAAI and EMNLP. He has received honors such as Beihang Role Model and Ascend Ecosystem Open Source Excellence Award. Winner of First Prize in the Huawei Cup National Mathematical Modeling Competition and Lanqiao Cup Information Technology Competition. Invited to give keynote speeches at industry summits like AI Computing Conference and Apsara Conference. His research results have been applied in companies like Alibaba Cloud and NVIDIA.",
-        "image": "郑耀威.png"
+        "id": "bian-li",
+        "name": "Li Bian",
+        "title": "Former VP of Software R&D at QBoson, Former Tech Product Lead at Waymo",
+        "bio": "Former VP of Software R&D at quantum AI company QBoson, built and led algorithm and infrastructure engineers to develop the first large model based on Bayesian Neural Networks (BNN) and public global stock trading data, as well as quantum image recognition acceleration algorithms based on CNN, Graph Sampling, and QUBO (patent pending). Former Tech Product Lead at self-driving car company Waymo, led internal Big Bet algorithm projects across Waymo Research and Behavior teams, exceeding expectations and accelerating product rollout to dense cities. Serial entrepreneur in chatbots, humanoid companion robots, and search engines.\n\nGraduated from MIT EECS (BS), MIT Media Lab (MS), and CIID (MS). Featured in media 2009-2012 for projects like UN rescue dog wearable data collection device (2009 Haiti Earthquake) and optical interactive orbital dress for Lady Gaga (2011), published in International Advanced Entertainment and Computing Conference. Interne at Microsoft Research Asia HCI group in 2010. 2003 Science Olympiad National Gold Medalist.",
+        "image": "卞立.png"
     },
     {
-        "id": "zhang-jiaju",
-        "name": "Jiaju Zhang",
-        "title": "vLLM Community Contributor, Chief Architect of Red Hat APAC CTO Office & CTO of Greater China",
-        "bio": "Passionate about open source software and communities, with over 20 years of experience in product R&D, architecture design, and team management in Linux OS, distributed systems, storage & HA, virtualization & cloud computing, containers & cloud-native, and AI infrastructure. He has held positions as Chief Architect, Technical Director, and China Technical Lead in well-known foreign and domestic ICT leaders. As an independent contributor, he has initiated open source projects and successfully promoted them internationally. Currently at Red Hat APAC CTO Office, he leads the incubation and promotion of AI inference communities like vLLM and llm-d, implements AI technology strategies, and focuses on the innovative application of 100% open source AI products and solutions in vertical industries.",
-        "image": "张家驹.png"
+        "id": "fang-haitao",
+        "name": "Haitao Fang",
+        "title": "Founder of Sealos, CEO of Huanjie Cloud, Author of FastGPT & Laf",
+        "bio": "Formerly responsible for the sealer project at Alibaba, later donated to CNCF.",
+        "image": "方海涛.png"
     },
     {
-        "id": "du-junping",
-        "name": "Junping Du",
-        "title": "Founder & CEO of Datastrato",
-        "bio": "Junping Du, Founder & CEO of Datastrato, former Chair of the LF AI & DATA Foundation Board, Member of the Apache Software Foundation, Co-founder of Apache Gravitino, and expert in data and open source. Previously, he served as GM of Open Source Business at a Fortune 500 company, Head of Tencent Open Source & Director of Big Data R&D, and Head of Cloudera Hadoop Team.",
-        "image": "堵俊平.png"
+        "id": "lin-yuanlin",
+        "name": "Yuanlin Lin",
+        "title": "Founder & CEO of Zeabur",
+        "bio": "Graduated from Zhejiang University (Computer Science). In 2023, his undergraduate graduation project Zeabur was selected for MiraclePlus Accelerator and received $300k seed funding. Dedicated to creating an AI DevOps engineer, allowing both non-technical users and professional dev teams to deploy, monitor, backup, and test any service using natural language, on any cloud server or local host. Zeabur received $2M angel funding led by Silicon Valley's 500 Global in Fall 2025 and officially launched globally.",
+        "image": "林沅霖.png"
     },
     {
-        "id": "zhang-yingfeng",
-        "name": "Yingfeng Zhang",
-        "title": "Founder of RAGFlow",
-        "bio": "Senior technical entrepreneur, currently Founder of the leading open source project RAGFlow. RAGFlow is a widely popular enterprise-grade RAG engine, which under his leadership has garnered nearly 70k stars on GitHub, becoming a widely adopted open source solution in knowledge retrieval and Agent development. He possesses years of R&D experience in infrastructure and core AI algorithms, having supported business systems with hundreds of millions of users, dedicated to driving enterprise intelligent upgrades through solid technical products.",
-        "image": "张颖峰.png"
-    },
-    {
-        "id": "chen-yonggang",
-        "name": "Yonggang Chen",
-        "title": "Head of Unitree Robotics Qmini Open Source, Head of Beijing Company",
-        "bio": "A comprehensive technical expert who often anticipates trends, with a background in R&D, Product, Management, and Business Models. Possesses full-stack reverse engineering capabilities and accumulated strategic experience across industries (Missiles, Mobile Phones, Automotive, AI New Retail, Edge Terminals, Embodied Intelligence). Expert in strategically integrating top-level technical solutions with business models, with experience in commercialization at the group strategy level. Released Unitree's open-source bipedal robot Qmini, pioneered the successful implementation of smart agricultural robot products for high-value crops, and established Unitree's Beijing company.",
-        "image": "陈永刚.png"
+        "id": "yiki",
+        "name": "Yiki",
+        "title": "Founder & CEO of EezyCollab",
+        "bio": "Serves over 100 AI tech products including Jimeng, Kuaishou Kling, Skywork, and Lovart in overseas influencer marketing campaigns, managing tens of millions in budget and helping brands quickly gain global volume. EezyCollab also self-developed an AI-driven influencer marketing SaaS, deeply coupled with its agency business, dedicated to using AI to improve the quality and efficiency of influencer marketing services. Yiki holds degrees from Peking University and USC.",
+        "image": "Yiki.png"
     },
     {
         "id": "tang-xiaoyin",
@@ -84,25 +119,39 @@
         "image": "唐小引.png"
     },
     {
-        "id": "michael-yuan",
-        "name": "Michael Yuan",
-        "title": "Founder of Second State, Initiator of GOSIM",
-        "bio": "Dr. Michael Yuan is the founder and core developer of WasmEdge. WasmEdge is a CNCF-hosted open source WebAssembly virtual machine, primarily used in edge computing, Service Mesh, and embedded functions. He has written 6 software engineering books and is a long-term open source contributor. Michael is also the co-founder of Second State, an open source infrastructure software startup dedicated to commercially and sustainably supporting enterprise applications in the WebAssembly and Rust ecosystems.",
-        "image": "MichaelYuan.png"
+        "id": "zheng-yaowei",
+        "name": "Yaowei Zheng",
+        "title": "Author of LLaMA Factory",
+        "bio": "Yaowei Zheng, Ph.D. student in Computer Science at Beihang University, author of the LLaMA Factory large model fine-tuning framework, which has over 60k Stars on GitHub. He has published multiple papers as first author in conferences and journals like ACL, CVPR, and WWW, and serves as a reviewer for AAAI and EMNLP. He has received honors such as Beihang Role Model and Ascend Ecosystem Open Source Excellence Award. Winner of First Prize in the Huawei Cup National Mathematical Modeling Competition and Lanqiao Cup Information Technology Competition. Invited to give keynote speeches at industry summits like AI Computing Conference and Apsara Conference. His research results have been applied in companies like Alibaba Cloud and NVIDIA.",
+        "image": "郑耀威.png"
     },
     {
-        "id": "bao-chenxi",
-        "name": "Chenxi Bao",
-        "title": "Product Manager at Music Tech Company, Former Researcher at MBZUAI",
-        "bio": "Former researcher at Mohamed bin Zayed University of Artificial Intelligence (MBZUAI). Currently a Product Manager at a music tech company, responsible for AI music plugins and innovative smart instrument R&D. With a background in Information Technology from Beihang University and Sound Design from the University of Edinburgh, he focuses on \"AI x Music Tech\" interdisciplinary research. He is also an active film composer and independent musician, currently serving as bassist for the Beijing band White Bird Dictionary.",
-        "image": "鲍晨熙.png"
+        "id": "zhang-yingfeng",
+        "name": "Yingfeng Zhang",
+        "title": "Founder of RAGFlow",
+        "bio": "Senior technical entrepreneur, currently Founder of the leading open source project RAGFlow. RAGFlow is a widely popular enterprise-grade RAG engine, which under his leadership has garnered nearly 70k stars on GitHub, becoming a widely adopted open source solution in knowledge retrieval and Agent development. He possesses years of R&D experience in infrastructure and core AI algorithms, having supported business systems with hundreds of millions of users, dedicated to driving enterprise intelligent upgrades through solid technical products.",
+        "image": "张颖峰.png"
     },
     {
-        "id": "gao-ning",
-        "name": "Ning Gao",
-        "title": "Co-founder of Linkloud",
-        "bio": "Dedicated to empowering AI/SaaS global entrepreneurs, former investor at Hillhouse Ventures.",
-        "image": "高宁.png"
+        "id": "zhang-jiaju",
+        "name": "Jiaju Zhang",
+        "title": "vLLM Community Contributor, Chief Architect of Red Hat APAC CTO Office & CTO of Greater China",
+        "bio": "Passionate about open source software and communities, with over 20 years of experience in product R&D, architecture design, and team management in Linux OS, distributed systems, storage & HA, virtualization & cloud computing, containers & cloud-native, and AI infrastructure. He has held positions as Chief Architect, Technical Director, and China Technical Lead in well-known foreign and domestic ICT leaders. As an independent contributor, he has initiated open source projects and successfully promoted them internationally. Currently at Red Hat APAC CTO Office, he leads the incubation and promotion of AI inference communities like vLLM and llm-d, implements AI technology strategies, and focuses on the innovative application of 100% open source AI products and solutions in vertical industries.",
+        "image": "张家驹.png"
+    },
+    {
+        "id": "chen-yonggang",
+        "name": "Yonggang Chen",
+        "title": "Head of Unitree Robotics Qmini Open Source, Head of Beijing Company",
+        "bio": "A comprehensive technical expert who often anticipates trends, with a background in R&D, Product, Management, and Business Models. Possesses full-stack reverse engineering capabilities and accumulated strategic experience across industries (Missiles, Mobile Phones, Automotive, AI New Retail, Edge Terminals, Embodied Intelligence). Expert in strategically integrating top-level technical solutions with business models, with experience in commercialization at the group strategy level. Released Unitree's open-source bipedal robot Qmini, pioneered the successful implementation of smart agricultural robot products for high-value crops, and established Unitree's Beijing company.",
+        "image": "陈永刚.png"
+    },
+    {
+        "id": "chen-zhiwei",
+        "name": "Zhiwei Chen",
+        "title": "Founder of Unbounded Youth Forum, AI HCI Researcher",
+        "bio": "Formerly worked at top international companies like The Times and Apple. The Unbounded Youth Forum he founded has gathered 100+ global projects, investors, and entrepreneurs across China, UK, and Australia, continuously helping enterprises land in China. He focuses on AI, entrepreneurial ecosystems, and future industry trends, dedicated to building a platform that truly improves youth development quality and promotes cross-domain ideological dialogue.",
+        "image": "陈志伟.png"
     },
     {
         "id": "zhao-jun",
@@ -110,13 +159,6 @@
         "title": "Developer of SimilarTube & NanoInfluencer",
         "bio": "",
         "image": "赵君.png"
-    },
-    {
-        "id": "sheng-jiang",
-        "name": "Iris Sheng",
-        "title": "Co-founder & Former COO of AFFiNE",
-        "bio": "AFFiNE Cofounder & ex-COO (raised $10M total). MiraclePlus S21 Alum. Dropped out of PhD at University of Edinburgh to start a business, taking it from Seed to Pre-A in 4 years. Forbes Asia 30U30. RTE Community Advisor. DKU Entrepreneurship Mentor. 3 years of global operations experience, reaching users in 100+ countries/regions. Mentored 30+ Product Hunt #1 projects. AFFiNE open source launch gained 6000 stars in one week, 10k stars in one month. Currently mentors 10+ projects on global expansion/open source operations, having mentored 40+ projects in total. \"AI toB Global Growth Methodology: Open Source Commercialization and Global Ecosystem Community Building\"",
-        "image": "生姜Iris.png"
     },
     {
         "id": "nana",
@@ -133,53 +175,11 @@
         "image": "泛函.png"
     },
     {
-        "id": "chen-zhiwei",
-        "name": "Zhiwei Chen",
-        "title": "Founder of Unbounded Youth Forum, AI HCI Researcher",
-        "bio": "Formerly worked at top international companies like The Times and Apple. The Unbounded Youth Forum he founded has gathered 100+ global projects, investors, and entrepreneurs across China, UK, and Australia, continuously helping enterprises land in China. He focuses on AI, entrepreneurial ecosystems, and future industry trends, dedicated to building a platform that truly improves youth development quality and promotes cross-domain ideological dialogue.",
-        "image": "陈志伟.png"
-    },
-    {
-        "id": "lin-yuanlin",
-        "name": "Yuanlin Lin",
-        "title": "Founder & CEO of Zeabur",
-        "bio": "Graduated from Zhejiang University (Computer Science). In 2023, his undergraduate graduation project Zeabur was selected for MiraclePlus Accelerator and received $300k seed funding. Dedicated to creating an AI DevOps engineer, allowing both non-technical users and professional dev teams to deploy, monitor, backup, and test any service using natural language, on any cloud server or local host. Zeabur received $2M angel funding led by Silicon Valley's 500 Global in Fall 2025 and officially launched globally.",
-        "image": "林沅霖.png"
-    },
-    {
-        "id": "fang-haitao",
-        "name": "Haitao Fang",
-        "title": "Founder of Sealos, CEO of Huanjie Cloud, Author of FastGPT & Laf",
-        "bio": "Formerly responsible for the sealer project at Alibaba, later donated to CNCF.",
-        "image": "方海涛.png"
-    },
-    {
-        "id": "yiki",
-        "name": "Yiki",
-        "title": "Founder & CEO of EezyCollab",
-        "bio": "Serves over 100 AI tech products including Jimeng, Kuaishou Kling, Skywork, and Lovart in overseas influencer marketing campaigns, managing tens of millions in budget and helping brands quickly gain global volume. EezyCollab also self-developed an AI-driven influencer marketing SaaS, deeply coupled with its agency business, dedicated to using AI to improve the quality and efficiency of influencer marketing services. Yiki holds degrees from Peking University and USC.",
-        "image": "Yiki.png"
-    },
-    {
-        "id": "bian-li",
-        "name": "Li Bian",
-        "title": "Former VP of Software R&D at QBoson, Former Tech Product Lead at Waymo",
-        "bio": "Former VP of Software R&D at quantum AI company QBoson, built and led algorithm and infrastructure engineers to develop the first large model based on Bayesian Neural Networks (BNN) and public global stock trading data, as well as quantum image recognition acceleration algorithms based on CNN, Graph Sampling, and QUBO (patent pending). Former Tech Product Lead at self-driving car company Waymo, led internal Big Bet algorithm projects across Waymo Research and Behavior teams, exceeding expectations and accelerating product rollout to dense cities. Serial entrepreneur in chatbots, humanoid companion robots, and search engines.\n\nGraduated from MIT EECS (BS), MIT Media Lab (MS), and CIID (MS). Featured in media 2009-2012 for projects like UN rescue dog wearable data collection device (2009 Haiti Earthquake) and optical interactive orbital dress for Lady Gaga (2011), published in International Advanced Entertainment and Computing Conference. Interne at Microsoft Research Asia HCI group in 2010. 2003 Science Olympiad National Gold Medalist.",
-        "image": "卞立.png"
-    },
-    {
-        "id": "wang-hua",
-        "name": "Hua Wang",
-        "title": "Co-founder & Managing Partner, Sinovation Ventures",
-        "bio": "Co-CEO / Managing Partner of Sinovation Ventures. Graduated from Stanford University with an MBA. In 2000, amidst the first internet wave, he co-founded Yinda Technology, reaching an annual turnover of $15 million. From 2006 to late 2009, he worked at Google China's Business Development headquarters, creating Google China's premium advertising network, achieving an annual run rate of $80 million in revenue. Currently oversees Sinovation Ventures' investment business and strategy. He started investing in AI in 2012 and is one of the earliest AI investors globally, with several portfolio companies reaching multi-billion dollar valuations (4Paradigm, Megvii, Momenta, etc.). Since 2023, he has participated in the incubation of 01.AI and is deeply involved in its strategic planning.",
-        "image": "汪华.png"
-    },
-    {
-        "id": "wen-xuanyi",
-        "name": "Xuanyi Wen",
-        "title": "Research Investor at XVC",
-        "bio": "Representative projects include ONES and ApiFox.",
-        "image": "placeholder.png"
+        "id": "bao-chenxi",
+        "name": "Chenxi Bao",
+        "title": "Product Manager at Music Tech Company, Former Researcher at MBZUAI",
+        "bio": "Former researcher at Mohamed bin Zayed University of Artificial Intelligence (MBZUAI). Currently a Product Manager at a music tech company, responsible for AI music plugins and innovative smart instrument R&D. With a background in Information Technology from Beihang University and Sound Design from the University of Edinburgh, he focuses on \"AI x Music Tech\" interdisciplinary research. He is also an active film composer and independent musician, currently serving as bassist for the Beijing band White Bird Dictionary.",
+        "image": "鲍晨熙.png"
     },
     {
         "id": "roxy",
