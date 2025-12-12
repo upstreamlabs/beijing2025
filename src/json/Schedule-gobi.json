@@ -27,15 +27,7 @@
         "date": "12月21日",
         "timeSlot": "10:00 - 10:05",
         "title": "开场致辞",
-        "content": "海淀、东升领导，UN (远程致辞)",
-        "speakers": [],
-        "isSpecialEvent": true
-      },
-      {
-        "date": "12月21日",
-        "timeSlot": "11:05 - 11:15",
-        "title": "社区启动：东畔开源社区启动",
-        "content": "组织委员会，宣言，Logo",
+        "content": "",
         "speakers": [],
         "isSpecialEvent": true
       },
@@ -59,25 +51,33 @@
     "keynote": [
       {
         "date": "12月21日",
-        "timeSlot": "10:15 - 10:45",
-        "title": "Keynote 1: 开源产业发展综述",
+        "timeSlot": "10:05 - 10:15",
+        "title": "Keynote 1：可持续的开源产业发展",
         "content": "",
         "speakers": [],
         "isSpecialEvent": true
       },
       {
         "date": "12月21日",
-        "timeSlot": "10:45 - 11:05",
-        "title": "Keynote 2: 开源商业模型探索（理论和实践）",
+        "timeSlot": "10:15 - 10:35",
+        "title": "Keynote 2：开源商业化未来可期",
         "content": "",
         "speakers": [],
         "isSpecialEvent": true
       },
       {
         "date": "12月21日",
-        "timeSlot": "11:05 - 11:25",
-        "title": "Keynote 3: 可持续发展开源商业生态指数（理论框架）",
-        "content": "CSDN创始人&董事长、开放原子基金会理事 蒋涛",
+        "timeSlot": "10:35 - 10:55",
+        "title": "Keynote 3：开源商业模型探索",
+        "content": "",
+        "speakers": [],
+        "isSpecialEvent": true
+      },
+      {
+        "date": "12月21日",
+        "timeSlot": "10:55 - 11:15",
+        "title": "Keynote 4：可持续发展开源商业生态指数",
+        "content": "",
         "speakers": [],
         "isSpecialEvent": true
       }
@@ -85,9 +85,9 @@
     "panel": [
       {
         "date": "12月21日",
-        "timeSlot": "11:25 - 12:25",
-        "title": "Panel: 破局 · 企业软件的\"巨硬\"时刻",
-        "content": "从“人头红利”到“人效革命”；代码通缩；商业模式终局；交互界面消失",
+        "timeSlot": "11:15 - 12:15",
+        "title": "Panel",
+        "content": "",
         "speakers": []
       },
       {

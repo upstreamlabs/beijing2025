@@ -24,16 +24,29 @@
   },
   {
     "date": "12月21日",
-    "timeSlot": "10:15 - 10:45",
-    "title": "主题演讲 1: 开源产业发展综述",
+    "timeSlot": "10:05 - 10:15",
+    "title": "Keynote 1：可持续的开源产业发展",
+    "content": "",
+    "speakers": [
+      {
+        "id": "du-yingfen",
+        "name": "杜莹芬",
+        "tags": ["forum"],
+        "roleOrg": "中国社会科学院工业经济研究所研究员、教授、国务院参事",
+        "image": "杜莹芬.png"
+      }
+    ]
+  },
+  {
+    "date": "12月21日",
+    "timeSlot": "10:15 - 10:35",
+    "title": "Keynote 2：开源商业化未来可期",
     "content": "",
     "speakers": [
       {
         "id": "wang-hua",
         "name": "汪华",
-        "tags": [
-          "forum"
-        ],
+        "tags": ["forum"],
         "roleOrg": "创新工场联合创始人、管理合伙人",
         "image": "汪华.png"
       }
@@ -41,23 +54,21 @@
   },
   {
     "date": "12月21日",
-    "timeSlot": "10:45 - 11:05",
-    "title": "主题演讲 2: 开源商业模型探索",
+    "timeSlot": "10:35 - 10:55",
+    "title": "Keynote 3：开源商业模型探索",
     "content": "",
     "speakers": []
   },
   {
     "date": "12月21日",
-    "timeSlot": "11:05 - 11:25",
-    "title": "主题演讲 3: 可持续发展开源商业生态指数",
+    "timeSlot": "10:55 - 11:15",
+    "title": "Keynote 4：可持续发展开源商业生态指数",
     "content": "",
     "speakers": [
       {
         "id": "jiang-tao",
         "name": "蒋涛",
-        "tags": [
-          "forum"
-        ],
+        "tags": ["forum"],
         "roleOrg": "CSDN 创始人 & 董事长、开放原子基金会理事",
         "image": "蒋涛.png"
       }
@@ -65,72 +76,51 @@
   },
   {
     "date": "12月21日",
-    "timeSlot": "11:25 - 12:25",
-    "title": "圆桌讨论: 破局 · 企业软件的\"巨硬\"时刻",
-    "content": "<h4>核心议题</h4><ul><li><strong>组织变革：</strong>从「人头红利」到「人效革命」，企业是否准备好用 10 人团队挑战传统 1000 人组织？人才密度、极度扁平化与 AI 自动化将如何重塑企业软件的组织形态？</li><li><strong>护城河重构：</strong>当代码通缩、UI 消失、AI 可生成工具时，SaaS 的护城河究竟还剩什么？竞争焦点是否已从「功能」转向「专有数据 + 深垂直工作流理解」？</li><li><strong>模式跃迁：</strong>Seat-based 模式失效后，谁能率先完成从 SaaS 到 Service-as-Software 的跃迁？在「巨硬时刻」中，巨头与 AI Native 创企，谁能突破信任与分发的双重瓶颈？</li></ul>",
+    "timeSlot": "11:15 - 12:15",
+    "title": "Panel：破局 · 企业软件的「巨硬」时刻",
+    "content": "",
     "speakers": [
       {
-        "id": "gao-ning",
-        "name": "高宁 (Moderator)",
-        "tags": [
-          "forum"
-        ],
-        "roleOrg": "Linkloud 联合创始人",
-        "image": "高宁.png"
+        "id": "sheng-jiang",
+        "name": "生姜 Iris (Moderator)",
+        "tags": ["forum"],
+        "roleOrg": "AFFiNE 联合创始人兼前 COO",
+        "image": "生姜Iris.png"
       },
       {
-        "id": "wang-wei",
-        "name": "王伟",
-        "tags": [
-          "forum"
-        ],
-        "roleOrg": "",
-        "image": "王伟.png"
+        "id": "yan-junchen",
+        "name": "延君晨",
+        "tags": ["forum"],
+        "roleOrg": "Dify 商业化负责人",
+        "image": "延君晨.png"
       },
       {
-        "id": "jiang-tao",
-        "name": "蒋涛",
-        "tags": [
-          "forum"
-        ],
-        "roleOrg": "CSDN 创始人 & 董事长、开放原子基金会理事",
-        "image": "蒋涛.png"
+        "id": "bian-li",
+        "name": "卞立",
+        "tags": ["forum"],
+        "roleOrg": "量子 AI 公司 QBoson 前软件研发副总裁，Waymo 前技术产品负责人",
+        "image": "卞立.png"
       },
       {
-        "id": "tao-jianhui",
-        "name": "陶建辉",
-        "tags": [
-          "forum"
-        ],
-        "roleOrg": "涛思数据创始人、CEO",
-        "image": "陶建辉.png"
+        "id": "fang-haitao",
+        "name": "方海涛",
+        "tags": ["forum"],
+        "roleOrg": "Sealos 创始人，环界云计算 CEO",
+        "image": "方海涛.png"
       },
       {
-        "id": "zhang-wensong",
-        "name": "章文嵩",
-        "tags": [
-          "forum"
-        ],
-        "roleOrg": "LVS 创始人",
-        "image": "章文嵩.png"
+        "id": "lin-yuanlin",
+        "name": "林沅霖",
+        "tags": ["forum"],
+        "roleOrg": "Zeabur 创始人兼 CEO",
+        "image": "林沅霖.png"
       },
       {
-        "id": "liu-song",
-        "name": "刘松",
-        "tags": [
-          "forum"
-        ],
-        "roleOrg": "PingCAP 副总裁",
-        "image": "刘松.png"
-      },
-      {
-        "id": "wen-xuanyi",
-        "name": "文煊义",
-        "tags": [
-          "forum"
-        ],
-        "roleOrg": "XVC 研究型投资人",
-        "image": "placeholder.png"
+        "id": "yiki",
+        "name": "Yiki",
+        "tags": ["forum"],
+        "roleOrg": "EezyCollab 创始人，AI Marketing Agency",
+        "image": "Yiki.png"
       }
     ]
   },

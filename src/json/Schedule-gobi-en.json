@@ -25,16 +25,8 @@
     "special": [
       {
         "date": "December 21",
-        "timeSlot": "09:00 – 10:00",
-        "title": "Registration & Social Breakfast",
-        "content": "",
-        "speakers": [],
-        "isSpecialEvent": true
-      },
-      {
-        "date": "December 21",
-        "timeSlot": "10:00 – 10:15",
-        "title": "Opening Remarks: GOBI 2025 & Upstream Training Camp Review",
+        "timeSlot": "10:00 - 10:05",
+        "title": "Opening Remarks",
         "content": "",
         "speakers": [],
         "isSpecialEvent": true
@@ -75,24 +67,32 @@
     "keynote": [
       {
         "date": "December 21",
-        "timeSlot": "10:15 – 10:45",
-        "title": "Keynote 1: Open Source Industry Development Overview",
+        "timeSlot": "10:05 - 10:15",
+        "title": "Keynote 1",
         "content": "",
         "speakers": [],
         "isSpecialEvent": true
       },
       {
         "date": "December 21",
-        "timeSlot": "10:45 – 11:05",
-        "title": "Keynote 2: Exploring Open Source Business Models (Theory and Practice)",
+        "timeSlot": "10:15 - 10:35",
+        "title": "Keynote 2",
         "content": "",
         "speakers": [],
         "isSpecialEvent": true
       },
       {
         "date": "December 21",
-        "timeSlot": "11:05 – 11:25",
-        "title": "Keynote 3: Sustainable Open Source Business Ecosystem Index (Theoretical Framework)",
+        "timeSlot": "10:35 - 10:55",
+        "title": "Keynote 3",
+        "content": "",
+        "speakers": [],
+        "isSpecialEvent": true
+      },
+      {
+        "date": "December 21",
+        "timeSlot": "10:55 - 11:15",
+        "title": "Keynote 4",
         "content": "",
         "speakers": [],
         "isSpecialEvent": true
@@ -101,8 +101,8 @@
     "panel": [
       {
         "date": "December 21",
-        "timeSlot": "11:25 – 12:25",
-        "title": "Panel Discussion: Unlock the Source · Open Source AI Models Shaping the New Foundation of China's SaaS Industry",
+        "timeSlot": "11:15 - 12:15",
+        "title": "Panel",
         "content": "",
         "speakers": []
       },
