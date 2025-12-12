@@ -21,34 +21,6 @@
         "image": "MichaelYuan.png"
     },
     {
-        "id": "wang-wei",
-        "name": "Wei Wang",
-        "title": "Professor at East China Normal University, Director of Open Source Technical Committee at Singularity AI Research Institute",
-        "bio": "Wei Wang, Director of the Open Source Technical Committee at Singularity AI Research Institute, Secretary-General of the Open Source Innovation Committee of CAST-UN Consultative Status, Professor at East China Normal University, and Distinguished Member of CCF. He has long been dedicated to systematic research on open source innovation, governance, and evaluation, leading the formulation of China's first set of open source governance standards and promoting the inclusion of open source in the national science and education development system. He has published over 100 papers in top international conferences and journals such as ICSE, WWW, and ACL. Selected for national innovation talent projects, he has won National Teaching Achievement Awards and the Shanghai Open Source Innovation Excellence Award Grand Prize.",
-        "image": "王伟.png"
-    },
-    {
-        "id": "gao-ning",
-        "name": "Ning Gao",
-        "title": "Co-founder of Linkloud",
-        "bio": "Dedicated to empowering AI/SaaS global entrepreneurs, former investor at Hillhouse Ventures.",
-        "image": "高宁.png"
-    },
-    {
-        "id": "yan-junchen",
-        "name": "Junchen Yan",
-        "title": "Co-founder, Dify.AI",
-        "bio": "Co-founder, Dify.AI Driving Commercial Growth through Product Architecture. Expert in the PMF to 1-to-10 journey.",
-        "image": "延君晨.png"
-    },
-    {
-        "id": "du-junping",
-        "name": "Junping Du",
-        "title": "Founder & CEO of Datastrato",
-        "bio": "Junping Du, Founder & CEO of Datastrato, former Chair of the LF AI & DATA Foundation Board, Member of the Apache Software Foundation, Co-founder of Apache Gravitino, and expert in data and open source. Previously, he served as GM of Open Source Business at a Fortune 500 company, Head of Tencent Open Source & Director of Big Data R&D, and Head of Cloudera Hadoop Team.",
-        "image": "堵俊平.png"
-    },
-    {
         "id": "tao-jianhui",
         "name": "Jianhui Tao",
         "title": "Founder & CEO of TDengine",
@@ -75,6 +47,34 @@
         "title": "Research Investor at XVC",
         "bio": "Representative projects include ONES and ApiFox.",
         "image": "placeholder.png"
+    },
+    {
+        "id": "wang-wei",
+        "name": "Wei Wang",
+        "title": "Professor at East China Normal University, Director of Open Source Technical Committee at Singularity AI Research Institute",
+        "bio": "Wei Wang, Director of the Open Source Technical Committee at Singularity AI Research Institute, Secretary-General of the Open Source Innovation Committee of CAST-UN Consultative Status, Professor at East China Normal University, and Distinguished Member of CCF. He has long been dedicated to systematic research on open source innovation, governance, and evaluation, leading the formulation of China's first set of open source governance standards and promoting the inclusion of open source in the national science and education development system. He has published over 100 papers in top international conferences and journals such as ICSE, WWW, and ACL. Selected for national innovation talent projects, he has won National Teaching Achievement Awards and the Shanghai Open Source Innovation Excellence Award Grand Prize.",
+        "image": "王伟.png"
+    },
+    {
+        "id": "gao-ning",
+        "name": "Ning Gao",
+        "title": "Co-founder of Linkloud",
+        "bio": "Dedicated to empowering AI/SaaS global entrepreneurs, former investor at Hillhouse Ventures.",
+        "image": "高宁.png"
+    },
+    {
+        "id": "yan-junchen",
+        "name": "Junchen Yan",
+        "title": "Co-founder, Dify.AI",
+        "bio": "Co-founder, Dify.AI Driving Commercial Growth through Product Architecture. Expert in the PMF to 1-to-10 journey.",
+        "image": "延君晨.png"
+    },
+    {
+        "id": "du-junping",
+        "name": "Junping Du",
+        "title": "Founder & CEO of Datastrato",
+        "bio": "Junping Du, Founder & CEO of Datastrato, former Chair of the LF AI & DATA Foundation Board, Member of the Apache Software Foundation, Co-founder of Apache Gravitino, and expert in data and open source. Previously, he served as GM of Open Source Business at a Fortune 500 company, Head of Tencent Open Source & Director of Big Data R&D, and Head of Cloudera Hadoop Team.",
+        "image": "堵俊平.png"
     },
     {
         "id": "sheng-jiang",

@@ -21,34 +21,6 @@
         "image": "MichaelYuan.png"
     },
     {
-        "id": "wang-wei",
-        "name": "王伟",
-        "title": "华东师范大学教授、奇点智能研究院开源技术委员会主任",
-        "bio": "王伟，奇点智能研究院开源技术委员会主任，中国科协联合国咨商开源创新专委会秘书长，华东师范大学教授，中国计算机学会（CCF）杰出会员。长期致力于开源创新、治理与评价的体系化研究，牵头制定中国首套开源治理系列标准，推动开源纳入国家科教发展体系。在ICSE、WWW、ACL等国际顶级会议和期刊发表论文百余篇。入选国家级创新人才项目，获国家级教学成果奖、上海开源创新卓越成果特等奖。",
-        "image": "王伟.png"
-    },
-    {
-        "id": "gao-ning",
-        "name": "高宁",
-        "title": "Linkloud 联合创始人",
-        "bio": "致力于赋能 AI/SaaS 出海创业者，前高瓴创投投资人",
-        "image": "高宁.png"
-    },
-    {
-        "id": "yan-junchen",
-        "name": "延君晨",
-        "title": "Dify.AI 联合创始人",
-        "bio": "以产品架构驱动商业化增长。从 PMF 到 1-10 的全链路实战专家。",
-        "image": "延君晨.png"
-    },
-    {
-        "id": "du-junping",
-        "name": "堵俊平",
-        "title": "Datastrato 创始人 & CEO",
-        "bio": "堵俊平，Datastrato 创始人兼 CEO，原 LF AI & DATA 基金会董事主席，Apache 软件基金会正式成员，Apache Gravitino Co-founder，数据与开源领域专家。此前，他曾任全球 500 强企业开源业务总经理、腾讯开源负责人兼大数据研发总监、Cloudera Hadoop 团队负责人等。",
-        "image": "堵俊平.png"
-    },
-    {
         "id": "tao-jianhui",
         "name": "陶建辉",
         "title": "涛思数据创始人、CEO",
@@ -75,6 +47,34 @@
         "title": "XVC 研究型投资人",
         "bio": "代表项目 ONES 与 ApiFox",
         "image": "placeholder.png"
+    },
+    {
+        "id": "wang-wei",
+        "name": "王伟",
+        "title": "华东师范大学教授、奇点智能研究院开源技术委员会主任",
+        "bio": "王伟，奇点智能研究院开源技术委员会主任，中国科协联合国咨商开源创新专委会秘书长，华东师范大学教授，中国计算机学会（CCF）杰出会员。长期致力于开源创新、治理与评价的体系化研究，牵头制定中国首套开源治理系列标准，推动开源纳入国家科教发展体系。在ICSE、WWW、ACL等国际顶级会议和期刊发表论文百余篇。入选国家级创新人才项目，获国家级教学成果奖、上海开源创新卓越成果特等奖。",
+        "image": "王伟.png"
+    },
+    {
+        "id": "gao-ning",
+        "name": "高宁",
+        "title": "Linkloud 联合创始人",
+        "bio": "致力于赋能 AI/SaaS 出海创业者，前高瓴创投投资人",
+        "image": "高宁.png"
+    },
+    {
+        "id": "yan-junchen",
+        "name": "延君晨",
+        "title": "Dify.AI 联合创始人",
+        "bio": "以产品架构驱动商业化增长。从 PMF 到 1-10 的全链路实战专家。",
+        "image": "延君晨.png"
+    },
+    {
+        "id": "du-junping",
+        "name": "堵俊平",
+        "title": "Datastrato 创始人 & CEO",
+        "bio": "堵俊平，Datastrato 创始人兼 CEO，原 LF AI & DATA 基金会董事主席，Apache 软件基金会正式成员，Apache Gravitino Co-founder，数据与开源领域专家。此前，他曾任全球 500 强企业开源业务总经理、腾讯开源负责人兼大数据研发总监、Cloudera Hadoop 团队负责人等。",
+        "image": "堵俊平.png"
     },
     {
         "id": "sheng-jiang",
