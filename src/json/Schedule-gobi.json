@@ -68,15 +68,7 @@
       {
         "date": "12月21日",
         "timeSlot": "10:35 - 10:55",
-        "title": "Keynote 3：开源商业模型探索",
-        "content": "",
-        "speakers": [],
-        "isSpecialEvent": true
-      },
-      {
-        "date": "12月21日",
-        "timeSlot": "10:55 - 11:15",
-        "title": "Keynote 4：可持续发展开源商业生态指数",
+        "title": "Keynote 3：可持续发展开源商业生态指数",
         "content": "",
         "speakers": [],
         "isSpecialEvent": true
@@ -85,7 +77,7 @@
     "panel": [
       {
         "date": "12月21日",
-        "timeSlot": "11:15 - 12:15",
+        "timeSlot": "10:55 - 11:55",
         "title": "Panel",
         "content": "",
         "speakers": []

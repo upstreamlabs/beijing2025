@@ -155,42 +155,79 @@
     }
 
     .invitation-section {
-      margin-top: 24px;
-      padding: 20px;
-      background: rgba(255, 215, 100, 0.25);
+      padding: 20px 16px;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #2B74FF 0%, #D4A84B 100%);
       border-radius: 12px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+
+    .invitation-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      opacity: 0.5;
+    }
+
+    .invitation-section > * {
+      position: relative;
+      z-index: 1;
     }
 
     .invitation-title {
       color: #fff;
-      font-size: 16px;
-      font-weight: 600;
+      font-size: 18px;
+      font-weight: 700;
       text-align: center;
       margin-bottom: 16px;
       letter-spacing: 2px;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .invitation-title-img {
+      display: block;
+      height: 32px;
+      width: auto;
+      margin: 0 auto 16px;
     }
 
     .invitation-content {
       display: flex;
       align-items: center;
       gap: 16px;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 16px;
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+      margin-bottom: 12px;
+    }
+
+    .invitation-content:last-child {
+      margin-bottom: 0;
     }
 
     .invitation-photo {
-      width: 70px;
-      height: 70px;
+      width: 80px;
+      height: 80px;
       border-radius: 50%;
       object-fit: cover;
-      background: #fef9e7;
+      background: #f0f0f0;
       flex-shrink: 0;
     }
 
     .invitation-text {
       color: #fff;
       font-size: 13px;
-      line-height: 1.7;
+      line-height: 1.8;
       text-align: left;
       margin: 0;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.1);
     }
 
     .gold-bar {
@@ -498,19 +535,21 @@
             <img src="images/sponsors/csdn.png" alt="CSDN" class="sponsor-logo">
           </div>
         </div>
-        <div class="invitation-section">
-          <h3 class="invitation-title">诚邀参会</h3>
-          <div class="invitation-content">
-            <img src="images/speakers/蒋涛.png" alt="蒋涛" class="invitation-photo">
-            <p class="invitation-text">开源为舟，商业为帆。GOBI 相见，共论开源可持续增长。诚邀蒋涛先生莅临全球开源商业创新大会并作主旨分享。</p>
-          </div>
-        </div>
       </div>
     </div>
     <div class="gold-bar"></div>
 
     <!-- Content -->
     <div class="content">
+      <!-- Invitation Section -->
+      <div class="invitation-section">
+        <img src="images/invitation.svg" alt="邀你同场共话" class="invitation-title-img">
+        <div class="invitation-content">
+          <img src="images/speakers/蒋涛.png" alt="蒋涛" class="invitation-photo">
+          <p class="invitation-text">开源为舟，商业为帆。GOBI 相见，共论开源可持续增长。诚邀蒋涛先生莅临全球开源商业创新大会并作主旨分享。</p>
+        </div>
+      </div>
+
       <!-- Morning Section -->
       <div class="section-label">
         <span class="dot"></span>
@@ -567,16 +606,7 @@
           <span class="session-time">10:35 - 10:55</span>
           <span class="session-type">主题演讲</span>
         </div>
-        <div class="session-title">主题演讲 3：开源商业模型探索</div>
-      </div>
-
-      <!-- Keynote 4 -->
-      <div class="session keynote">
-        <div class="session-header">
-          <span class="session-time">10:55 - 11:15</span>
-          <span class="session-type">主题演讲</span>
-        </div>
-        <div class="session-title">主题演讲 4：可持续发展开源商业生态指数</div>
+        <div class="session-title">主题演讲 3：可持续发展开源商业生态指数</div>
         <div class="speakers-grid single">
           <div class="speaker">
             <img src="images/speakers/蒋涛.png" alt="蒋涛" class="speaker-photo">
@@ -591,51 +621,58 @@
       <!-- Morning Panel -->
       <div class="session panel">
         <div class="session-header">
-          <span class="session-time">11:15 - 12:15</span>
+          <span class="session-time">10:55 - 11:55</span>
           <span class="session-type">圆桌讨论</span>
         </div>
         <div class="session-title">圆桌讨论：破局 · 企业软件的「巨硬」时刻</div>
         <div class="speakers-grid">
           <div class="speaker">
-            <img src="images/speakers/生姜Iris.png" alt="生姜Iris" class="speaker-photo">
+            <img src="images/speakers/高宁.png" alt="高宁" class="speaker-photo">
             <div class="speaker-info">
-              <div class="speaker-name">生姜 Iris <span class="tag">主持</span></div>
-              <div class="speaker-role">AFFiNE 联合创始人兼前 COO</div>
+              <div class="speaker-name">高宁 <span class="tag">主持</span></div>
+              <div class="speaker-role">Linkloud 联合创始人</div>
             </div>
           </div>
           <div class="speaker">
-            <img src="images/speakers/延君晨.png" alt="延君晨" class="speaker-photo">
+            <img src="images/speakers/李世华.png" alt="李世华" class="speaker-photo">
             <div class="speaker-info">
-              <div class="speaker-name">延君晨</div>
-              <div class="speaker-role">Dify 商业化负责人</div>
+              <div class="speaker-name">李世华</div>
+              <div class="speaker-role">中璟资本管理合伙人</div>
             </div>
           </div>
           <div class="speaker">
-            <img src="images/speakers/卞立.png" alt="卞立" class="speaker-photo">
+            <img src="images/speakers/蒋涛.png" alt="蒋涛" class="speaker-photo">
             <div class="speaker-info">
-              <div class="speaker-name">卞立</div>
-              <div class="speaker-role">QBoson 前软件研发副总裁</div>
+              <div class="speaker-name">蒋涛</div>
+              <div class="speaker-role">CSDN 创始人 & 董事长</div>
             </div>
           </div>
           <div class="speaker">
-            <img src="images/speakers/方海涛.png" alt="方海涛" class="speaker-photo">
+            <img src="images/speakers/陶建辉.png" alt="陶建辉" class="speaker-photo">
             <div class="speaker-info">
-              <div class="speaker-name">方海涛</div>
-              <div class="speaker-role">Sealos 创始人，环界云计算 CEO</div>
+              <div class="speaker-name">陶建辉</div>
+              <div class="speaker-role">涛思数据创始人、CEO</div>
             </div>
           </div>
           <div class="speaker">
-            <img src="images/speakers/林沅霖.png" alt="林沅霖" class="speaker-photo">
+            <img src="images/speakers/章文嵩.png" alt="章文嵩" class="speaker-photo">
             <div class="speaker-info">
-              <div class="speaker-name">林沅霖</div>
-              <div class="speaker-role">Zeabur 创始人兼 CEO</div>
+              <div class="speaker-name">章文嵩</div>
+              <div class="speaker-role">LVS 创始人</div>
             </div>
           </div>
           <div class="speaker">
-            <img src="images/speakers/Yiki.png" alt="Yiki" class="speaker-photo">
+            <img src="images/speakers/刘松.png" alt="刘松" class="speaker-photo">
             <div class="speaker-info">
-              <div class="speaker-name">Yiki</div>
-              <div class="speaker-role">EezyCollab 创始人</div>
+              <div class="speaker-name">刘松</div>
+              <div class="speaker-role">PingCAP 副总裁</div>
+            </div>
+          </div>
+          <div class="speaker">
+            <img src="images/speakers/文煊义.png" alt="文煊义" class="speaker-photo">
+            <div class="speaker-info">
+              <div class="speaker-name">文煊义</div>
+              <div class="speaker-role">XVC 研究型投资人</div>
             </div>
           </div>
         </div>
@@ -643,7 +680,7 @@
 
       <!-- Lunch Break -->
       <div class="break">
-        <div class="break-time">12:15 - 13:30</div>
+        <div class="break-time">11:55 - 13:30</div>
         <div class="break-title">午餐 & 交流</div>
       </div>
 
