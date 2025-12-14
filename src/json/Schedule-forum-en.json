@@ -169,15 +169,6 @@
                 "image": "延君晨.png"
             },
             {
-                "id": "bian-li",
-                "name": "Li Bian",
-                "tags": [
-                    "forum"
-                ],
-                "roleOrg": "Former VP of R&D at QBoson",
-                "image": "卞立.png"
-            },
-            {
                 "id": "fang-haitao",
                 "name": "Haitao Fang",
                 "tags": [
@@ -284,6 +275,15 @@
                 "image": "陈志伟.png"
             },
             {
+                "id": "bian-li",
+                "name": "Li Bian",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "Former VP of R&D at QBoson",
+                "image": "卞立.png"
+            },
+            {
                 "id": "zhao-jun",
                 "name": "Jun Zhao",
                 "tags": [
@@ -348,14 +348,6 @@
         "date": "DEC 21",
         "timeSlot": "17:10 - 17:30",
         "title": "Closing: Unlock the Source, Create the Future, 2026 and Beyond",
-        "content": "",
-        "speakers": [],
-        "isSpecialEvent": true
-    },
-    {
-        "date": "DEC 21",
-        "timeSlot": "18:30 - 20:30",
-        "title": "VIP Dinner",
         "content": "",
         "speakers": [],
         "isSpecialEvent": true
