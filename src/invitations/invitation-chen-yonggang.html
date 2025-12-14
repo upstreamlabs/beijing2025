@@ -221,9 +221,9 @@
     .invitation-photo {
       width: 80px;
       height: 80px;
-      border-radius: 50%;
-      object-fit: cover;
+      object-fit: contain;
       flex-shrink: 0;
+      background: transparent;
     }
 
     .invitation-text {
@@ -233,6 +233,15 @@
       text-align: left;
       margin: 0;
       text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .invitation-text .highlight {
+      background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FFD700 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 700;
+      text-shadow: none;
     }
 
     .gold-bar {
@@ -522,11 +531,11 @@
     <!-- Header -->
     <div class="header">
       <div class="header-content">
-        <img src="images/logos/GOBI-golden-logo.svg" alt="GOBI 2025" class="header-logo">
+        <img src="../../public/images/logos/GOBI-golden-logo.svg" alt="GOBI 2025" class="header-logo">
         <h1>全球开源商业创新大会</h1>
-        <h2>Global Open-source Business Innovation</h2>
+        <h2>Global Open-Source Business Innovation</h2>
         <div class="hero-image-wrap">
-          <img src="images/homepage/unlockthesource.png" alt="Unlock the Source" class="hero-img">
+          <img src="../../public/images/homepage/unlockthesource.png" alt="Unlock the Source" class="hero-img">
         </div>
         <div class="meta">
           <div class="meta-item">
@@ -541,9 +550,9 @@
         <div class="sponsors">
           <p class="sponsors-label">联合主办方</p>
           <div class="sponsors-logos">
-            <img src="images/logos/upstream-golden-logo.svg" alt="Upstream" class="sponsor-logo upstream">
-            <img src="images/logos/atominnovation.svg" alt="Atom Innovation" class="sponsor-logo atom">
-            <img src="images/sponsors/csdn.png" alt="CSDN" class="sponsor-logo">
+            <img src="../../public/images/logos/upstream-golden-logo.svg" alt="Upstream" class="sponsor-logo upstream">
+            <img src="../../public/images/logos/atominnovation.svg" alt="Atom Innovation" class="sponsor-logo atom">
+            <img src="../../public/images/sponsors/csdn.png" alt="CSDN" class="sponsor-logo">
           </div>
         </div>
       </div>
@@ -554,10 +563,10 @@
     <div class="content">
       <!-- Invitation Section -->
       <div class="invitation-section">
-        <img src="images/invitation.svg" alt="邀你同场共话" class="invitation-title-img">
+        <img src="../../public/images/invitation.svg" alt="邀你同场共话" class="invitation-title-img">
         <div class="invitation-content">
-          <img src="images/speakers/蒋涛.png" alt="蒋涛" class="invitation-photo">
-          <p class="invitation-text">开源为舟，商业为帆。GOBI 相见，共论开源可持续增长。诚邀蒋涛先生莅临全球开源商业创新大会并作主旨分享。</p>
+          <img src="../../public/images/speakers/陈永刚.png" alt="陈永刚" class="invitation-photo">
+          <p class="invitation-text">开源为舟，商业为帆。GOBI 相见，共论开源可持续增长。诚邀你参加全球开源商业创新大会，参与[陈永刚先生]的圆桌讨论<span class="highlight">「聚力·开源社区的进化与未来圆桌」</span>。</p>
         </div>
       </div>
 
@@ -584,7 +593,7 @@
         <div class="session-title">主题演讲 1：可持续的开源产业发展</div>
         <div class="speakers-grid single">
           <div class="speaker">
-            <img src="images/speakers/杜莹芬.png" alt="杜莹芬" class="speaker-photo duyingfen">
+            <img src="../../public/images/speakers/杜莹芬.png" alt="杜莹芬" class="speaker-photo duyingfen">
             <div class="speaker-info">
               <div class="speaker-name">杜莹芬</div>
               <div class="speaker-role">中国社会科学院工业经济研究所研究员、教授、国务院参事</div>
@@ -602,7 +611,7 @@
         <div class="session-title">主题演讲 2：开源商业化未来可期</div>
         <div class="speakers-grid single">
           <div class="speaker">
-            <img src="images/speakers/汪华.png" alt="汪华" class="speaker-photo">
+            <img src="../../public/images/speakers/汪华.png" alt="汪华" class="speaker-photo">
             <div class="speaker-info">
               <div class="speaker-name">汪华</div>
               <div class="speaker-role">创新工场联合创始人、管理合伙人</div>
@@ -620,7 +629,7 @@
         <div class="session-title">主题演讲 3：可持续发展开源商业生态指数</div>
         <div class="speakers-grid single">
           <div class="speaker">
-            <img src="images/speakers/蒋涛.png" alt="蒋涛" class="speaker-photo">
+            <img src="../../public/images/speakers/蒋涛.png" alt="蒋涛" class="speaker-photo">
             <div class="speaker-info">
               <div class="speaker-name">蒋涛</div>
               <div class="speaker-role">CSDN 创始人 & 董事长、开放原子基金会理事</div>
@@ -638,49 +647,49 @@
         <div class="session-title">圆桌讨论：源力觉醒 · 企业软件的「巨硬」时刻</div>
         <div class="speakers-grid">
           <div class="speaker">
-            <img src="images/speakers/高宁.png" alt="高宁" class="speaker-photo">
+            <img src="../../public/images/speakers/高宁.png" alt="高宁" class="speaker-photo">
             <div class="speaker-info">
               <div class="speaker-name">高宁 <span class="tag">主持</span></div>
               <div class="speaker-role">Linkloud 联合创始人</div>
             </div>
           </div>
           <div class="speaker">
-            <img src="images/speakers/李世华.png" alt="李世华" class="speaker-photo">
+            <img src="../../public/images/speakers/李世华.png" alt="李世华" class="speaker-photo">
             <div class="speaker-info">
               <div class="speaker-name">李世华</div>
               <div class="speaker-role">中璟资本管理合伙人</div>
             </div>
           </div>
           <div class="speaker">
-            <img src="images/speakers/蒋涛.png" alt="蒋涛" class="speaker-photo">
+            <img src="../../public/images/speakers/蒋涛.png" alt="蒋涛" class="speaker-photo">
             <div class="speaker-info">
               <div class="speaker-name">蒋涛</div>
               <div class="speaker-role">CSDN 创始人 & 董事长</div>
             </div>
           </div>
           <div class="speaker">
-            <img src="images/speakers/陶建辉.png" alt="陶建辉" class="speaker-photo">
+            <img src="../../public/images/speakers/陶建辉.png" alt="陶建辉" class="speaker-photo">
             <div class="speaker-info">
               <div class="speaker-name">陶建辉</div>
               <div class="speaker-role">涛思数据创始人、CEO</div>
             </div>
           </div>
           <div class="speaker">
-            <img src="images/speakers/章文嵩.png" alt="章文嵩" class="speaker-photo">
+            <img src="../../public/images/speakers/章文嵩.png" alt="章文嵩" class="speaker-photo">
             <div class="speaker-info">
               <div class="speaker-name">章文嵩</div>
               <div class="speaker-role">LVS 创始人</div>
             </div>
           </div>
           <div class="speaker">
-            <img src="images/speakers/刘松.png" alt="刘松" class="speaker-photo">
+            <img src="../../public/images/speakers/刘松.png" alt="刘松" class="speaker-photo">
             <div class="speaker-info">
               <div class="speaker-name">刘松</div>
               <div class="speaker-role">PingCAP 副总裁</div>
             </div>
           </div>
           <div class="speaker">
-            <img src="images/speakers/文煊义.png" alt="文煊义" class="speaker-photo">
+            <img src="../../public/images/speakers/文煊义.png" alt="文煊义" class="speaker-photo">
             <div class="speaker-info">
               <div class="speaker-name">文煊义</div>
               <div class="speaker-role">XVC 研究型投资人</div>
@@ -712,42 +721,42 @@
         <div class="session-title">圆桌讨论 1：破局 · AI 带来的软件和 SaaS 变革</div>
         <div class="speakers-grid">
           <div class="speaker">
-            <img src="images/speakers/生姜Iris.png" alt="生姜Iris" class="speaker-photo">
+            <img src="../../public/images/speakers/生姜Iris.png" alt="生姜Iris" class="speaker-photo">
             <div class="speaker-info">
               <div class="speaker-name">生姜 Iris <span class="tag">主持</span></div>
               <div class="speaker-role">AFFiNE 联合创始人</div>
             </div>
           </div>
           <div class="speaker">
-            <img src="images/speakers/延君晨.png" alt="延君晨" class="speaker-photo">
+            <img src="../../public/images/speakers/延君晨.png" alt="延君晨" class="speaker-photo">
             <div class="speaker-info">
               <div class="speaker-name">延君晨</div>
               <div class="speaker-role">Dify.AI 联合创始人</div>
             </div>
           </div>
           <div class="speaker">
-            <img src="images/speakers/卞立.png" alt="卞立" class="speaker-photo">
+            <img src="../../public/images/speakers/卞立.png" alt="卞立" class="speaker-photo">
             <div class="speaker-info">
               <div class="speaker-name">卞立</div>
               <div class="speaker-role">QBoson 前软件研发副总裁</div>
             </div>
           </div>
           <div class="speaker">
-            <img src="images/speakers/方海涛.png" alt="方海涛" class="speaker-photo">
+            <img src="../../public/images/speakers/方海涛.png" alt="方海涛" class="speaker-photo">
             <div class="speaker-info">
               <div class="speaker-name">方海涛</div>
               <div class="speaker-role">Sealos 创始人</div>
             </div>
           </div>
           <div class="speaker">
-            <img src="images/speakers/林沅霖.png" alt="林沅霖" class="speaker-photo">
+            <img src="../../public/images/speakers/林沅霖.png" alt="林沅霖" class="speaker-photo">
             <div class="speaker-info">
               <div class="speaker-name">林沅霖</div>
               <div class="speaker-role">Zeabur 创始人兼 CEO</div>
             </div>
           </div>
           <div class="speaker">
-            <img src="images/speakers/Yiki.png" alt="Yiki" class="speaker-photo">
+            <img src="../../public/images/speakers/Yiki.png" alt="Yiki" class="speaker-photo">
             <div class="speaker-info">
               <div class="speaker-name">Yiki</div>
               <div class="speaker-role">EezyCollab 创始人兼 CEO</div>
@@ -765,42 +774,42 @@
         <div class="session-title">圆桌讨论 2：聚力 · 开源社区的进化与未来</div>
         <div class="speakers-grid">
           <div class="speaker">
-            <img src="images/speakers/唐小引.png" alt="唐小引" class="speaker-photo">
+            <img src="../../public/images/speakers/唐小引.png" alt="唐小引" class="speaker-photo">
             <div class="speaker-info">
               <div class="speaker-name">唐小引 <span class="tag">主持</span></div>
               <div class="speaker-role">CSDN &《新程序员》执行总编</div>
             </div>
           </div>
           <div class="speaker">
-            <img src="images/speakers/郑耀威.png" alt="郑耀威" class="speaker-photo">
+            <img src="../../public/images/speakers/郑耀威.png" alt="郑耀威" class="speaker-photo">
             <div class="speaker-info">
               <div class="speaker-name">郑耀威</div>
               <div class="speaker-role">LLaMA Factory 作者</div>
             </div>
           </div>
           <div class="speaker">
-            <img src="images/speakers/张颖峰.png" alt="张颖峰" class="speaker-photo">
+            <img src="../../public/images/speakers/张颖峰.png" alt="张颖峰" class="speaker-photo">
             <div class="speaker-info">
               <div class="speaker-name">张颖峰</div>
               <div class="speaker-role">RAGFlow 创始人</div>
             </div>
           </div>
           <div class="speaker">
-            <img src="images/speakers/张家驹.png" alt="张家驹" class="speaker-photo">
+            <img src="../../public/images/speakers/张家驹.png" alt="张家驹" class="speaker-photo">
             <div class="speaker-info">
               <div class="speaker-name">张家驹</div>
               <div class="speaker-role">vLLM 社区贡献者</div>
             </div>
           </div>
           <div class="speaker">
-            <img src="images/speakers/堵俊平.png" alt="堵俊平" class="speaker-photo">
+            <img src="../../public/images/speakers/堵俊平.png" alt="堵俊平" class="speaker-photo">
             <div class="speaker-info">
               <div class="speaker-name">堵俊平</div>
               <div class="speaker-role">Datastrato 创始人 & CEO</div>
             </div>
           </div>
           <div class="speaker">
-            <img src="images/speakers/陈永刚.png" alt="陈永刚" class="speaker-photo">
+            <img src="../../public/images/speakers/陈永刚.png" alt="陈永刚" class="speaker-photo">
             <div class="speaker-info">
               <div class="speaker-name">陈永刚</div>
               <div class="speaker-role">宇树科技 Qmini 开源负责人</div>
@@ -818,42 +827,42 @@
         <div class="session-title">圆桌讨论 3：创生 · AI催生的文艺复兴式创业者</div>
         <div class="speakers-grid">
           <div class="speaker">
-            <img src="images/speakers/陈志伟.png" alt="陈志伟" class="speaker-photo">
+            <img src="../../public/images/speakers/陈志伟.png" alt="陈志伟" class="speaker-photo">
             <div class="speaker-info">
               <div class="speaker-name">陈志伟 <span class="tag">主持</span></div>
               <div class="speaker-role">无界青年论坛创始人</div>
             </div>
           </div>
           <div class="speaker">
-            <img src="images/speakers/赵君.png" alt="赵君" class="speaker-photo">
+            <img src="../../public/images/speakers/赵君.png" alt="赵君" class="speaker-photo">
             <div class="speaker-info">
               <div class="speaker-name">赵君</div>
               <div class="speaker-role">SimilarTube & NanoInfluencer 开发者</div>
             </div>
           </div>
           <div class="speaker">
-            <img src="images/speakers/NANA.png" alt="Nana" class="speaker-photo">
+            <img src="../../public/images/speakers/NANA.png" alt="Nana" class="speaker-photo">
             <div class="speaker-info">
               <div class="speaker-name">Nana</div>
               <div class="speaker-role">YouTube AI 视频探索者</div>
             </div>
           </div>
           <div class="speaker">
-            <img src="images/speakers/泛函.png" alt="泛函" class="speaker-photo">
+            <img src="../../public/images/speakers/泛函.png" alt="泛函" class="speaker-photo">
             <div class="speaker-info">
               <div class="speaker-name">泛函</div>
               <div class="speaker-role">AI 社交产品 Bonjour! CMO</div>
             </div>
           </div>
           <div class="speaker">
-            <img src="images/speakers/鲍晨熙.png" alt="鲍晨熙" class="speaker-photo">
+            <img src="../../public/images/speakers/鲍晨熙.png" alt="鲍晨熙" class="speaker-photo">
             <div class="speaker-info">
               <div class="speaker-name">鲍晨熙</div>
               <div class="speaker-role">音乐科技公司产品经理</div>
             </div>
           </div>
           <div class="speaker">
-            <img src="images/speakers/兔老师Roxy.png" alt="兔老师Roxy" class="speaker-photo">
+            <img src="../../public/images/speakers/兔老师Roxy.png" alt="兔老师Roxy" class="speaker-photo">
             <div class="speaker-info">
               <div class="speaker-name">兔老师Roxy</div>
               <div class="speaker-role">Citely.ai 创始人</div>
@@ -876,16 +885,15 @@
         </div>
         <div class="session-title">颁奖 & 闭幕</div>
       </div>
-
     </div>
 
     <!-- Footer -->
     <div class="footer">
-      <img src="images/registration.svg" alt="Registration" class="registration-img">
+      <img src="../../public/images/registration.svg" alt="Registration" class="registration-img">
       <div class="qr-section">
-        <img src="images/gobiqr.svg" alt="扫码报名" class="qr-code">
+        <img src="../../public/images/gobiqr.svg" alt="扫码报名" class="qr-code">
       </div>
-      <img src="images/logos/GOBI-golden-logo.svg" alt="GOBI 2025" class="footer-logo">
+      <img src="../../public/images/logos/GOBI-golden-logo.svg" alt="GOBI 2025" class="footer-logo">
       <p><span class="url">gobi.upstreamlabs.org</span></p>
     </div>
   </div>

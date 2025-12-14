@@ -70,131 +70,105 @@
   {
     "date": "12月21日",
     "timeSlot": "10:55 - 11:55",
-    "title": "Panel：破局 · 企业软件的「巨硬」时刻",
+    "title": "Panel：源力觉醒 · 企业软件的「巨硬」时刻",
     "content": "<h4>核心议题</h4><ul><li><strong>组织变革：</strong>从「人头红利」到「人效革命」，企业是否准备好用 10 人团队挑战传统 1000 人组织？人才密度、极度扁平化与 AI 自动化将如何重塑企业软件的组织形态？</li><li><strong>护城河重构：</strong>当代码通缩、UI 消失、AI 可生成工具时，SaaS 的护城河究竟还剩什么？竞争焦点是否已从「功能」转向「专有数据 + 深垂直工作流理解」？</li><li><strong>模式跃迁：</strong>Seat-based 模式失效后，谁能率先完成从 SaaS 到 Service-as-Software 的跃迁？在「巨硬时刻」中，巨头与 AI Native 创企，谁能突破信任与分发的双重瓶颈？</li></ul>",
     "speakers": [
       {
         "id": "gao-ning",
         "name": "高宁 (Moderator)",
-        "tags": [
-          "forum"
-        ],
+        "tags": ["forum"],
         "roleOrg": "Linkloud 联合创始人",
         "image": "高宁.png"
       },
       {
         "id": "li-shihua",
         "name": "李世华",
-        "tags": [
-          "forum"
-        ],
+        "tags": ["forum"],
         "roleOrg": "中璟资本管理合伙人",
         "image": "李世华.png"
       },
       {
         "id": "jiang-tao",
         "name": "蒋涛",
-        "tags": [
-          "forum"
-        ],
+        "tags": ["forum"],
         "roleOrg": "CSDN 创始人 & 董事长、开放原子基金会理事",
         "image": "蒋涛.png"
       },
       {
         "id": "tao-jianhui",
         "name": "陶建辉",
-        "tags": [
-          "forum"
-        ],
+        "tags": ["forum"],
         "roleOrg": "涛思数据创始人、CEO",
         "image": "陶建辉.png"
       },
       {
         "id": "zhang-wensong",
         "name": "章文嵩",
-        "tags": [
-          "forum"
-        ],
+        "tags": ["forum"],
         "roleOrg": "LVS 创始人",
         "image": "章文嵩.png"
       },
       {
         "id": "liu-song",
         "name": "刘松",
-        "tags": [
-          "forum"
-        ],
+        "tags": ["forum"],
         "roleOrg": "PingCAP 副总裁",
         "image": "刘松.png"
       },
       {
         "id": "wen-xuanyi",
         "name": "文煊义",
-        "tags": [
-          "forum"
-        ],
+        "tags": ["forum"],
         "roleOrg": "XVC 研究型投资人",
-        "image": "placeholder.png"
+        "image": "文煊义.png"
       }
     ]
   },
   {
     "date": "12月21日",
     "timeSlot": "13:30 - 14:30",
-    "title": "圆桌讨论 1: 变局 · AI 带来的软件和 Saas 变革，新底座，新机会",
+    "title": "圆桌讨论 1: 破局 · AI 带来的软件和 Saas 变革，新底座，新机会",
     "content": "<h4>核心议题</h4><ul><li><strong>认知变局：</strong>AI正在高速淘汰哪些“伪技能”？如何绘制一份面向未来的“能力资产负债表”，打破思维定式？</li><li><strong>能力变局：</strong>如何用最低成本搭建跨学科学习路径，找到能力的“破局点”，成为AI无法轻易替代的“接口型人才”？</li><li><strong>价值变局：</strong>未来5年，哪些底层能力能让你穿越技术周期，从“被替代者”变为“不可替代者”，实现价值的跃迁？</li></ul>",
     "speakers": [
       {
         "id": "sheng-jiang",
         "name": "生姜Iris (Moderator)",
-        "tags": [
-          "forum"
-        ],
+        "tags": ["forum"],
         "roleOrg": "AFFiNE 联合创始人",
         "image": "生姜Iris.png"
       },
       {
         "id": "yan-junchen",
         "name": "延君晨",
-        "tags": [
-          "forum"
-        ],
+        "tags": ["forum"],
         "roleOrg": "Dify.AI 联合创始人",
         "image": "延君晨.png"
       },
       {
         "id": "bian-li",
         "name": "卞立",
-        "tags": [
-          "forum"
-        ],
+        "tags": ["forum"],
         "roleOrg": "QBoson 前软件研发副总裁",
         "image": "卞立.png"
       },
       {
         "id": "fang-haitao",
         "name": "方海涛",
-        "tags": [
-          "forum"
-        ],
+        "tags": ["forum"],
         "roleOrg": "Sealos 创始人",
         "image": "方海涛.png"
       },
       {
         "id": "lin-yuanlin",
         "name": "林沅霖",
-        "tags": [
-          "forum"
-        ],
+        "tags": ["forum"],
         "roleOrg": "Zeabur 创始人兼 CEO",
         "image": "林沅霖.png"
       },
       {
         "id": "yiki",
         "name": "Yiki",
-        "tags": [
-          "forum"
-        ],
+        "tags": ["forum"],
         "roleOrg": "EezyCollab 创始人兼 CEO",
         "image": "Yiki.png"
       }
@@ -209,54 +183,42 @@
       {
         "id": "tang-xiaoyin",
         "name": "唐小引 (Moderator)",
-        "tags": [
-          "forum"
-        ],
+        "tags": ["forum"],
         "roleOrg": "CSDN &《新程序员》执行总编",
         "image": "唐小引.png"
       },
       {
         "id": "zheng-yaowei",
         "name": "郑耀威",
-        "tags": [
-          "forum"
-        ],
+        "tags": ["forum"],
         "roleOrg": "LLaMA Factory 作者",
         "image": "郑耀威.png"
       },
       {
         "id": "zhang-yingfeng",
         "name": "张颖峰",
-        "tags": [
-          "forum"
-        ],
+        "tags": ["forum"],
         "roleOrg": "RAGFlow 创始人",
         "image": "张颖峰.png"
       },
       {
         "id": "zhang-jiaju",
         "name": "张家驹",
-        "tags": [
-          "forum"
-        ],
+        "tags": ["forum"],
         "roleOrg": "vLLM 社区贡献者",
         "image": "张家驹.png"
       },
       {
         "id": "du-junping",
         "name": "堵俊平",
-        "tags": [
-          "forum"
-        ],
+        "tags": ["forum"],
         "roleOrg": "Datastrato 创始人 & CEO",
         "image": "堵俊平.png"
       },
       {
         "id": "chen-yonggang",
         "name": "陈永刚",
-        "tags": [
-          "forum"
-        ],
+        "tags": ["forum"],
         "roleOrg": "宇树科技 Qmini 开源负责人",
         "image": "陈永刚.png"
       }
@@ -271,54 +233,42 @@
       {
         "id": "chen-zhiwei",
         "name": "陈志伟 (Moderator)",
-        "tags": [
-          "forum"
-        ],
+        "tags": ["forum"],
         "roleOrg": "无界青年论坛创始人",
         "image": "陈志伟.png"
       },
       {
         "id": "zhao-jun",
         "name": "赵君",
-        "tags": [
-          "forum"
-        ],
+        "tags": ["forum"],
         "roleOrg": "SimilarTube & NanoInfluencer 开发者",
         "image": "赵君.png"
       },
       {
         "id": "nana",
         "name": "Nana",
-        "tags": [
-          "forum"
-        ],
+        "tags": ["forum"],
         "roleOrg": "YouTube AI 视频探索者",
         "image": "NANA.png"
       },
       {
         "id": "fan-han",
         "name": "泛函",
-        "tags": [
-          "forum"
-        ],
+        "tags": ["forum"],
         "roleOrg": "AI 社交产品 Bonjour! CMO",
         "image": "泛函.png"
       },
       {
         "id": "bao-chenxi",
         "name": "鲍晨熙",
-        "tags": [
-          "forum"
-        ],
+        "tags": ["forum"],
         "roleOrg": "音乐科技公司产品经理",
         "image": "鲍晨熙.png"
       },
       {
         "id": "roxy",
         "name": "兔老师Roxy",
-        "tags": [
-          "forum"
-        ],
+        "tags": ["forum"],
         "roleOrg": "Citely.ai 创始人",
         "image": "兔老师Roxy.png"
       }
@@ -342,14 +292,6 @@
     "date": "12月21日",
     "timeSlot": "17:10 - 17:30",
     "title": "闭幕：释放源力，开创未来，2026 展望",
-    "content": "",
-    "speakers": [],
-    "isSpecialEvent": true
-  },
-  {
-    "date": "12月21日",
-    "timeSlot": "18:30 - 20:30",
-    "title": "嘉宾晚宴",
     "content": "",
     "speakers": [],
     "isSpecialEvent": true
