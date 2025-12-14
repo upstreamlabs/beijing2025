@@ -55,14 +55,14 @@
   {
     "date": "12月21日",
     "timeSlot": "10:35 - 10:55",
-    "title": "Keynote 3：可持续发展开源商业生态指数",
+    "title": "Keynote 3：可持续发展开源商业生态指数（理论框架）",
     "content": "",
     "speakers": [
       {
         "id": "jiang-tao",
         "name": "蒋涛",
         "tags": ["forum"],
-        "roleOrg": "CSDN 创始人 & 董事长、开放原子基金会理事",
+        "roleOrg": "CSDN创始人&董事长、开放原子基金会理事",
         "image": "蒋涛.png"
       }
     ]
@@ -81,15 +81,6 @@
         ],
         "roleOrg": "Linkloud 联合创始人",
         "image": "高宁.png"
-      },
-      {
-        "id": "li-shihua",
-        "name": "李世华",
-        "tags": [
-          "forum"
-        ],
-        "roleOrg": "中璟资本管理合伙人",
-        "image": "李世华.png"
       },
       {
         "id": "jiang-tao",
@@ -128,13 +119,22 @@
         "image": "刘松.png"
       },
       {
+        "id": "li-shihua",
+        "name": "李世华",
+        "tags": [
+          "forum"
+        ],
+        "roleOrg": "中璟资本管理合伙人（2024 年度中国最佳市场 LP TOP20）",
+        "image": "李世华.png"
+      },
+      {
         "id": "wen-xuanyi",
         "name": "文煊义",
         "tags": [
           "forum"
         ],
-        "roleOrg": "XVC 研究型投资人",
-        "image": "placeholder.png"
+        "roleOrg": "XVC投资人，代表项目 ONES 与 ApiFox",
+        "image": "文煊义.png"
       }
     ]
   },

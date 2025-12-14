@@ -24,9 +24,26 @@
     },
     {
         "date": "DEC 21",
-        "timeSlot": "10:15 - 10:45",
-        "title": "Keynote Speech 1: Overview of Open Source Industry Development",
-        "content": "Co-founder & Managing Partner, Sinovation Ventures Hua Wang",
+        "timeSlot": "10:05 - 10:15",
+        "title": "Keynote 1: Sustainable Open Source Industry Development",
+        "content": "",
+        "speakers": [
+            {
+                "id": "du-yingfen",
+                "name": "Yingfen Du",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "Researcher & Professor at CASS Institute of Industrial Economics, State Councilor",
+                "image": "杜莹芬.png"
+            }
+        ]
+    },
+    {
+        "date": "DEC 21",
+        "timeSlot": "10:15 - 10:35",
+        "title": "Keynote 2: Promising Future of Open Source Commercialization",
+        "content": "",
         "speakers": [
             {
                 "id": "wang-hua",
@@ -41,15 +58,8 @@
     },
     {
         "date": "DEC 21",
-        "timeSlot": "10:45 - 11:05",
-        "title": "Keynote Speech 2: Exploring Open Source Business Models",
-        "content": "",
-        "speakers": []
-    },
-    {
-        "date": "DEC 21",
-        "timeSlot": "11:05 - 11:25",
-        "title": "Keynote Speech 3: Sustainable Open Source Business Ecosystem Index",
+        "timeSlot": "10:35 - 10:55",
+        "title": "Keynote 3: Sustainable Open Source Business Ecosystem Index (Theoretical Framework)",
         "content": "",
         "speakers": [
             {
@@ -65,7 +75,7 @@
     },
     {
         "date": "DEC 21",
-        "timeSlot": "11:25 - 12:25",
+        "timeSlot": "10:55 - 11:55",
         "title": "Panel: Breaking Through · The \"Macrohard\" Moment of Enterprise Software",
         "content": "<h4>Key Topics</h4><ul><li><strong>Organizational Transformation:</strong> From \"headcount dividend\" to \"efficiency revolution\", are enterprises ready to challenge traditional 1000-person organizations with 10-person teams? How will talent density, radical flattening, and AI automation reshape the organizational form of enterprise software?</li><li><strong>Moat Reconstruction:</strong> When code deflates, UI disappears, and AI can generate tools, what's left of SaaS's moat? Has the competitive focus shifted from \"features\" to \"proprietary data + deep vertical workflow understanding\"?</li><li><strong>Model Transition:</strong> After seat-based models fail, who can first complete the transition from SaaS to Service-as-Software? In the \"Macrohard moment\", who can break through the dual bottleneck of trust and distribution—giants or AI Native startups?</li></ul>",
         "speakers": [
@@ -77,15 +87,6 @@
                 ],
                 "roleOrg": "Co-founder of Linkloud",
                 "image": "高宁.png"
-            },
-            {
-                "id": "wang-wei",
-                "name": "Wei Wang",
-                "tags": [
-                    "forum"
-                ],
-                "roleOrg": "",
-                "image": "王伟.png"
             },
             {
                 "id": "jiang-tao",
@@ -124,12 +125,21 @@
                 "image": "刘松.png"
             },
             {
+                "id": "li-shihua",
+                "name": "Shihua Li",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "Managing Partner of Zhongjing Capital (2024 China's Best Market LP TOP20)",
+                "image": "李世华.png"
+            },
+            {
                 "id": "wen-xuanyi",
                 "name": "Xuanyi Wen",
                 "tags": [
                     "forum"
                 ],
-                "roleOrg": "Research Investor at XVC",
+                "roleOrg": "Investor at XVC, Representative projects ONES & ApiFox",
                 "image": "文煊义.png"
             }
         ]

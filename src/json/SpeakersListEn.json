@@ -1,5 +1,12 @@
 [
     {
+        "id": "du-yingfen",
+        "name": "Yingfen Du",
+        "title": "Researcher & Professor at CASS Institute of Industrial Economics, State Councilor",
+        "bio": "Currently serves as a researcher at the Institute of Industrial Economics of the Chinese Academy of Social Sciences, State Councilor, Executive Director of the China Enterprise Management Research Association, Professor and Doctoral Supervisor at the Graduate School of the Chinese Academy of Social Sciences, and expert member of the National Enterprise Management Modernization Innovation Achievement Review Committee. She has published 14 academic monographs. As a key member, she has participated in more than ten national natural science and social science foundation key projects, and has won the National Science and Technology Progress Award (3rd Prize, 1999), China Development Award (1st Prize, 1998), Sun Yefang Economic Science Paper Award (1998), the first Jiang Yiwei Enterprise Reform and Development Academic Fund Outstanding Research Report Award (1998), and the Chinese Academy of Social Sciences Outstanding Achievement Award. While engaged in theoretical research, she also serves as a management consultant and consulting expert, providing beneficial services to government departments and enterprises.",
+        "image": "杜莹芬.png"
+    },
+    {
         "id": "wang-hua",
         "name": "Hua Wang",
         "title": "Co-founder & Managing Partner, Sinovation Ventures",
@@ -42,18 +49,18 @@
         "image": "刘松.png"
     },
     {
+        "id": "li-shihua",
+        "name": "Shihua Li",
+        "title": "Managing Partner of Zhongjing Capital",
+        "bio": "Managing Partner of Zhongjing Capital (2024 China's Best Market LP TOP20), holds a Master's degree in Economics from Renmin University of China, is a Certified Public Accountant and Senior Accountant in China. Mr. Li has over 20 years of experience in investment and financing management of large enterprise groups, having worked in three well-known listed companies responsible for investment and financing, mergers and acquisitions, and internal control management, covering industries such as consumer goods, environmental protection, internet, and advanced technology. During his ten years as Managing Partner of Zhongjing Capital, Mr. Li has invested in 21 well-known GPs through FOFs and directly invested in more than ten well-known projects.",
+        "image": "李世华.png"
+    },
+    {
         "id": "wen-xuanyi",
         "name": "Xuanyi Wen",
         "title": "Investor at XVC",
         "bio": "Former strategic analyst at ByteDance, Master's in Software Engineering from Nanjing University, representative projects include ONES and ApiFox",
         "image": "文煊义.png"
-    },
-    {
-        "id": "wang-wei",
-        "name": "Wei Wang",
-        "title": "Professor at East China Normal University, Director of Open Source Technical Committee at Singularity AI Research Institute",
-        "bio": "Wei Wang, Director of the Open Source Technical Committee at Singularity AI Research Institute, Secretary-General of the Open Source Innovation Committee of CAST-UN Consultative Status, Professor at East China Normal University, and Distinguished Member of CCF. He has long been dedicated to systematic research on open source innovation, governance, and evaluation, leading the formulation of China's first set of open source governance standards and promoting the inclusion of open source in the national science and education development system. He has published over 100 papers in top international conferences and journals such as ICSE, WWW, and ACL. Selected for national innovation talent projects, he has won National Teaching Achievement Awards and the Shanghai Open Source Innovation Excellence Award Grand Prize.",
-        "image": "王伟.png"
     },
     {
         "id": "gao-ning",
