@@ -275,6 +275,13 @@
         "tags": ["forum"],
         "roleOrg": "Citely.ai 创始人",
         "image": "兔老师Roxy.png"
+      },
+      {
+        "id": "bian-li",
+        "name": "卞立",
+        "tags": ["forum"],
+        "roleOrg": "QBoson 前软件研发副总裁",
+        "image": "卞立.png"
       }
     ]
   },

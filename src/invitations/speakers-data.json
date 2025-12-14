@@ -155,8 +155,8 @@
       "role": "QBoson 前软件研发副总裁",
       "participation": {
         "type": "panel",
-        "title": "破局 · AI 带来的软件和 SaaS 变革",
-        "time": "13:30 - 14:30",
+        "title": "创生 · AI催生的文艺复兴式创业者",
+        "time": "15:30 - 16:30",
         "isModerator": false
       }
     },
@@ -358,7 +358,7 @@
   ],
   "templates": {
     "keynote": "开源为舟，商业为帆。GOBI 相见，共论开源可持续增长。诚邀你来到全球开源商业创新大会，在现场聆听【{{NAME}}{{HONORIFIC}}】的主题演讲<span class=\"highlight\">「{{KEYNOTE_TITLE}}」</span>。",
-    "panel_moderator": "开源为舟，商业为帆。GOBI 相见，共论开源可持续增长。诚邀你参加全球开源商业创新大会，参与[{{NAME}}{{HONORIFIC}}]主持圆桌讨论<span class=\"highlight\">「{{PANEL_TITLE}}圆桌」</span>。",
+    "panel_moderator": "开源为舟，商业为帆。GOBI 相见，共论开源可持续增长。诚邀你参加全球开源商业创新大会，参与的[{{NAME}}{{HONORIFIC}}]主持圆桌讨论<span class=\"highlight\">「{{PANEL_TITLE}}圆桌」</span>。",
     "panel_speaker": "开源为舟，商业为帆。GOBI 相见，共论开源可持续增长。诚邀你参加全球开源商业创新大会，参与[{{NAME}}{{HONORIFIC}}]的圆桌讨论<span class=\"highlight\">「{{PANEL_TITLE}}圆桌」</span>。",
     "keynote_and_panel": "开源为舟，商业为帆。GOBI 相见，共论开源可持续增长。诚邀你来到全球开源商业创新大会，在现场聆听[{{NAME}}{{HONORIFIC}}的]主题演讲<span class=\"highlight\">「{{KEYNOTE_TITLE}}」</span>。"
   },
