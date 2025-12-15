@@ -59,7 +59,7 @@
   {
     "date": "12月21日",
     "timeSlot": "10:35 - 10:55",
-    "title": "Keynote 3：可持续发展开源商业生态指数（理论框架）",
+    "title": "Keynote 3：AI开源时代商业化的新机会",
     "content": "",
     "speakers": [
       {
@@ -331,7 +331,9 @@
       {
         "id": "bian-li",
         "name": "卞立",
-        "tags": ["forum"],
+        "tags": [
+          "forum"
+        ],
         "roleOrg": "QBoson 前软件研发副总裁",
         "image": "卞立.png"
       }
