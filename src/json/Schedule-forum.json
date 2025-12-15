@@ -31,7 +31,9 @@
       {
         "id": "du-yingfen",
         "name": "杜莹芬",
-        "tags": ["forum"],
+        "tags": [
+          "forum"
+        ],
         "roleOrg": "中国社会科学院工业经济研究所研究员、教授、国务院参事",
         "image": "杜莹芬.png"
       }
@@ -46,7 +48,9 @@
       {
         "id": "wang-hua",
         "name": "汪华",
-        "tags": ["forum"],
+        "tags": [
+          "forum"
+        ],
         "roleOrg": "创新工场联合创始人、管理合伙人",
         "image": "汪华.png"
       }
@@ -61,7 +65,9 @@
       {
         "id": "jiang-tao",
         "name": "蒋涛",
-        "tags": ["forum"],
+        "tags": [
+          "forum"
+        ],
         "roleOrg": "CSDN创始人&董事长、开放原子基金会理事",
         "image": "蒋涛.png"
       }
@@ -76,35 +82,45 @@
       {
         "id": "gao-ning",
         "name": "高宁 (Moderator)",
-        "tags": ["forum"],
+        "tags": [
+          "forum"
+        ],
         "roleOrg": "Linkloud 联合创始人",
         "image": "高宁.png"
       },
       {
         "id": "jiang-tao",
         "name": "蒋涛",
-        "tags": ["forum"],
+        "tags": [
+          "forum"
+        ],
         "roleOrg": "CSDN 创始人 & 董事长、开放原子基金会理事",
         "image": "蒋涛.png"
       },
       {
         "id": "tao-jianhui",
         "name": "陶建辉",
-        "tags": ["forum"],
+        "tags": [
+          "forum"
+        ],
         "roleOrg": "涛思数据创始人、CEO",
         "image": "陶建辉.png"
       },
       {
         "id": "zhang-wensong",
         "name": "章文嵩",
-        "tags": ["forum"],
+        "tags": [
+          "forum"
+        ],
         "roleOrg": "LVS 创始人",
         "image": "章文嵩.png"
       },
       {
         "id": "liu-song",
         "name": "刘松",
-        "tags": ["forum"],
+        "tags": [
+          "forum"
+        ],
         "roleOrg": "PingCAP 副总裁",
         "image": "刘松.png"
       },
@@ -120,7 +136,9 @@
       {
         "id": "wen-xuanyi",
         "name": "文煊义",
-        "tags": ["forum"],
+        "tags": [
+          "forum"
+        ],
         "roleOrg": "XVC投资人，代表项目 ONES 与 ApiFox",
         "image": "文煊义.png"
       }
@@ -129,41 +147,51 @@
   {
     "date": "12月21日",
     "timeSlot": "13:30 - 14:30",
-    "title": "圆桌讨论 1: 破局 · AI 带来的软件和 Saas 变革，新底座，新机会",
-    "content": "<h4>核心议题</h4><ul><li><strong>认知变局：</strong>AI正在高速淘汰哪些“伪技能”？如何绘制一份面向未来的“能力资产负债表”，打破思维定式？</li><li><strong>能力变局：</strong>如何用最低成本搭建跨学科学习路径，找到能力的“破局点”，成为AI无法轻易替代的“接口型人才”？</li><li><strong>价值变局：</strong>未来5年，哪些底层能力能让你穿越技术周期，从“被替代者”变为“不可替代者”，实现价值的跃迁？</li></ul>",
+    "title": "Panel 1: 变局 · AI 带来的软件和 Saas 变革，新底座，新机会",
+    "content": "<h4>核心议题</h4><ul><li><strong>认知变局：</strong>AI正在高速淘汰哪些\"伪技能\"？如何绘制一份面向未来的\"能力资产负债表\"，打破思维定式？</li><li><strong>能力变局：</strong>如何用最低成本搭建跨学科学习路径，找到能力的\"破局点\"，成为AI无法轻易替代的\"接口型人才\"？</li><li><strong>价值变局：</strong>未来5年，哪些底层能力能让你穿越技术周期，从\"被替代者\"变为\"不可替代者\"，实现价值的跃迁？</li></ul>",
     "speakers": [
       {
         "id": "sheng-jiang",
         "name": "生姜Iris (Moderator)",
-        "tags": ["forum"],
+        "tags": [
+          "forum"
+        ],
         "roleOrg": "AFFiNE 联合创始人",
         "image": "生姜Iris.png"
       },
       {
         "id": "yan-junchen",
         "name": "延君晨",
-        "tags": ["forum"],
+        "tags": [
+          "forum"
+        ],
         "roleOrg": "Dify.AI 联合创始人",
         "image": "延君晨.png"
       },
       {
         "id": "fang-haitao",
         "name": "方海涛",
-        "tags": ["forum"],
+        "tags": [
+          "forum"
+        ],
         "roleOrg": "Sealos 创始人",
         "image": "方海涛.png"
       },
       {
         "id": "lin-yuanlin",
         "name": "林沅霖",
-        "tags": ["forum"],
+        "tags": [
+          "forum"
+        ],
         "roleOrg": "Zeabur 创始人兼 CEO",
         "image": "林沅霖.png"
       },
       {
         "id": "yiki",
         "name": "Yiki",
-        "tags": ["forum"],
+        "tags": [
+          "forum"
+        ],
         "roleOrg": "EezyCollab 创始人兼 CEO",
         "image": "Yiki.png"
       }
@@ -172,48 +200,60 @@
   {
     "date": "12月21日",
     "timeSlot": "14:30 - 15:30",
-    "title": "圆桌讨论 2: 聚力 · 开源社区的进化与未来",
-    "content": "<p><strong>聚拢微光，可成星河。</strong></p><h4>核心议题</h4><ul><li><strong>智慧聚力：</strong>当成长遭遇瓶颈，如何借助社区力量实现“认知跃迁”？如何高效提问、求助，从社区中汲取集体智慧？</li><li><strong>行动聚力：</strong>从“围观者”到“共创者”，普通人如何在开源社区找到自己的贡献坐标，让个体的微光汇聚成项目的燎原之火？</li><li><strong>价值聚力：</strong>社区如何超越“工具属性”，成为个体的“精神部落”？我们如何在协作中找到归属感，聚力前行，实现共生进化？</li></ul>",
+    "title": "Panel 2: 聚力 · 开源社区的进化与未来",
+    "content": "<p><strong>聚拢微光，可成星河。</strong></p><h4>核心议题</h4><ul><li><strong>智慧聚力：</strong>当成长遭遇瓶颈，如何借助社区力量实现\"认知跃迁\"？如何高效提问、求助，从社区中汲取集体智慧？</li><li><strong>行动聚力：</strong>从\"围观者\"到\"共创者\"，普通人如何在开源社区找到自己的贡献坐标，让个体的微光汇聚成项目的燎原之火？</li><li><strong>价值聚力：</strong>社区如何超越\"工具属性\"，成为个体的\"精神部落\"？我们如何在协作中找到归属感，聚力前行，实现共生进化？</li></ul>",
     "speakers": [
       {
         "id": "tang-xiaoyin",
         "name": "唐小引 (Moderator)",
-        "tags": ["forum"],
+        "tags": [
+          "forum"
+        ],
         "roleOrg": "CSDN &《新程序员》执行总编",
         "image": "唐小引.png"
       },
       {
         "id": "zheng-yaowei",
         "name": "郑耀威",
-        "tags": ["forum"],
+        "tags": [
+          "forum"
+        ],
         "roleOrg": "LLaMA Factory 作者",
         "image": "郑耀威.png"
       },
       {
         "id": "zhang-yingfeng",
         "name": "张颖峰",
-        "tags": ["forum"],
+        "tags": [
+          "forum"
+        ],
         "roleOrg": "RAGFlow 创始人",
         "image": "张颖峰.png"
       },
       {
         "id": "zhang-jiaju",
         "name": "张家驹",
-        "tags": ["forum"],
+        "tags": [
+          "forum"
+        ],
         "roleOrg": "vLLM 社区贡献者",
         "image": "张家驹.png"
       },
       {
         "id": "du-junping",
         "name": "堵俊平",
-        "tags": ["forum"],
+        "tags": [
+          "forum"
+        ],
         "roleOrg": "Datastrato 创始人 & CEO",
         "image": "堵俊平.png"
       },
       {
         "id": "chen-yonggang",
         "name": "陈永刚",
-        "tags": ["forum"],
+        "tags": [
+          "forum"
+        ],
         "roleOrg": "宇树科技 Qmini 开源负责人",
         "image": "陈永刚.png"
       }
@@ -222,13 +262,15 @@
   {
     "date": "12月21日",
     "timeSlot": "15:30 - 16:30",
-    "title": "圆桌讨论 3: 创生 · AI催生的文艺复兴式创业者",
-    "content": "<h4>核心议题</h4><ul><li><strong>土壤创生：</strong>AI 时代如何重塑成长的思想土壤？思想解放、跨界需求与资源托举不断重构青年发展的环境。AI时代中，青年人会扮演一个怎样的角色？思想和个人发展的轨迹会受到怎样的影响？</li><li><strong>范式创生：</strong>当 AI 成为协作与创作的基础设施，效率范式将如何重构？AI 产品正在成为新的「协作接口」和「创作引擎」。从自动化到共创，从搜索到推理，我们是如何真正使用 AI 提升效率、突破专业边界的？未来的工作流会是什么样？</li><li><strong>模式创生：</strong>在 AI 加持下，价值创造的模式正在改变吗？内容生产、产品开发、表达方式与分发路径都因 AI 而重塑。AI 是否让个人能够以更低成本、更快速度实现创造？AI 是否正在让「一个人做一支团队的事」成为可能？</li></ul>",
+    "title": "Panel 3: 创生 · AI催生的文艺复兴式创业者",
+    "content": "<p><strong>与AI共舞，创生未来。人人都可以吗？</strong></p><p><strong>文艺复兴式 AI 创业者：</strong>在 AI 时代，能够跨越技术、艺术、人文、商业四个维度，以综合性思维创造突破性产品的人。如同文艺复兴时期的达·芬奇、米开朗基罗，他们不是局限在单一工种，而是用跨学科视角创造垂范百年的作品。现代的「文艺复兴式 AI 创业者」则是：深刻理解人类需求、熟悉人工智能原理与工具链、能进行艺术化的表达与设计、并掌握商业化、市场洞察、价值创造。这种创业者不是「技术创业者升级版」，而是技术 + 人文 + 审美 + 商业四位一体的复合人才。</p><h4>核心议题</h4><ul><li><strong>土壤创生：</strong>AI 时代如何重塑成长的思想土壤？思想解放、跨界需求与资源托举不断重构青年发展的环境。AI时代中，青年人会扮演一个怎样的角色？思想和个人发展的轨迹会受到怎样的影响？</li><li><strong>范式创生：</strong>当 AI 成为协作与创作的基础设施，效率范式将如何重构？AI 产品正在成为新的「协作接口」和「创作引擎」。从自动化到共创，从搜索到推理，我们是如何真正使用 AI 提升效率、突破专业边界的？未来的工作流会是什么样？</li><li><strong>模式创生：</strong>在 AI 加持下，价值创造的模式正在改变吗？内容生产、产品开发、表达方式与分发路径都因 AI 而重塑。AI 是否让个人能够以更低成本、更快速度实现创造？AI 是否正在让「一个人做一支团队的事」成为可能？</li></ul>",
     "speakers": [
       {
         "id": "chen-zhiwei",
         "name": "陈志伟 (Moderator)",
-        "tags": ["forum"],
+        "tags": [
+          "forum"
+        ],
         "roleOrg": "无界青年论坛创始人",
         "image": "陈志伟.png"
       },
@@ -244,35 +286,45 @@
       {
         "id": "zhao-jun",
         "name": "赵君",
-        "tags": ["forum"],
+        "tags": [
+          "forum"
+        ],
         "roleOrg": "SimilarTube & NanoInfluencer 开发者",
         "image": "赵君.png"
       },
       {
         "id": "nana",
         "name": "Nana",
-        "tags": ["forum"],
+        "tags": [
+          "forum"
+        ],
         "roleOrg": "YouTube AI 视频探索者",
         "image": "NANA.png"
       },
       {
         "id": "fan-han",
         "name": "泛函",
-        "tags": ["forum"],
+        "tags": [
+          "forum"
+        ],
         "roleOrg": "AI 社交产品 Bonjour! CMO",
         "image": "泛函.png"
       },
       {
         "id": "bao-chenxi",
         "name": "鲍晨熙",
-        "tags": ["forum"],
+        "tags": [
+          "forum"
+        ],
         "roleOrg": "音乐科技公司产品经理",
         "image": "鲍晨熙.png"
       },
       {
         "id": "roxy",
         "name": "兔老师Roxy",
-        "tags": ["forum"],
+        "tags": [
+          "forum"
+        ],
         "roleOrg": "Citely.ai 创始人",
         "image": "兔老师Roxy.png"
       }

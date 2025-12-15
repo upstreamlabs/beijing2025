@@ -538,6 +538,28 @@ const sortedAllSessions = sortSessionsByTime(uniqueAllSessions)
     margin: 0.25rem 0;
   }
 
+  /* Override global ul li styles to prevent double bullet points */
+  .styled-content :global(ul) {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+  
+  .styled-content :global(ul li) {
+    list-style: disc !important;
+    margin-left: 1.5rem !important;
+    padding-left: 0 !important;
+  }
+  
+  /* Ensure no pseudo-elements are adding extra bullets */
+  .styled-content :global(ul li::before) {
+    content: none !important;
+  }
+  
+  .styled-content :global(ul li::marker) {
+    color: #333 !important;
+  }
+
   .styled-content :global(h4) {
     margin-top: 1.5rem;
     margin-bottom: 1rem;
