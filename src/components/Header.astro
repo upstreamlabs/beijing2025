@@ -134,21 +134,12 @@ const slug = Astro.url.pathname;
           })}
         </ul>
       </nav>
-      <div class="box-row box-row-btn" style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem;">
-        <CityTour cities={["Beijing", "Paris", "SF"]} />
-      </div>
       <div class="box-row box-row-btn" style="display: flex; gap: 1rem; align-items: center;">
-        <div class="link link-hover" style="margin-right: 1rem;">
+        <div class="link link-hover">
           <a class="link-click" href={langSwitchLink} style="color: white; text-decoration: none;">
             <span>{langSwitchText}</span>
           </a>
         </div>
-        <Button
-          text={cta.text}
-          link={cta.link}
-          openInNewTab={cta.openInNewTab ?? false}
-          class="btn primary xl btn-hover"
-        />
       </div>
     </div>
   </div>
