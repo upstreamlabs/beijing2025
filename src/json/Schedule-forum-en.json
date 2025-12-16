@@ -76,7 +76,7 @@
     {
         "date": "DEC 21",
         "timeSlot": "10:55 - 11:55",
-        "title": "Panel: Breaking Through · The \"Macrohard\" Moment of Enterprise Software",
+        "title": "Panel 1: Breaking Through · The \"Macrohard\" Moment of Enterprise Software",
         "content": "<h4>Key Topics</h4><ul><li><strong>Organizational Transformation:</strong> From \"headcount dividend\" to \"efficiency revolution\", are enterprises ready to challenge traditional 1000-person organizations with 10-person teams? How will talent density, radical flattening, and AI automation reshape the organizational form of enterprise software?</li><li><strong>Moat Reconstruction:</strong> When code deflates, UI disappears, and AI can generate tools, what's left of SaaS's moat? Has the competitive focus shifted from \"features\" to \"proprietary data + deep vertical workflow understanding\"?</li><li><strong>Model Transition:</strong> After seat-based models fail, who can first complete the transition from SaaS to Service-as-Software? In the \"Macrohard moment\", who can break through the dual bottleneck of trust and distribution—giants or AI Native startups?</li></ul>",
         "speakers": [
             {
@@ -146,8 +146,16 @@
     },
     {
         "date": "DEC 21",
+        "timeSlot": "11:55 - 13:30",
+        "title": "Lunch Break",
+        "content": "",
+        "speakers": [],
+        "isSpecialEvent": true
+    },
+    {
+        "date": "DEC 21",
         "timeSlot": "13:30 - 14:30",
-        "title": "Panel 1: Disruption · AI-Driven Software and SaaS Revolution, New Foundation, New Opportunities",
+        "title": "Panel 2: Disruption · AI-Driven Software and SaaS Revolution, New Foundation, New Opportunities",
         "content": "<h4>Key Topics</h4><ul><li><strong>Cognitive Transformation:</strong> Which \"pseudo-skills\" is AI rapidly eliminating? How to draw a \"capability balance sheet\" for the future and break mindset patterns?</li><li><strong>Capability Transformation:</strong> How to build interdisciplinary learning paths at the lowest cost, find the \"breakthrough point\" of capabilities, and become an \"interface talent\" that AI cannot easily replace?</li><li><strong>Value Transformation:</strong> In the next 5 years, what underlying capabilities will allow you to traverse the technology cycle, moving from \"replaced\" to \"irreplaceable\", achieving a leap in value?</li></ul>",
         "speakers": [
             {
@@ -218,7 +226,7 @@
     {
         "date": "DEC 21",
         "timeSlot": "14:30 - 15:30",
-        "title": "Panel 2: Synergy · Evolution and Future of Open Source Communities",
+        "title": "Panel 3: Synergy · Evolution and Future of Open Source Communities",
         "content": "<p><strong>Gathering glimmer makes a galaxy.</strong></p><h4>Key Topics</h4><ul><li><strong>Wisdom Synergy:</strong> When growth hits a bottleneck, how to leverage community power to achieve \"cognitive leaps\"? How to ask effectively and seek help to draw collective wisdom from the community?</li><li><strong>Action Synergy:</strong> From \"onlooker\" to \"co-creator\", how can ordinary people find their contribution coordinates in the open source community, turning individual glimmer into a prairie fire for the project?</li><li><strong>Value Synergy:</strong> How can communities go beyond \"tool attributes\" to become an individual's \"spiritual tribe\"? How do we find a sense of belonging in collaboration, move forward together, and achieve symbiotic evolution?</li></ul>",
         "speakers": [
             {
@@ -280,7 +288,7 @@
     {
         "date": "DEC 21",
         "timeSlot": "15:30 - 16:30",
-        "title": "Panel 3: Genesis · Renaissance-Style Entrepreneurs Catalyzed by AI",
+        "title": "Panel 4: Genesis · Renaissance-Style Entrepreneurs Catalyzed by AI",
         "content": "<p><strong>Dancing with AI, creating the future. Can everyone do it?</strong></p><p><strong>Renaissance-Style AI Entrepreneurs:</strong> In the AI era, individuals who can span across technology, art, humanities, and business dimensions, creating breakthrough products with comprehensive thinking. Like Leonardo da Vinci and Michelangelo during the Renaissance, they are not limited to a single profession but use interdisciplinary perspectives to create works that set standards for centuries. Modern \"Renaissance-Style AI Entrepreneurs\" are those who: deeply understand human needs, are familiar with AI principles and toolchains, can perform artistic expression and design, and master commercialization, market insights, and value creation. These entrepreneurs are not \"upgraded tech entrepreneurs\" but composite talents integrating technology + humanities + aesthetics + business.</p><h4>Key Topics</h4><ul><li><strong>Soil Genesis:</strong> How does the AI era reshape the ideological soil of growth? Ideological liberation, cross-boundary demands, and resource support are constantly reconstructing the environment for youth development. What role will young people play in the AI era? How will the trajectory of thought and personal development be affected?</li><li><strong>Paradigm Genesis:</strong> When AI becomes the infrastructure for collaboration and creation, how will the efficiency paradigm be reconstructed? AI products are becoming the new \"collaboration interface\" and \"creation engine\". From automation to co-creation, from search to reasoning, how do we truly use AI to improve efficiency and break professional boundaries? What will future workflows look like?</li><li><strong>Pattern Genesis:</strong> With AI support, is the pattern of value creation changing? Content production, product development, expression methods, and distribution paths are all reshaped by AI. Does AI allow individuals to create at lower costs and faster speeds? Is AI making \"one person doing the work of a team\" possible?</li></ul>",
         "speakers": [
             {
