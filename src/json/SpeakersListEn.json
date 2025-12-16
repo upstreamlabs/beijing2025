@@ -72,8 +72,8 @@
     {
         "id": "yan-junchen",
         "name": "Junchen Yan",
-        "title": "Co-founder, Dify.AI",
-        "bio": "Co-founder, Dify.AI Driving Commercial Growth through Product Architecture. Expert in the PMF to 1-to-10 journey.",
+        "title": "Head of Commercialization, Dify",
+        "bio": "Driving Commercial Growth through Product Architecture. Expert in the PMF to 1-to-10 journey.",
         "image": "延君晨.png"
     },
     {
@@ -91,6 +91,13 @@
         "image": "生姜Iris.png"
     },
     {
+        "id": "huang-zhenxin",
+        "name": "Zhenxin Huang",
+        "title": "VP of Kimi Moonshot AI",
+        "bio": "Bachelor's in Software Engineering from University of Electronic Science and Technology of China, MBA from Tsinghua PBC School of Finance and Cornell University. Forbes China 30 Under 30, Hurun Under30s Entrepreneurship Leader, Vice President of Quzhou Chamber of Commerce. Serial entrepreneur for ten years, deeply engaged in data and AI applications, experienced multiple rounds of financing and corporate M&A, accumulated solid product and commercialization experience. Founded Lexiang Online and Zaoshu Technology, exploring instant retail and intelligent financial data infrastructure respectively, serving universities nationwide and trillion-level asset management institutions. Former General Manager of Financial and Pan-Enterprise Division at Sensors Data, leading AI product R&D and commercial implementation, promoting large-scale application of AI technology in finance and overseas scenarios.",
+        "image": "黄震昕.png"
+    },
+    {
         "id": "bian-li",
         "name": "Li Bian",
         "title": "Former VP of Software R&D at QBoson, Former Tech Product Lead at Waymo",
@@ -103,6 +110,13 @@
         "title": "Founder of Sealos, CEO of Huanjie Cloud, Author of FastGPT & Laf",
         "bio": "Formerly responsible for the sealer project at Alibaba, later donated to CNCF.",
         "image": "方海涛.png"
+    },
+    {
+        "id": "sun-keqiang",
+        "name": "Keqiang Sun",
+        "title": "Founder & CEO of MiShen Technology",
+        "bio": "PhD graduate from the Multimedia Laboratory (MMLab) at The Chinese University of Hong Kong, with long-term research in multimodal generation, 3D reconstruction, and human preference modeling. Has published multiple research achievements at top international conferences such as CVPR, ICCV, and ECCV, and proposed systematic human visual preference modeling work (HPS series), providing important references for preference alignment and evaluation of generative models. Previously conducted cutting-edge AI research and engineering practices at SenseTime, Meta, and other institutions, participating in the development and implementation of multiple generative AI systems for real business scenarios. In recent years, he has focused on the structural connection between AI and real user needs, proposing the Vibe User Research concept, exploring a new generation of product self-iteration and self-upgrade paradigms centered on continuous user feedback and preference modeling, committed to promoting the large-scale implementation of open source technology in enterprise-level AI applications and business innovation.",
+        "image": "孙克强.png"
     },
     {
         "id": "lin-yuanlin",

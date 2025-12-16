@@ -156,8 +156,17 @@
                 "tags": [
                     "forum"
                 ],
-                "roleOrg": "Co-founder of AFFiNE",
+                "roleOrg": "Co-founder & Former COO of AFFiNE",
                 "image": "生姜Iris.png"
+            },
+            {
+                "id": "huang-zhenxin",
+                "name": "Zhenxin Huang",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "VP of Kimi Moonshot AI",
+                "image": "黄震昕.png"
             },
             {
                 "id": "yan-junchen",
@@ -165,7 +174,7 @@
                 "tags": [
                     "forum"
                 ],
-                "roleOrg": "Co-founder, Dify.AI",
+                "roleOrg": "Head of Commercialization, Dify",
                 "image": "延君晨.png"
             },
             {
@@ -174,7 +183,7 @@
                 "tags": [
                     "forum"
                 ],
-                "roleOrg": "Founder of Sealos",
+                "roleOrg": "Founder of Sealos, CEO of Huanjie Cloud Computing",
                 "image": "方海涛.png"
             },
             {
@@ -194,6 +203,15 @@
                 ],
                 "roleOrg": "Founder & CEO of EezyCollab",
                 "image": "Yiki.png"
+            },
+            {
+                "id": "sun-keqiang",
+                "name": "Keqiang Sun",
+                "tags": [
+                    "forum"
+                ],
+                "roleOrg": "Founder & CEO of MiShen Technology",
+                "image": "孙克强.png"
             }
         ]
     },

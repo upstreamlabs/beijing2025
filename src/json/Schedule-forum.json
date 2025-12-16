@@ -156,8 +156,17 @@
         "tags": [
           "forum"
         ],
-        "roleOrg": "AFFiNE 联合创始人",
+        "roleOrg": "AFFiNE 联合创始人兼前 COO",
         "image": "生姜Iris.png"
+      },
+      {
+        "id": "huang-zhenxin",
+        "name": "黄震昕",
+        "tags": [
+          "forum"
+        ],
+        "roleOrg": "Kimi 月之暗面副总裁",
+        "image": "黄震昕.png"
       },
       {
         "id": "yan-junchen",
@@ -165,7 +174,7 @@
         "tags": [
           "forum"
         ],
-        "roleOrg": "Dify.AI 联合创始人",
+        "roleOrg": "Dify 商业化负责人",
         "image": "延君晨.png"
       },
       {
@@ -174,7 +183,7 @@
         "tags": [
           "forum"
         ],
-        "roleOrg": "Sealos 创始人",
+        "roleOrg": "Sealos 创始人，环界云计算 CEO",
         "image": "方海涛.png"
       },
       {
@@ -194,6 +203,15 @@
         ],
         "roleOrg": "EezyCollab 创始人兼 CEO",
         "image": "Yiki.png"
+      },
+      {
+        "id": "sun-keqiang",
+        "name": "孙克强",
+        "tags": [
+          "forum"
+        ],
+        "roleOrg": "觅深科技创始人兼 CEO",
+        "image": "孙克强.png"
       }
     ]
   },

@@ -126,7 +126,7 @@
       "name": "生姜Iris",
       "honorific": "女士",
       "photo": "生姜Iris.png",
-      "role": "AFFiNE 联合创始人",
+      "role": "AFFiNE 联合创始人兼前 COO",
       "participation": {
         "type": "panel",
         "title": "破局 · AI 带来的软件和 SaaS 变革",
@@ -135,11 +135,24 @@
       }
     },
     {
+      "id": "huang-zhenxin",
+      "name": "黄震昕",
+      "honorific": "先生",
+      "photo": "黄震昕.png",
+      "role": "Kimi 月之暗面副总裁",
+      "participation": {
+        "type": "panel",
+        "title": "破局 · AI 带来的软件和 SaaS 变革",
+        "time": "13:30 - 14:30",
+        "isModerator": false
+      }
+    },
+    {
       "id": "yan-junchen",
       "name": "延君晨",
       "honorific": "先生",
       "photo": "延君晨.png",
-      "role": "Dify.AI 联合创始人",
+      "role": "Dify 商业化负责人",
       "participation": {
         "type": "panel",
         "title": "破局 · AI 带来的软件和 SaaS 变革",
@@ -165,7 +178,7 @@
       "name": "方海涛",
       "honorific": "先生",
       "photo": "方海涛.png",
-      "role": "Sealos 创始人",
+      "role": "Sealos 创始人，环界云计算 CEO",
       "participation": {
         "type": "panel",
         "title": "破局 · AI 带来的软件和 SaaS 变革",
@@ -192,6 +205,19 @@
       "honorific": "女士",
       "photo": "Yiki.png",
       "role": "EezyCollab 创始人兼 CEO",
+      "participation": {
+        "type": "panel",
+        "title": "破局 · AI 带来的软件和 SaaS 变革",
+        "time": "13:30 - 14:30",
+        "isModerator": false
+      }
+    },
+    {
+      "id": "sun-keqiang",
+      "name": "孙克强",
+      "honorific": "先生",
+      "photo": "孙克强.png",
+      "role": "觅深科技创始人兼 CEO",
       "participation": {
         "type": "panel",
         "title": "破局 · AI 带来的软件和 SaaS 变革",
@@ -363,9 +389,21 @@
     "keynote_and_panel": "开源为舟，商业为帆。GOBI 相见，共论开源可持续增长。诚邀你来到全球开源商业创新大会，在现场聆听[{{NAME}}{{HONORIFIC}}的]主题演讲<span class=\"highlight\">「{{KEYNOTE_TITLE}}」</span>。"
   },
   "panels": {
-    "源力觉醒·企业软件的「巨硬」时刻": { "moderator": "高宁", "honorific": "先生" },
-    "破局·AI 带来的软件和 SaaS 变革": { "moderator": "生姜Iris", "honorific": "女士" },
-    "聚力·开源社区的进化与未来": { "moderator": "唐小引", "honorific": "女士" },
-    "创生·AI催生的文艺复兴式创业者": { "moderator": "陈志伟", "honorific": "先生" }
+    "源力觉醒·企业软件的「巨硬」时刻": {
+      "moderator": "高宁",
+      "honorific": "先生"
+    },
+    "破局·AI 带来的软件和 SaaS 变革": {
+      "moderator": "生姜Iris",
+      "honorific": "女士"
+    },
+    "聚力·开源社区的进化与未来": {
+      "moderator": "唐小引",
+      "honorific": "女士"
+    },
+    "创生·AI催生的文艺复兴式创业者": {
+      "moderator": "陈志伟",
+      "honorific": "先生"
+    }
   }
 }
