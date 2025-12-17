@@ -23,6 +23,7 @@ interface Session {
   date: string
   timeSlot: string
   title: string
+  subtitle?: string
   content: string
   speakers: Speaker[]
   category?: string
@@ -171,7 +172,12 @@ const sortedAllSessions = sortSessionsByTime(uniqueAllSessions)
                       <div class="timeslot">
                         <p>{session.timeSlot}</p>
                       </div>
-                      <h2 class="h5">{session.title}</h2>
+                      <div class="title-content">
+                        <h2 class="h5">{session.title}</h2>
+                        {session.subtitle && (
+                          <p class="subtitle">{session.subtitle}</p>
+                        )}
+                      </div>
                     </div>
                     {(session.speakers.length > 0 || session.content) && (
                       <div class="plus">
@@ -408,8 +414,14 @@ const sortedAllSessions = sortSessionsByTime(uniqueAllSessions)
   .single-agenda-card .top .left {
     display: flex;
     width: auto;
-    align-items: center;
+    align-items: flex-start;
     gap: 2rem;
+  }
+
+  .single-agenda-card .top .left .title-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
   }
 
   .single-agenda-card .top .left .timeslot {
@@ -430,6 +442,14 @@ const sortedAllSessions = sortSessionsByTime(uniqueAllSessions)
     font-size: 1.1rem;
     font-weight: 600;
     color: #333;
+  }
+
+  .single-agenda-card .top .left .subtitle {
+    margin: 0.25rem 0 0 0;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #666;
+    font-style: normal;
   }
 
   /* Plus/Minus Toggle */

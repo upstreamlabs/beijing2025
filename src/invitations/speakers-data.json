@@ -168,7 +168,7 @@
       "role": "QBoson 前软件研发副总裁",
       "participation": {
         "type": "panel",
-        "title": "创生 · AI催生的文艺复兴式创业者",
+        "title": "创生 · AI 催生的文艺复兴式创业者",
         "time": "15:30 - 16:30",
         "isModerator": false
       }
@@ -311,7 +311,7 @@
       "role": "无界青年论坛创始人",
       "participation": {
         "type": "panel",
-        "title": "创生 · AI催生的文艺复兴式创业者",
+        "title": "创生 · AI 催生的文艺复兴式创业者",
         "time": "15:30 - 16:30",
         "isModerator": true
       }
@@ -324,20 +324,20 @@
       "role": "SimilarTube & NanoInfluencer 开发者",
       "participation": {
         "type": "panel",
-        "title": "创生 · AI催生的文艺复兴式创业者",
+        "title": "创生 · AI 催生的文艺复兴式创业者",
         "time": "15:30 - 16:30",
         "isModerator": false
       }
     },
     {
       "id": "nana",
-      "name": "Nana",
+      "name": "NANA",
       "honorific": "女士",
       "photo": "NANA.png",
       "role": "YouTube AI 视频探索者",
       "participation": {
         "type": "panel",
-        "title": "创生 · AI催生的文艺复兴式创业者",
+        "title": "创生 · AI 催生的文艺复兴式创业者",
         "time": "15:30 - 16:30",
         "isModerator": false
       }
@@ -350,7 +350,7 @@
       "role": "AI 社交产品 Bonjour! CMO",
       "participation": {
         "type": "panel",
-        "title": "创生 · AI催生的文艺复兴式创业者",
+        "title": "创生 · AI 催生的文艺复兴式创业者",
         "time": "15:30 - 16:30",
         "isModerator": false
       }
@@ -363,7 +363,7 @@
       "role": "音乐科技公司产品经理",
       "participation": {
         "type": "panel",
-        "title": "创生 · AI催生的文艺复兴式创业者",
+        "title": "创生 · AI 催生的文艺复兴式创业者",
         "time": "15:30 - 16:30",
         "isModerator": false
       }
@@ -376,7 +376,7 @@
       "role": "Citely.ai 创始人",
       "participation": {
         "type": "panel",
-        "title": "创生 · AI催生的文艺复兴式创业者",
+        "title": "创生 · AI 催生的文艺复兴式创业者",
         "time": "15:30 - 16:30",
         "isModerator": false
       }
@@ -393,7 +393,7 @@
       "moderator": "高宁",
       "honorific": "先生"
     },
-    "破局·AI 带来的软件和 SaaS 变革": {
+    "破局 · AI 带来的软件和 SaaS 变革": {
       "moderator": "生姜Iris",
       "honorific": "女士"
     },
@@ -401,7 +401,7 @@
       "moderator": "唐小引",
       "honorific": "女士"
     },
-    "创生·AI催生的文艺复兴式创业者": {
+    "创生·AI 催生的文艺复兴式创业者": {
       "moderator": "陈志伟",
       "honorific": "先生"
     }

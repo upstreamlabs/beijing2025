@@ -1,7 +1,7 @@
 [
     {
         "date": "DEC 21",
-        "timeSlot": "09:00 - 18:00",
+        "timeSlot": "09:00 - 17:15",
         "title": "(All Day) Embodied AI Application Showcase",
         "content": "",
         "speakers": [],
@@ -227,7 +227,8 @@
         "date": "DEC 21",
         "timeSlot": "14:30 - 15:30",
         "title": "Panel 3: Synergy · Evolution and Future of Open Source Communities",
-        "content": "<p><strong>Gathering glimmer makes a galaxy.</strong></p><h4>Key Topics</h4><ul><li><strong>Wisdom Synergy:</strong> When growth hits a bottleneck, how to leverage community power to achieve \"cognitive leaps\"? How to ask effectively and seek help to draw collective wisdom from the community?</li><li><strong>Action Synergy:</strong> From \"onlooker\" to \"co-creator\", how can ordinary people find their contribution coordinates in the open source community, turning individual glimmer into a prairie fire for the project?</li><li><strong>Value Synergy:</strong> How can communities go beyond \"tool attributes\" to become an individual's \"spiritual tribe\"? How do we find a sense of belonging in collaboration, move forward together, and achieve symbiotic evolution?</li></ul>",
+        "subtitle": "Gathering glimmer makes a galaxy.",
+        "content": "<h4>Key Topics</h4><ul><li><strong>Wisdom Synergy:</strong> When growth hits a bottleneck, how to leverage community power to achieve \"cognitive leaps\"? How to ask effectively and seek help to draw collective wisdom from the community?</li><li><strong>Action Synergy:</strong> From \"onlooker\" to \"co-creator\", how can ordinary people find their contribution coordinates in the open source community, turning individual glimmer into a prairie fire for the project?</li><li><strong>Value Synergy:</strong> How can communities go beyond \"tool attributes\" to become an individual's \"spiritual tribe\"? How do we find a sense of belonging in collaboration, move forward together, and achieve symbiotic evolution?</li></ul>",
         "speakers": [
             {
                 "id": "tang-xiaoyin",
@@ -289,7 +290,8 @@
         "date": "DEC 21",
         "timeSlot": "15:30 - 16:30",
         "title": "Panel 4: Genesis · Renaissance-Style Entrepreneurs Catalyzed by AI",
-        "content": "<p><strong>Dancing with AI, creating the future. Can everyone do it?</strong></p><p><strong>Renaissance-Style AI Entrepreneurs:</strong> In the AI era, individuals who can span across technology, art, humanities, and business dimensions, creating breakthrough products with comprehensive thinking. Like Leonardo da Vinci and Michelangelo during the Renaissance, they are not limited to a single profession but use interdisciplinary perspectives to create works that set standards for centuries. Modern \"Renaissance-Style AI Entrepreneurs\" are those who: deeply understand human needs, are familiar with AI principles and toolchains, can perform artistic expression and design, and master commercialization, market insights, and value creation. These entrepreneurs are not \"upgraded tech entrepreneurs\" but composite talents integrating technology + humanities + aesthetics + business.</p><h4>Key Topics</h4><ul><li><strong>Soil Genesis:</strong> How does the AI era reshape the ideological soil of growth? Ideological liberation, cross-boundary demands, and resource support are constantly reconstructing the environment for youth development. What role will young people play in the AI era? How will the trajectory of thought and personal development be affected?</li><li><strong>Paradigm Genesis:</strong> When AI becomes the infrastructure for collaboration and creation, how will the efficiency paradigm be reconstructed? AI products are becoming the new \"collaboration interface\" and \"creation engine\". From automation to co-creation, from search to reasoning, how do we truly use AI to improve efficiency and break professional boundaries? What will future workflows look like?</li><li><strong>Pattern Genesis:</strong> With AI support, is the pattern of value creation changing? Content production, product development, expression methods, and distribution paths are all reshaped by AI. Does AI allow individuals to create at lower costs and faster speeds? Is AI making \"one person doing the work of a team\" possible?</li></ul>",
+        "subtitle": "Dancing with AI, creating the future. Can everyone do it?",
+        "content": "<p><strong>Renaissance-Style AI Entrepreneurs:</strong> In the AI era, individuals who can span across technology, art, humanities, and business dimensions, creating breakthrough products with comprehensive thinking. Like Leonardo da Vinci and Michelangelo during the Renaissance, they are not limited to a single profession but use interdisciplinary perspectives to create works that set standards for centuries. Modern \"Renaissance-Style AI Entrepreneurs\" are those who: deeply understand human needs, are familiar with AI principles and toolchains, can perform artistic expression and design, and master commercialization, market insights, and value creation. These entrepreneurs are not \"upgraded tech entrepreneurs\" but composite talents integrating technology + humanities + aesthetics + business.</p><h4>Key Topics</h4><ul><li><strong>Soil Genesis:</strong> How does the AI era reshape the ideological soil of growth? Ideological liberation, cross-boundary demands, and resource support are constantly reconstructing the environment for youth development. What role will young people play in the AI era? How will the trajectory of thought and personal development be affected?</li><li><strong>Paradigm Genesis:</strong> When AI becomes the infrastructure for collaboration and creation, how will the efficiency paradigm be reconstructed? AI products are becoming the new \"collaboration interface\" and \"creation engine\". From automation to co-creation, from search to reasoning, how do we truly use AI to improve efficiency and break professional boundaries? What will future workflows look like?</li><li><strong>Pattern Genesis:</strong> With AI support, is the pattern of value creation changing? Content production, product development, expression methods, and distribution paths are all reshaped by AI. Does AI allow individuals to create at lower costs and faster speeds? Is AI making \"one person doing the work of a team\" possible?</li></ul>",
         "speakers": [
             {
                 "id": "chen-zhiwei",
@@ -320,7 +322,7 @@
             },
             {
                 "id": "nana",
-                "name": "Nana",
+                "name": "NANA",
                 "tags": [
                     "forum"
                 ],
@@ -372,10 +374,20 @@
     },
     {
         "date": "DEC 21",
-        "timeSlot": "17:10 - 17:30",
-        "title": "Closing: Unlock the Source, Create the Future, 2026 and Beyond",
+        "timeSlot": "17:10 - 17:15",
+        "title": "Closing Remarks",
         "content": "",
-        "speakers": [],
+        "speakers": [
+            {
+                "id": "michael-yuan",
+                "name": "Michael Yuan",
+                "tags": [
+                "forum"
+                ],
+                "roleOrg": "Founder of Second State, Initiator of GOSIM",
+                "image": "MichaelYuan.png"
+            }
+        ],
         "isSpecialEvent": true
     }
 ]
