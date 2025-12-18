@@ -19,11 +19,9 @@ import sellingPointsData from "json/SellingPointsEn.json";
 import tracksData from "json/Tracks.json";
 import speakerProfilesData from "json/SpeakerProfiles.json";
 
-
 const heroLinks = heroLinksData;
 const tracks = tracksData;
 const speakerProfiles = speakerProfilesData;
-
 
 const heroBadges = [
   // Badges removed as requested
@@ -32,16 +30,16 @@ const heroBadges = [
 const coorganizers = [
   {
     src: "/images/logos/upstream-golden-logo.svg",
-    alt: "Upstream"
+    alt: "Upstream",
   },
   {
-    src: "/images/logos/atominnovation.svg",
-    alt: "Atom Innovation"
+    src: "/images/sponsors/北京AI原点社区.png",
+    alt: "北京AI原点社区",
   },
   {
     src: "/images/sponsors/csdn.png",
-    alt: "CSDN"
-  }
+    alt: "CSDN",
+  },
 ];
 ---
 
@@ -91,8 +89,6 @@ const coorganizers = [
     background="light"
   />
 
-
-
   <Marquee />
 
   <SellingPoints
@@ -114,21 +110,34 @@ const coorganizers = [
     mapZoom={15}
   />
 
-  {/* <SimpleFAQ
+  {
+    /* <SimpleFAQ
     id="faq"
     title="Frequently Asked Questions"
     items={faqItems}
     theme="light"
     background="light"
-  /> */}
+  /> */
+  }
 
-  <section class="section section-apply" id="apply" data-theme-section="dark" data-bg-section="dark">
+  <section
+    class="section section-apply"
+    id="apply"
+    data-theme-section="dark"
+    data-bg-section="dark"
+  >
     <div class="container">
       <div class="row">
         <div class="col">
-          <h2 class="custom3" style="font-family: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">Join GOBI 2025</h2>
+          <h2
+            class="custom3"
+            style="font-family: 'Manrope', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;"
+          >
+            Join GOBI 2025
+          </h2>
           <p class="apply-motto">
-            GOBI 2025 connects developers, businesses, and policy partners to explore sustainable paths from "source" to "industry".
+            GOBI 2025 connects developers, businesses, and policy partners to
+            explore sustainable paths from "source" to "industry".
           </p>
           <div class="apply-actions">
             <Button
@@ -141,7 +150,6 @@ const coorganizers = [
       </div>
     </div>
   </section>
-
 </Layout>
 
 <style>
@@ -152,7 +160,11 @@ const coorganizers = [
 
   .section-apply {
     text-align: left;
-    background: linear-gradient(135deg, rgba(43, 116, 255, 0.92), rgba(0, 200, 150, 0.88));
+    background: linear-gradient(
+      135deg,
+      rgba(43, 116, 255, 0.92),
+      rgba(0, 200, 150, 0.88)
+    );
   }
 
   .section-apply p {
@@ -163,7 +175,9 @@ const coorganizers = [
   }
 
   .apply-motto {
-    font-family: 'Source Han Serif CN VF', 'Source Han Serif SC', 'Source Han Serif', 'Noto Serif CJK SC', serif;
+    font-family:
+      "Source Han Serif CN VF", "Source Han Serif SC", "Source Han Serif",
+      "Noto Serif CJK SC", serif;
     font-size: 1.3rem;
     line-height: 1.8;
     margin-bottom: 2rem;
@@ -187,9 +201,36 @@ const coorganizers = [
     color: #ffffff !important;
   }
 
+  /* Make 北京AI原点社区 logo smaller */
+  :global(.org-logo[src*="北京AI原点社区"]) {
+    height: 50px !important;
+  }
+
+  @media (max-width: 1024px) and (min-width: 769px) {
+    :global(.org-logo[src*="北京AI原点社区"]) {
+      height: 42px !important;
+    }
+  }
+
   @media (max-width: 768px) {
     .lead {
       font-size: 1.02rem;
+    }
+
+    :global(.org-logo[src*="北京AI原点社区"]) {
+      height: 28px !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    :global(.org-logo[src*="北京AI原点社区"]) {
+      height: 24px !important;
+    }
+  }
+
+  @media (max-width: 360px) {
+    :global(.org-logo[src*="北京AI原点社区"]) {
+      height: 20px !important;
     }
   }
 </style>

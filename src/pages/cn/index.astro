@@ -38,8 +38,8 @@ const coorganizers = [
     alt: "Upstream"
   },
   {
-    src: "/images/logos/atominnovation.svg",
-    alt: "Atom Innovation"
+    src: "/images/sponsors/北京AI原点社区.png",
+    alt: "北京AI原点社区"
   },
   {
     src: "/images/sponsors/csdn.png",
@@ -196,9 +196,36 @@ const coorganizers = [
     color: #ffffff !important;
   }
 
+  /* Make 北京AI原点社区 logo smaller */
+  :global(.org-logo[src*="北京AI原点社区"]) {
+    height: 50px !important;
+  }
+
+  @media (max-width: 1024px) and (min-width: 769px) {
+    :global(.org-logo[src*="北京AI原点社区"]) {
+      height: 42px !important;
+    }
+  }
+
   @media (max-width: 768px) {
     .lead {
       font-size: 1.02rem;
+    }
+
+    :global(.org-logo[src*="北京AI原点社区"]) {
+      height: 28px !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    :global(.org-logo[src*="北京AI原点社区"]) {
+      height: 24px !important;
+    }
+  }
+
+  @media (max-width: 360px) {
+    :global(.org-logo[src*="北京AI原点社区"]) {
+      height: 20px !important;
     }
   }
 </style>
