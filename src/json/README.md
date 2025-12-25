@@ -28,7 +28,7 @@ This directory contains all the editable content for the GOBI 2025 website. You 
 ```json
 [
   {
-    "text": "立即报名",
+    "text": "活动结束，感谢参与",
     "link": "https://www.bagevent.com/event/gobi2025"
   }
 ]

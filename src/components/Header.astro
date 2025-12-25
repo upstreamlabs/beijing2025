@@ -12,6 +12,7 @@ const navLinks = isChinesePage
       { text: "首页", link: `${langPrefix}/` },
       { text: "会议日程", link: `${langPrefix}/schedule` },
       { text: "演讲嘉宾", link: `${langPrefix}/speakers` },
+      { text: "演讲幻灯片下载", link: "/GOBI演讲幻灯片.zip", download: true },
       {
         text: "Upstream 开源商业创新训练营",
         link: "https://camp.upstreamlabs.org/cn/",
@@ -22,6 +23,7 @@ const navLinks = isChinesePage
       { text: "Home", link: `${langPrefix}/` },
       { text: "Schedule", link: `${langPrefix}/schedule` },
       { text: "Speakers", link: `${langPrefix}/speakers` },
+      { text: "Download Slides", link: "/GOBI演讲幻灯片.zip", download: true },
       {
         text: "Upstream Open Source Business Camp",
         link: "https://camp.upstreamlabs.org/en/",
@@ -31,12 +33,12 @@ const navLinks = isChinesePage
 
 const cta = isChinesePage
   ? {
-      text: "立即报名",
+      text: "活动结束，感谢参与",
       link: "https://www.bagevent.com/event/gobi2025",
       openInNewTab: true,
     }
   : {
-      text: "Register Now",
+      text: "Event Ended, Thank You",
       link: "https://www.bagevent.com/event/gobi2025",
       openInNewTab: true,
     };
@@ -126,6 +128,9 @@ const slug = Astro.url.pathname;
                   href={linkHref}
                   data-anchor-target={anchorTarget || undefined}
                   data-page-title={anchorTarget ? link.text : undefined}
+                  target={link.openInNewTab ? '_blank' : '_self'}
+                  rel={link.openInNewTab ? 'noopener noreferrer' : ''}
+                  download={link.download ? true : undefined}
                 >
                   <span>{link.text}</span>
                 </a>
@@ -226,6 +231,9 @@ const slug = Astro.url.pathname;
                   href={linkHref}
                   data-anchor-target={anchorTarget || undefined}
                   data-page-title={anchorTarget ? link.text : undefined}
+                  target={link.openInNewTab ? '_blank' : '_self'}
+                  rel={link.openInNewTab ? 'noopener noreferrer' : ''}
+                  download={link.download ? true : undefined}
                 >
                   <span>{link.text}</span>
                 </a>
